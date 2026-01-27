@@ -1,0 +1,8 @@
+Shelf ID,Shelf Name,X Position,Y Position,Z Position,Item
+1,aws_robomaker_warehouse_ShelfF_01,-5.795143,-0.956635,0,Item_001
+2,aws_robomaker_warehouse_ShelfE_01,4.73156,0.57943,0,Item_002
+3,aws_robomaker_warehouse_ShelfE_01,4.73156,-4.827049,0,Item_003
+4,aws_robomaker_warehouse_ShelfE_01,4.73156,-8.6651,0,Item_004
+5,aws_robomaker_warehouse_ShelfD_01,4.73156,-1.242668,0,Item_005
+6,aws_robomaker_warehouse_ShelfD_01,4.73156,-3.038551,0,Item_006
+7,aws_robomaker_warehouse_ShelfD_01,4.73156,-6.750542,0,Item_007
