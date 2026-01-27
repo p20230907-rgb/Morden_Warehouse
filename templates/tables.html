@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Comparison Tables</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif; /* Professional font */
+            background-color: #f8f9fa; /* Very light background */
+            padding: 30px;
+            color: #343a40; /* Dark text for contrast */
+            line-height: 1.6;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+        }
+        h2 {
+            background-color: #34495e; /* Midnight Blue */
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            font-size: 1.8em;
+            width: 90%; /* Match table width */
+            max-width: 900px; /* Constrain max width for posters */
+        }
+        table {
+            width: 90%; /* Slightly narrower tables */
+            max-width: 900px; /* Max width for consistency */
+            margin: 30px auto; /* Center tables and provide vertical spacing */
+            border-collapse: separate; /* For rounded corners on cells */
+            border-spacing: 0; /* Remove space between cells */
+            border-radius: 10px; /* More pronounced rounded corners */
+            overflow: hidden; /* Ensures corners are rounded */
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15); /* Stronger shadow */
+            background-color: #ffffff; /* White background for tables */
+        }
+        th, td {
+            padding: 15px 20px;
+            text-align: center;
+            border-bottom: 1px solid #e9ecef; /* Lighter border for rows */
+            /* Add some padding to cells for better spacing */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+        th {
+            background-color: #495057; /* Slightly lighter dark grey for headers */
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.95em;
+        }
+        /* Rounded corners for the very first and last cells in the header row */
+        th:first-child { border-top-left-radius: 10px; }
+        th:last-child { border-top-right-radius: 10px; }
+
+        tr:nth-child(even) {
+            background-color: #f2f4f6; /* Very light grey-blue */
+        }
+        tr:hover {
+            background-color: #e0f2f7; /* Soft blue on hover */
+            cursor: pointer;
+        }
+        /* Bottom rounded corners for the last row */
+        tbody tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+        tbody tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+
+        .highlight {
+            font-weight: bold;
+            color: #007bff; /* Vibrant blue for general highlights */
+        }
+        .success-rate {
+            font-weight: bold;
+            color: #27ae60; /* Emerald Green for success */
+        }
+        .not-supported {
+            font-weight: bold;
+            color: #dc3545; /* Red for "Not Supported" */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            h2, table {
+                width: 100%;
+                margin: 20px auto;
+            }
+            th, td {
+                padding: 10px 12px;
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>TABLE I: Performance Comparison of Different Models</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Query Type</th>
+                <th>LLaMA3-70B-8192</th>
+                <th>Gemma2-9B-IT</th>
+                <th>DeepSeek-R1-Distill-LLaMA-70B</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>How many units of Item 001 are in stock?</td>
+                <td>1.44</td>
+                <td>1.54</td>
+                <td>6.31</td>
+            </tr>
+            <tr>
+                <td>Please pick 3 units of Item 001</td>
+                <td>1.91</td>
+                <td>1.42</td>
+                <td>6.26</td>
+            </tr>
+            <tr>
+                <td>Assist near Shelf A</td>
+                <td>2.94</td>
+                <td>1.63</td>
+                <td>5.46</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>TABLE II: Average Response Time per Model</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Model</th>
+                <th>Average Response Time (s)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>LLaMA3-70B-8192</td>
+                <td>2.10</td>
+            </tr>
+            <tr>
+                <td class="highlight">Gemma2-9B-IT</td>
+                <td class="highlight">1.53</td>
+            </tr>
+            <tr>
+                <td>DeepSeek-R1-Distill-LLaMA-70B</td>
+                <td>6.01</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>TABLE III: RAG-based LLMs Enable Advanced Query Handling Beyond Traditional Search Limitations</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Query</th>
+                <th>LLaMA3-70B-8192</th>
+                <th>Gemma2-9B-IT</th>
+                <th>DeepSeek-R1-Distill-LLaMA-70B</th>
+                <th>Traditional Search</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Summarize the key safety points from the manual</td>
+                <td>1.2303</td>
+                <td>1.0311</td>
+                <td class="highlight">0.8292</td>
+                <td class="not-supported">Not Supported</td>
+            </tr>
+            <tr>
+                <td>Compare safety requirements for chemicals vs machinery</td>
+                <td>1.1697</td>
+                <td class="highlight" >1.1986</td>
+                <td>1.7652</td>
+                <td class="not-supported">Not Supported</td>
+            </tr>
+            <tr>
+                <td>Generate checklist for new employee safety orientation</td>
+                <td>2.4658</td>
+                <td class="highlight">1.1161</td>
+                <td>2.6245</td>
+                <td class="not-supported">Not Supported</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>TABLE IV: Reliability Evaluation: Overall Success Rates of Models</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Model</th>
+                <th>Total Queries</th>
+                <th>Success Rate (%)</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>LLaMA3-70B-8192</td>
+                <td>72</td>
+                <td class="success-rate">100%</td>
+                <td>Fully successful using RAG+LLM for all queries</td>
+            </tr>
+            <tr>
+                <td>Gemma2-9B-IT</td>
+                <td>72</td>
+                <td class="highlight" style="color: #7700ff;">87.50%</td>
+                <td>Struggled with Traditional Search (Semantic Fail)</td>
+            </tr>
+            <tr>
+                <td>DeepSeek</td>
+                <td>72</td>
+                <td class="success-rate">100%</td>
+                <td>Fully successful using RAG+LLM</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

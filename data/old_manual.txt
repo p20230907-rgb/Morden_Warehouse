@@ -1,0 +1,92 @@
+WAREHOUSE SAFETY MANUAL (2025)
+==================================================
+
+SECTION 1: PERSONAL PROTECTIVE EQUIPMENT (PPE)
+--------------------------------------------------
+- Safety Helmets – Protect against falling objects and head injuries.
+- High-Visibility Vests – Must be fluorescent yellow or orange with retro-reflective stripes.
+- Steel-Toed Boots – Must conform to ISO 20345:2011 standard.
+- Cut-Resistant Gloves – Level 3 or higher EN388-rated gloves must be worn during handling sharp or metal objects.
+- Hearing Protection – Required in zones exceeding 85 dB (e.g., near industrial compressors).
+
+SECTION 2: FIRE SAFETY EQUIPMENT AND EXIT PROCEDURES
+--------------------------------------------------
+1. Fire Extinguishers must be located every 15 meters in accessible positions and inspected monthly.
+2. Fire Blankets should be located in areas with welding or flammable liquids.
+3. Sprinkler System: Must comply with NFPA 13 standards and be tested quarterly.
+4. Emergency Exits:
+   - Clearly marked with illuminated signs.
+   - Unobstructed with 1.2 meters of clearance.
+   - At least 2 exits per zone, within 30 meters.
+5. Evacuation Protocol:
+   - Stop work immediately on alarm.
+   - Leave belongings and use the nearest fire exit.
+   - Never use elevators or powered lifts.
+6. Assembly Points:
+   - At least 50 meters from building.
+   - Green "Assembly Zone" signage.
+   - Roll call by Safety Officer within 10 minutes.
+7. Drill Frequency: Every 6 months; missed drills require safety retraining.
+8. Emergency lights: Minimum 90-minute functionality after power cut.
+
+SECTION 3: MATERIAL HANDLING SAFETY
+--------------------------------------------------
+- Forklift Operators: Certified; recertification every 2 years.
+- Load Limits: Do not exceed 1500 kg per level unless labeled otherwise.
+- Straps and Bindings: Use Class 2 ratchet straps for loads over 200 kg.
+
+SECTION 4: CHEMICAL AND HAZARDOUS MATERIALS HANDLING
+--------------------------------------------------
+1. Storage:
+   - Ventilated, locked cabinets.
+   - At least 10 meters from ignition sources.
+   - Accessible MSDS sheets.
+2. Labeling:
+   - GHS pictograms, chemical name, date of receipt and expiry.
+3. Spill Containment:
+   - Kits within 15 meters of storage.
+   - Include absorbent pads, neutralizers, and disposal bags.
+4. PPE:
+   - Nitrile gloves, face shield, apron.
+   - Respirators for volatile/corrosive materials.
+5. Disposal:
+   - Follow EPA Regulation CFR 261.
+   - Log entries in WHS-204 Chemical Logbook.
+
+SECTION 5: LOCKOUT/TAGOUT (LOTO) PROCEDURES
+--------------------------------------------------
+1. Authorization:
+   - Only certified technicians.
+   - Certification valid for 3 years.
+2. Lockout Procedure:
+   1. Notify affected employees.
+   2. Shut down equipment.
+   3. Isolate energy source.
+   4. Lock and tag energy points.
+   5. Verify isolation.
+3. Tagout Guidelines:
+   - Include technician name, date/time, reason.
+   - Only technician who tagged can remove it.
+4. Training:
+   - Annual requirement (every 12 months).
+   - Emergency removal needs written supervisor approval.
+5. Covered Equipment:
+   - Conveyor belts, hydraulic presses, forklift charging stations.
+
+SECTION 6: SAFETY SIGNAGE AND INCIDENT REPORTING
+--------------------------------------------------
+- Hazardous Zones: Marked with red-yellow striping.
+- Pedestrian Walkways: Green/white markings.
+- MSDS Locations: Within 10 meters of chemical zones.
+- Reporting:
+   - All incidents reported within 2 hours.
+   - Use Form WHS-101 or internal safety portal.
+
+SECTION 7: PPE REPLACEMENT FREQUENCY
+--------------------------------------------------
+| Equipment            | Replacement Cycle              |
+|----------------------|-------------------------------|
+| Safety Helmet        | Every 5 years or after impact |
+| Gloves               | Every 3 months or on damage   |
+| High-Vis Vest        | Annually                      |
+| Steel-Toed Boots     | Every 18 months               |
