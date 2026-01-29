@@ -51,5 +51,4 @@ This project is designed for **warehouse-style environments** where operators ne
 
 ---
 
-
-URL: https://www.youtube.com/watch?v=OlvQJqSsOZA
+DEmo URL: https://www.youtube.com/watch?v=n_hodmLCzXY
