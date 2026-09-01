@@ -1,0 +1,52 @@
+global_costmap:
+  global_frame: "map"                # The frame of the global costmap, typically "map"
+  robot_base_frame: "base_link"      # The robot's base frame
+  update_frequency: 5.0              # The frequency at which the costmap is updated
+  publish_frequency: 2.0             # The frequency at which the costmap is published to topics
+  static_map: true                   # Whether to use a static map (set to true if using a pre-loaded map)
+  rolling_window: false              # Whether the costmap should move with the robot (set to true for dynamic costmap)
+  width: 60.0                        # The width (in meters) of the global costmap
+  height: 60.0                       # The height (in meters) of the global costmap
+  resolution: 0.05                   # The resolution of the costmap in meters/cell (e.g., 0.05 for 5cm resolution)
+  
+  # List of layers (plugins) for the global costmap
+  plugins:
+    # Static Layer: A layer representing the static map (walls, obstacles, etc.)
+    - {name: "static_layer", type: "costmap_2d::StaticLayer"}
+
+    # Obstacle Layer: A layer to add obstacles from your sensors (e.g., laser scans)
+    - {name: "obstacle_layer", type: "costmap_2d::ObstacleLayer"}
+    
+    # Inflation Layer: A layer to inflate the cost of obstacles, typically used for safety
+    - {name: "inflation_layer", type: "costmap_2d::InflationLayer"}
+
+  # Parameters for the static layer
+  static_layer:
+    map_topic: "map"                  # The topic to get the static map
+    subscribe_to_updates: false       # Whether to subscribe to map updates (if using dynamic map)
+
+  # Parameters for the obstacle layer
+  obstacle_layer:
+    observation_sources: laser_scan   # Sources of sensor data (e.g., laser_scan, pointcloud)
+    sensor_frame: "base_scan"         # The frame of the sensor (e.g., "base_scan" for laser)
+    data_type: "LaserScan"            # Type of sensor data (can be "LaserScan", "PointCloud", etc.)
+    max_obstacle_height: 2.0          # Max height of obstacles to consider in the costmap
+    min_obstacle_height: 0.0          # Min height of obstacles to consider in the costmap
+    obstacle_range: 3.0               # Max range of the sensor to detect obstacles
+    raytrace_range: 3.0               # Range for ray tracing obstacles
+    footprint: "base_footprint"       # The footprint of the robot (typically "base_footprint")
+    padding: 0.1                      # Padding around obstacles to prevent collisions
+    track_unknown_space: true         # Whether to track unknown space (useful for obstacles not sensed yet)
+    observation_persistence: 0.0      # How long to remember obstacles
+
+  # Parameters for the inflation layer
+  inflation_layer:
+    inflation_radius: 0.55            # Radius around obstacles to inflate (in meters)
+    cost_scaling_factor: 10.0         # Scaling factor for cost (larger values make obstacles more costly)
+  
+  # Common global costmap parameters
+  footprint_clearing_enabled: true    # Whether to clear the robot's footprint in the costmap
+  mark_unknown_space_as_free: true    # Mark unknown spaces as free (useful for large areas without sensors)
+  rolling_window: false               # If true, dynamically updates costmap as the robot moves (set to false for static)
+
+# Optional: If you're using dynamic obstacle detection from sensors, such as laser scans, make sure that the obstacle layer has the proper parameters.

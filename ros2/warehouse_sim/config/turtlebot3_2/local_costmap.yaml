@@ -1,0 +1,41 @@
+local_costmap:
+  global_frame: "map"                # The global frame in which the local costmap is defined (typically "map")
+  robot_base_frame: "base_link"      # The robot's base frame (typically "base_link")
+  update_frequency: 10.0             # The frequency at which the costmap is updated (in Hz)
+  publish_frequency: 2.0             # The frequency at which the costmap is published (in Hz)
+  rolling_window: true               # Whether the costmap should move with the robot
+  width: 6.0                         # Width of the local costmap in meters
+  height: 6.0                        # Height of the local costmap in meters
+  resolution: 0.05                   # Resolution of the local costmap (in meters per cell)
+
+  # List of layers (plugins) for the local costmap
+  plugins:
+    # Obstacle Layer: A layer to add obstacles from your sensors (e.g., laser scans)
+    - {name: "obstacle_layer", type: "costmap_2d::ObstacleLayer"}
+
+    # Inflation Layer: A layer to inflate the cost of obstacles, typically used for safety
+    - {name: "inflation_layer", type: "costmap_2d::InflationLayer"}
+
+  # Parameters for the obstacle layer
+  obstacle_layer:
+    observation_sources: laser_scan   # Sources of sensor data (e.g., laser_scan, pointcloud)
+    sensor_frame: "base_scan"         # The frame of the sensor (e.g., "base_scan" for laser)
+    data_type: "LaserScan"            # Type of sensor data (can be "LaserScan", "PointCloud", etc.)
+    max_obstacle_height: 2.0          # Max height of obstacles to consider in the costmap
+    min_obstacle_height: 0.0          # Min height of obstacles to consider in the costmap
+    obstacle_range: 3.0               # Max range of the sensor to detect obstacles (in meters)
+    raytrace_range: 3.0               # Range for ray tracing obstacles
+    footprint: "base_footprint"       # The footprint of the robot (typically "base_footprint")
+    padding: 0.1                      # Padding around obstacles to prevent collisions
+    track_unknown_space: true         # Whether to track unknown space (useful for obstacles not sensed yet)
+    observation_persistence: 0.0      # How long to remember obstacles
+
+  # Parameters for the inflation layer
+  inflation_layer:
+    inflation_radius: 0.55            # Radius around obstacles to inflate (in meters)
+    cost_scaling_factor: 10.0         # Scaling factor for cost (larger values make obstacles more costly)
+
+  # Common local costmap parameters
+  footprint_clearing_enabled: true    # Whether to clear the robot's footprint in the costmap
+  mark_unknown_space_as_free: true    # Mark unknown spaces as free (useful for large areas without sensors)
+  rolling_window: true               # If true, dynamically updates costmap as the robot moves
