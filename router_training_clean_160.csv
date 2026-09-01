@@ -1,0 +1,161 @@
+﻿query,tier
+Apple iPhone 14,direct
+Apple iPhone 14 Pro,direct
+Apple charging cable,direct
+Apple screen protector,direct
+Samsung Galaxy S23,direct
+Samsung Galaxy S24,direct
+Samsung Wireless Earbuds,direct
+Samsung Fast Charger,direct
+Sony WH-1000XM5,direct
+Sony WF-1000XM5,direct
+Sony Carrying Case,direct
+Dell XPS 13,direct
+Dell XPS 15,direct
+Dell Laptop Charger,direct
+Bose QC45,direct
+Bose SoundLink Flex,direct
+Logitech MX Master 3,direct
+Logitech MX Keys,direct
+Sony PlayStation 5,direct
+Sony DualSense,direct
+Find Apple iPhone 13,direct
+Locate Samsung Galaxy Tab S9,direct
+Where is Sony WH-CH720N stored?,direct
+Find Sony Extra Bass Headphones,direct
+Locate Dell Inspiron 14,direct
+Where is the Dell Laptop Bag?,direct
+Find Bose QC Ultra,direct
+Locate Bose Soundbar 600,direct
+Where are the Bose replacement pads?,direct
+Find Logitech G Pro X Superlight,direct
+Locate Logitech Webcam C920,direct
+Where is the Logitech Mouse Pad?,direct
+Find Sony VR2,direct
+Locate Sony Games Bundle,direct
+Where is the Sony Charging Station?,direct
+Show Shelf A,direct
+Show Shelf C,direct
+Show Shelf E,direct
+Show Shelf G,direct
+Locate Shelf D,direct
+helmet requirement,keyword
+high visibility vest,keyword
+steel toe footwear standard,keyword
+cut resistant gloves,keyword
+hearing protection threshold,keyword
+fire extinguisher spacing,keyword
+monthly extinguisher check,keyword
+emergency exit requirement,keyword
+evacuation assembly point,keyword
+elevator evacuation rule,keyword
+visitor PPE,keyword
+forklift certification,keyword
+forklift recertification interval,keyword
+hazardous chemical storage,keyword
+first aid kit spacing,keyword
+weekly first aid check,keyword
+incident reporting deadline,keyword
+WHS-101 incident form,keyword
+WHS-207 incident form,keyword
+annual safety training,keyword
+post-accident training,keyword
+LOTO review interval,keyword
+fire drill frequency,keyword
+spill cleanup,keyword
+absorbent pads,keyword
+powered equipment authorization,keyword
+inspection zone damaged goods,keyword
+inventory discrepancy supervisor,keyword
+paper cardboard waste bin,keyword
+plastic waste bin,keyword
+hazardous waste bin,keyword
+loading area helmets,keyword
+reflective vest requirement,keyword
+ISO 20345 footwear,keyword
+sharp material gloves,keyword
+85 dB hearing protection,keyword
+assembly point signage,keyword
+chemical cabinet ventilation,keyword
+medical emergency extension,keyword
+safety lead extension,keyword
+What protective equipment is mandatory in loading areas?,rag
+What kind of high-visibility clothing does the manual require?,rag
+What footwear standard is specified for warehouse safety boots?,rag
+When are cut-resistant gloves mandatory?,rag
+At what noise level is hearing protection required?,rag
+How far apart should fire extinguishers be placed?,rag
+How frequently must fire extinguishers be inspected?,rag
+How many emergency exits are required in each zone?,rag
+How far from the warehouse are assembly points located?,rag
+Are elevators permitted during an evacuation?,rag
+What PPE requirements apply to visitors?,rag
+What certification is required before operating a forklift?,rag
+How often must forklift operators be recertified?,rag
+How must hazardous chemicals be stored?,rag
+How frequently should first-aid kits be checked?,rag
+How far apart should first-aid kits be located?,rag
+What is the 2025 deadline for reporting an incident?,rag
+Which form is used for incident reporting under the 2025 procedure?,rag
+What incident-reporting requirement is stated in the 2024 procedure?,rag
+How often is warehouse safety training required?,rag
+When is additional training required after an incident or violation?,rag
+How often must the lockout/tagout procedure be reviewed?,rag
+How frequently are fire drills conducted?,rag
+What should staff do immediately after a spill occurs?,rag
+What material is specified for cleaning up spills?,rag
+Who is permitted to operate powered warehouse equipment?,rag
+Where should damaged goods be moved for inspection?,rag
+Who should be notified about inventory discrepancies?,rag
+Which bin is used for paper and cardboard waste?,rag
+Which bin is used for plastic waste?,rag
+Which bin is used for hazardous waste?,rag
+What helmet rule applies specifically in loading areas?,rag
+What does the manual require for reflective visibility clothing?,rag
+What standard number applies to steel safety boots?,rag
+What hand protection is required for sharp materials?,rag
+What does the manual say about areas above 85 dB?,rag
+What signage identifies the emergency assembly points?,rag
+What storage conditions are required for chemical cabinets?,rag
+What emergency number is listed for the fire department?,rag
+What extension should be used to contact the safety lead?,rag
+Which shelf has the largest total stock?,llm
+Which shelf has the smallest total stock?,llm
+What is the average stock per shelf?,llm
+Which two shelves have the closest total stock?,llm
+Which product has the highest unit price?,llm
+Which products are tied for the lowest stock quantity?,llm
+What is the total stock across the entire warehouse?,llm
+What is the total inventory value of Shelf B?,llm
+Which shelf has the highest inventory value?,llm
+Compare total stock on Shelves A and D.,llm
+How much greater is Shelf B stock than Shelf A stock?,llm
+Compare the total stock of Shelves C and F.,llm
+Which shelf should be replenished first based only on lowest total stock?,llm
+Which product should be replenished first based only on lowest stock?,llm
+What is the total stock of all smartphone products?,llm
+What is the combined inventory value of all smartphone products?,llm
+"Which is more expensive, Dell XPS 15 or Bose QC Ultra?",llm
+How much more expensive is Dell XPS 15 than Dell XPS 13?,llm
+Compare the stock of Samsung Galaxy S23 and Sony PlayStation 5.,llm
+What is the combined stock of Apple iPhone 14 and Apple iPhone 14 Pro?,llm
+Which Bose product has the highest stock?,llm
+Which Logitech product has the lowest stock?,llm
+"Rank Shelves A, B, and C by total stock from highest to lowest.",llm
+Summarize the inventory composition of Shelf E.,llm
+Summarize the inventory composition of Shelf F.,llm
+Compare the number of units on Shelf G with Shelf D.,llm
+What percentage of Shelf B stock is Samsung Galaxy S23?,llm
+What is the total stock of all products on Shelf C?,llm
+What is the total stock of all products on Shelf F?,llm
+Which shelf contains the greatest number of units of a single product?,llm
+Compare the highest-stock product on Shelf A with the highest-stock product on Shelf E.,llm
+Which shelf has the highest average stock per product?,llm
+Which shelf has the lowest average stock per product?,llm
+What is the price difference between Samsung Galaxy S24 and Galaxy S23?,llm
+What is the combined value of all Dell XPS models in stock?,llm
+Which product contributes the most inventory value on Shelf B?,llm
+Compare total inventory value on Shelf A and Shelf G.,llm
+Which three products have the lowest stock quantities?,llm
+What is the difference between the highest and lowest shelf stock totals?,llm
+"Give a concise stock comparison of Shelves B, C, and F.",llm

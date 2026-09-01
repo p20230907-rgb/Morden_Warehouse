@@ -1,0 +1,16 @@
+{
+  "overall_accuracy": 0.8833333333333333,
+  "routing_accuracy": 1.0,
+  "type_accuracy": {
+    "RAG Safety": 1.0,
+    "LLM Reasoning": 1.0,
+    "Keyword Search": 0.8666666666666667,
+    "Direct Item Lookup": 0.6666666666666666
+  },
+  "tier_accuracy": {
+    "direct": 0.6666666666666666,
+    "keyword": 0.8666666666666667,
+    "llm": 1.0,
+    "rag": 1.0
+  }
+}

@@ -1,0 +1,26 @@
+# API keys / secrets
+.env
+*.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+
+# Windows metadata
+*:Zone.Identifier
+
+# Runtime logs
+query_log.csv
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,302 @@
+[
+  {
+    "query": "Apple iPhone 14",
+    "mode": "auto",
+    "type": "Direct Item Lookup"
+  },
+  {
+    "query": "Samsung Galaxy S23",
+    "mode": "auto",
+    "type": "Direct Item Lookup"
+  },
+  {
+    "query": "Sony WH-1000XM5",
+    "mode": "auto",
+    "type": "Direct Item Lookup"
+  },
+  {
+    "query": "Dell XPS 13",
+    "mode": "auto",
+    "type": "Direct Item Lookup"
+  },
+  {
+    "query": "Bose QuietComfort 45",
+    "mode": "auto",
+    "type": "Direct Item Lookup"
+  },
+  {
+    "query": "Logitech MX Master 3",
+    "mode": "auto",
+    "type": "Direct Item Lookup"
+  },
+  {
+    "query": "Sony PlayStation 5",
+    "mode": "auto",
+    "type": "Direct Item Lookup"
+  },
+  {
+    "query": "Samsung Galaxy S24",
+    "mode": "auto",
+    "type": "Direct Item Lookup"
+  },
+  {
+    "query": "Apple iPhone 14 Pro",
+    "mode": "auto",
+    "type": "Direct Item Lookup"
+  },
+  {
+    "query": "Bose SoundLink Flex",
+    "mode": "auto",
+    "type": "Direct Item Lookup"
+  },
+  {
+    "query": "Shelf A",
+    "mode": "auto",
+    "type": "Direct Item Lookup"
+  },
+  {
+    "query": "Shelf B",
+    "mode": "auto",
+    "type": "Direct Item Lookup"
+  },
+  {
+    "query": "Shelf C",
+    "mode": "auto",
+    "type": "Direct Item Lookup"
+  },
+  {
+    "query": "Shelf D",
+    "mode": "auto",
+    "type": "Direct Item Lookup"
+  },
+  {
+    "query": "How many Samsung Galaxy S23 are there?",
+    "mode": "auto",
+    "type": "Direct Item Lookup"
+  },
+  {
+    "query": "Safety Helmets",
+    "mode": "auto",
+    "type": "Keyword Search"
+  },
+  {
+    "query": "Fire Extinguishers",
+    "mode": "auto",
+    "type": "Keyword Search"
+  },
+  {
+    "query": "forklift operators",
+    "mode": "auto",
+    "type": "Keyword Search"
+  },
+  {
+    "query": "steel-toed boots",
+    "mode": "auto",
+    "type": "Keyword Search"
+  },
+  {
+    "query": "cut-resistant gloves",
+    "mode": "auto",
+    "type": "Keyword Search"
+  },
+  {
+    "query": "PPE requirements",
+    "mode": "auto",
+    "type": "Keyword Search"
+  },
+  {
+    "query": "LOTO procedure",
+    "mode": "auto",
+    "type": "Keyword Search"
+  },
+  {
+    "query": "emergency exits",
+    "mode": "auto",
+    "type": "Keyword Search"
+  },
+  {
+    "query": "assembly points",
+    "mode": "auto",
+    "type": "Keyword Search"
+  },
+  {
+    "query": "hazardous chemicals",
+    "mode": "auto",
+    "type": "Keyword Search"
+  },
+  {
+    "query": "locked ventilated cabinets",
+    "mode": "auto",
+    "type": "Keyword Search"
+  },
+  {
+    "query": "incident report",
+    "mode": "auto",
+    "type": "Keyword Search"
+  },
+  {
+    "query": "first aid kit",
+    "mode": "auto",
+    "type": "Keyword Search"
+  },
+  {
+    "query": "warehouse training",
+    "mode": "auto",
+    "type": "Keyword Search"
+  },
+  {
+    "query": "spill containment",
+    "mode": "auto",
+    "type": "Keyword Search"
+  },
+  {
+    "query": "What PPE is required for handling chemicals?",
+    "mode": "auto",
+    "type": "RAG Safety"
+  },
+  {
+    "query": "What are the rules for emergency exits?",
+    "mode": "auto",
+    "type": "RAG Safety"
+  },
+  {
+    "query": "What is the LOTO procedure?",
+    "mode": "auto",
+    "type": "RAG Safety"
+  },
+  {
+    "query": "How often do we inspect fire extinguishers?",
+    "mode": "auto",
+    "type": "RAG Safety"
+  },
+  {
+    "query": "Who can operate forklifts?",
+    "mode": "auto",
+    "type": "RAG Safety"
+  },
+  {
+    "query": "Where should I store hazardous materials?",
+    "mode": "auto",
+    "type": "RAG Safety"
+  },
+  {
+    "query": "What kind of gloves do I need for sharp objects?",
+    "mode": "auto",
+    "type": "RAG Safety"
+  },
+  {
+    "query": "Tell me about the evacuation protocol.",
+    "mode": "auto",
+    "type": "RAG Safety"
+  },
+  {
+    "query": "How often are fire drills conducted?",
+    "mode": "auto",
+    "type": "RAG Safety"
+  },
+  {
+    "query": "What is the procedure for chemical spills?",
+    "mode": "auto",
+    "type": "RAG Safety"
+  },
+  {
+    "query": "What standard must steel-toed boots conform to?",
+    "mode": "auto",
+    "type": "RAG Safety"
+  },
+  {
+    "query": "What's the replacement frequency for safety helmets?",
+    "mode": "auto",
+    "type": "RAG Safety"
+  },
+  {
+    "query": "Explain the emergency evacuation procedure.",
+    "mode": "auto",
+    "type": "RAG Safety"
+  },
+  {
+    "query": "What should I do during a warehouse fire?",
+    "mode": "auto",
+    "type": "RAG Safety"
+  },
+  {
+    "query": "What are the requirements for emergency exits?",
+    "mode": "auto",
+    "type": "RAG Safety"
+  },
+  {
+    "query": "Which iPhone model has the highest price?",
+    "mode": "auto",
+    "type": "LLM Reasoning"
+  },
+  {
+    "query": "Compare the stock on Shelf A and Shelf B.",
+    "mode": "auto",
+    "type": "LLM Reasoning"
+  },
+  {
+    "query": "Which shelf has the most items?",
+    "mode": "auto",
+    "type": "LLM Reasoning"
+  },
+  {
+    "query": "What is the total value of all smartphones?",
+    "mode": "auto",
+    "type": "LLM Reasoning"
+  },
+  {
+    "query": "Compare the prices of Dell laptops.",
+    "mode": "auto",
+    "type": "LLM Reasoning"
+  },
+  {
+    "query": "Which item is the most expensive?",
+    "mode": "auto",
+    "type": "LLM Reasoning"
+  },
+  {
+    "query": "Which shelf should I visit first to get the most expensive products?",
+    "mode": "auto",
+    "type": "LLM Reasoning"
+  },
+  {
+    "query": "What is the difference between Shelf C and Shelf D?",
+    "mode": "auto",
+    "type": "LLM Reasoning"
+  },
+  {
+    "query": "Compare the inventory levels across shelves.",
+    "mode": "auto",
+    "type": "LLM Reasoning"
+  },
+  {
+    "query": "Which product has the lowest stock?",
+    "mode": "auto",
+    "type": "LLM Reasoning"
+  },
+  {
+    "query": "Which shelf has the highest total inventory value?",
+    "mode": "auto",
+    "type": "LLM Reasoning"
+  },
+  {
+    "query": "Summarize the inventory on Shelf F.",
+    "mode": "auto",
+    "type": "LLM Reasoning"
+  },
+  {
+    "query": "What is the average stock per shelf?",
+    "mode": "auto",
+    "type": "LLM Reasoning"
+  },
+  {
+    "query": "Which two shelves have similar stock levels?",
+    "mode": "auto",
+    "type": "LLM Reasoning"
+  },
+  {
+    "query": "Give me a short comparison of shelves A, B, and C.",
+    "mode": "auto",
+    "type": "LLM Reasoning"
+  }
+]

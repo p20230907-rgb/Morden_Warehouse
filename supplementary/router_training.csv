@@ -1,0 +1,161 @@
+query,tier
+Apple iPhone 14,direct
+Samsung Galaxy S23,direct
+Sony WH-1000XM5,direct
+Bose QC45,direct
+Logitech MX Master 3,direct
+PlayStation 5,direct
+Dell XPS 13,direct
+HP EliteBook 840,direct
+Lenovo ThinkPad X1,direct
+Apple MacBook Air,direct
+Shelf A,direct
+Shelf B,direct
+Shelf C,direct
+Shelf D,direct
+Shelf E,direct
+Shelf F,direct
+Shelf G,direct
+Navigate to Shelf A,direct
+Navigate to Shelf B,direct
+Navigate to Shelf C,direct
+Navigate to Shelf D,direct
+Navigate to Shelf E,direct
+Navigate to Shelf F,direct
+Navigate to Shelf G,direct
+how many phones do we have?,direct
+how many laptops do we have?,direct
+how many headphones do we have?,direct
+how many accessories do we have?,direct
+how many gaming consoles do we have?,direct
+how many controllers do we have?,direct
+how many keyboards do we have?,direct
+how many computer mice do we have?,direct
+Where is Apple iPhone 14?,direct
+Where is Samsung Galaxy S23?,direct
+Locate Sony WH-1000XM5,direct
+Locate Bose QC45,direct
+Find Logitech MX Master 3,direct
+Go to Shelf F,direct
+Take the robot to Shelf C,direct
+Send the robot to Shelf G,direct
+forklift operators,keyword
+Safety Helmets,keyword
+steel-toed boots,keyword
+cut-resistant gloves,keyword
+fire extinguishers,keyword
+assembly points,keyword
+emergency exits,keyword
+hazardous chemicals,keyword
+locked ventilated cabinets,keyword
+incident report,keyword
+first aid kit,keyword
+warehouse training,keyword
+forklift recertification,keyword
+PPE requirements,keyword
+LOTO review,keyword
+evacuation drill,keyword
+monthly extinguisher inspection,keyword
+two exits per zone,keyword
+50 metre assembly point,keyword
+no elevators during evacuation,keyword
+warehouse safety manual,keyword
+chemical storage cabinet,keyword
+personal protective equipment,keyword
+operator training requirements,keyword
+fire safety rules,keyword
+injury reporting,keyword
+emergency assembly area,keyword
+vehicle recertification,keyword
+lockout tagout,keyword
+safety footwear,keyword
+hand protection,keyword
+spill containment,keyword
+fire extinguisher inspection,keyword
+evacuation frequency,keyword
+training review frequency,keyword
+hazardous material storage,keyword
+warehouse incident form,keyword
+emergency procedure,keyword
+robot operation notes,keyword
+safety equipment,keyword
+What PPE is required?,rag
+What PPE should workers wear when handling sharp materials?,rag
+What should I do during a warehouse fire?,rag
+Explain the emergency evacuation procedure.,rag
+What is the procedure for storing hazardous chemicals?,rag
+How often should fire extinguishers be inspected?,rag
+How often are evacuation drills required?,rag
+What are the requirements for emergency exits?,rag
+Where should workers assemble after evacuation?,rag
+Can workers use elevators during an evacuation?,rag
+What is the forklift recertification procedure?,rag
+How often must forklift operators be recertified?,rag
+Explain the lockout tagout procedure.,rag
+What training is required for warehouse operators?,rag
+What should be done after a warehouse injury?,rag
+How should an incident be reported?,rag
+What is the correct procedure for spill containment?,rag
+Explain the safety procedure before handling hazardous chemicals.,rag
+What safety precautions apply to sharp materials?,rag
+What should an operator do if a fire extinguisher is unavailable?,rag
+Tell me about warehouse safety procedures.,rag
+Summarize the warehouse emergency rules.,rag
+What are the safety requirements for operating warehouse vehicles?,rag
+Explain when PPE must be used in the warehouse.,rag
+What should staff do if an emergency exit is blocked?,rag
+What is the recommended response to a chemical spill?,rag
+Describe the fire evacuation requirements from the safety manual.,rag
+What evidence does the manual provide about forklift training?,rag
+Which safety rules apply to chemical storage?,rag
+What procedure should be followed after an equipment-related injury?,rag
+Explain the inspection requirements for warehouse fire equipment.,rag
+What steps are required before using lockout tagout?,rag
+How should hazardous materials be secured?,rag
+What are the documented emergency assembly requirements?,rag
+What should a worker check before operating a forklift?,rag
+What does the safety manual say about first aid?,rag
+What procedures apply to reporting unsafe conditions?,rag
+Explain the documented training-review requirements.,rag
+What safety guidance applies during robot operation?,rag
+Summarize the SOP for emergency response.,rag
+Which shelf has the highest stock?,llm
+Compare prices of laptops.,llm
+who is the CEO?,llm
+Shelf A contents,llm
+Which shelf contains the most items?,llm
+Compare the stock on Shelf A and Shelf B.,llm
+"Which item is more expensive, the iPhone or Galaxy S23?",llm
+Which shelf would be better to visit first?,llm
+Compare the available headphones.,llm
+Which product has the lowest stock?,llm
+Which product has the highest stock?,llm
+What is the difference between Shelf C and Shelf D?,llm
+Compare inventory levels across shelves.,llm
+Which laptop is cheaper?,llm
+Which item has the greatest value?,llm
+What are the most expensive items in inventory?,llm
+Which shelf has fewer products than Shelf A?,llm
+Compare the products stored on Shelf E and Shelf F.,llm
+Which two shelves have similar stock levels?,llm
+What is the total value of products on Shelf A?,llm
+Which category has the most inventory?,llm
+Which category has the least inventory?,llm
+Compare smartphone and laptop stock.,llm
+Which shelf should be prioritized for replenishment?,llm
+What items appear to need restocking soon?,llm
+Which products have similar prices?,llm
+Which shelf contains both high-value and low-stock items?,llm
+Explain the differences between the inventory on Shelf B and Shelf G.,llm
+Which item would be the best candidate for replenishment?,llm
+Compare stock and price for the two smartphone products.,llm
+Which shelf appears most heavily stocked?,llm
+Which shelf appears least heavily stocked?,llm
+Summarize what is stored on Shelf C.,llm
+Tell me what is available on Shelf D.,llm
+What can you infer about the inventory distribution?,llm
+Which products are likely to run out first?,llm
+Compare the gaming products in the warehouse.,llm
+Which shelf has the widest variety of products?,llm
+What is unusual about the current inventory?,llm
+"Give me a short comparison of shelves A, B, and C.",llm

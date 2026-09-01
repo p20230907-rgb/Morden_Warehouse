@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Control</title>
+    <!-- Tailwind CSS CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic overrides for font and default link/button styles */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Ensures header links match consistency */
+        nav ul li a {
+            @apply px-4 py-2 rounded-md transition-colors duration-200;
+        }
+        nav ul li a:hover {
+            @apply bg-blue-700;
+        }
+        nav ul li a.current {
+            @apply bg-blue-700;
+        }
+        /* Loading spinner for robot status */
+        .loading-spinner-small {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #4f46e5; /* Indigo color */
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 8px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <h1 class="text-3xl font-bold mb-2 md:mb-0">Warehouse Robot Assistant</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="/" class="text-white hover:text-gray-300">Shelf Map</a></li>
+                    <li><a href="/assistance" class="text-white hover:text-gray-300">General Query Assistant</a></li>
+                    <li><a href="/robot_assistance" class="current text-white hover:text-gray-300">Robot Control</a></li>
+                    <li><a href="/order_management" class="text-white hover:text-gray-300">Order Management</a></li>
+                    <li><a href="/deep_thinking_assistant" class="text-white hover:text-gray-300">Deep Thinking</a></li>
+                    <li><a href="/performance_dashboard" class="text-white hover:text-gray-300">Performance Dashboard</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 p-6 bg-white rounded-lg shadow-xl flex-grow">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-6">Robot Control Panel</h2>
+        <p class="text-gray-700 mb-4">
+            Send commands to the warehouse robot to navigate to specific shelves or item locations.
+        </p>
+
+        <div class="robot-control-section bg-gray-50 p-4 rounded-lg shadow">
+            <h3 class="text-lg font-semibold text-gray-700 mb-3">Robot Navigation</h3>
+            <div class="robot-send-form flex flex-col space-y-3">
+                <input type="text" id="robot-target" placeholder="e.g., 'navigate to shelf A', 'move to Shelf B', 'go to Dell XPS 13'"
+                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500">
+                <button id="send-robot-btn" class="w-full px-4 py-2 bg-teal-600 text-white font-semibold rounded-lg shadow-md hover:bg-teal-700 transition-colors duration-200">
+                    Send Robot
+                </button>
+            </div>
+            <div class="robot-status mt-4 p-3 rounded-lg bg-gray-100 border border-gray-200 text-gray-700 text-sm" id="robot-status">
+                <!-- Robot status messages will appear here -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 text-center mt-8">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Warehouse Robot Assistant</p>
+        </div>
+    </footer>
+
+   <script>
+    // Helper to normalize shelf names before sending to query
+    function normalizeQueryInput(query) {
+        if (!query) return query;
+        
+        const lower = query.toLowerCase().trim();
+        
+        // If it's a simple shelf reference like "shelf d", convert to "Shelf D"
+        if (lower.startsWith("shelf ")) {
+            const parts = lower.split(" ");
+            if (parts.length >= 2) {
+                const shelfLetter = parts[1].toUpperCase();
+                return "Shelf " + shelfLetter;
+            }
+        }
+        
+        // If it's just a letter like "d", convert to "Shelf D"
+        if (lower.length === 1 && /[a-g]/.test(lower)) {
+            return "Shelf " + lower.toUpperCase();
+        }
+        
+        return query;
+    }
+    
+    const robotTargetInput = document.getElementById('robot-target');
+    const sendRobotBtn = document.getElementById('send-robot-btn');
+    const robotStatusDiv = document.getElementById('robot-status');
+
+    async function sendRobotCommand() {
+        let query = robotTargetInput.value.trim();
+        
+        // Normalize the query for better matching
+        query = normalizeQueryInput(query);
+        if (query === '') {
+            robotStatusDiv.innerHTML = '<span class="text-orange-500">Please enter a command for the robot (e.g., "move to shelf A").</span>';
+            return;
+        }
+
+        robotStatusDiv.innerHTML = '<span class="text-gray-500">Processing robot command... <span class="loading-spinner-small"></span></span>';
+
+        try {
+            // Step 1: Send the query to the chatbot's /query endpoint
+            const queryResponse = await fetch('/query', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ query: query, mode: 'llm_only' }) 
+            });
+            const queryData = await queryResponse.json();
+
+            console.log('=== QUERY RESPONSE ===');
+            console.log('Full response:', queryData);
+            
+            if (queryData.status === 'success') {
+                // Show the LLM response message
+                if (queryData.message) {
+                    robotStatusDiv.innerHTML = `<span class="text-blue-600">${queryData.message}</span>`;
+                }
+                
+                // Try to extract shelf letter from the response
+                let targetIdentifier = null;
+                
+                // METHOD 1: Check if LLM response contains shelf information we can extract
+                const llmResponse = queryData.data?.llm_answer || queryData.message || '';
+                console.log('LLM Response:', llmResponse);
+                
+                // Look for shelf patterns in the LLM response
+                const shelfPatterns = [
+                    /Shelf\s+([A-G])/i,
+                    /shelf\s+([A-G])/i,
+                    /ID:\s*([A-G])/i,
+                    /\(ID\s*:\s*([A-G])\)/i
+                ];
+                
+                for (const pattern of shelfPatterns) {
+                    const match = llmResponse.match(pattern);
+                    if (match) {
+                        targetIdentifier = "Shelf " + match[1].toUpperCase();
+                        break;
+                    }
+                }
+                
+                // METHOD 2: Check structured data fields
+                if (!targetIdentifier && queryData.data) {
+                    const cleanShelf = queryData.data.shelf?.replace(/[^a-zA-Z0-9\s]/g, '').trim();
+                    const cleanShelfId = queryData.data.shelf_id?.replace(/[^a-zA-Z0-9\s]/g, '').trim();
+                    
+                    if (cleanShelf && cleanShelf !== 'N/A' && cleanShelf !== 'N/A') {
+                        targetIdentifier = cleanShelf;
+                    } else if (cleanShelfId && cleanShelfId !== 'N/A' && cleanShelfId !== 'N/A') {
+                        targetIdentifier = "Shelf " + cleanShelfId;
+                    }
+                }
+                
+                // METHOD 3: Extract from original query
+                if (!targetIdentifier) {
+                    const queryMatch = query.match(/shelf\s+([A-G])/i);
+                    if (queryMatch) {
+                        targetIdentifier = "Shelf " + queryMatch[1].toUpperCase();
+                    }
+                }
+                
+                console.log('Target identifier found:', targetIdentifier);
+                
+                if (targetIdentifier) {
+                    robotStatusDiv.innerHTML += `<br><span class="text-blue-600">Sending robot to ${targetIdentifier}... <span class="loading-spinner-small"></span></span>`;
+
+                    const robotResponse = await fetch('/send_to_robot', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ item: targetIdentifier })
+                    });
+                    const robotData = await robotResponse.json();
+
+                    console.log('=== ROBOT RESPONSE ===');
+                    console.log('Status:', robotResponse.status);
+                    console.log('Data:', robotData);
+
+                    if (robotData.status === 'success') {
+                        robotStatusDiv.innerHTML = `
+                            <div class="space-y-2">
+                                <span class="text-green-600 font-semibold">✅ ${robotData.message}</span>
+                                <div class="bg-white p-3 rounded border">
+                                    <span class="text-gray-700">${llmResponse || 'Robot navigation successful.'}</span>
+                                </div>
+                            </div>`;
+                    } else {
+                        robotStatusDiv.innerHTML = `
+                            <div class="space-y-2">
+                                <span class="text-red-600 font-semibold">❌ Robot Error: ${robotData.message}</span>
+                                <div class="bg-white p-3 rounded border">
+                                    <span class="text-gray-700">${llmResponse || 'Robot navigation failed.'}</span>
+                                </div>
+                            </div>`;
+                    }
+                } else {
+                    // If we can't find a shelf, but got an LLM response, show it
+                    if (llmResponse) {
+                        robotStatusDiv.innerHTML = `
+                            <div class="space-y-2">
+                                <span class="text-amber-600 font-semibold">⚠️ Could not identify a specific shelf to navigate to.</span>
+                                <div class="bg-white p-3 rounded border">
+                                    <span class="text-gray-700">${llmResponse}</span>
+                                </div>
+                            </div>`;
+                    } else {
+                        robotStatusDiv.innerHTML = `<span class="text-red-600 font-semibold">Could not identify a clear shelf or item from your command.</span>`;
+                    }
+                }
+            } else {
+                robotStatusDiv.innerHTML = `<span class="text-red-600 font-semibold">Query failed: ${queryData.message || 'No specific entity found'}</span>`;
+            }
+        } catch (error) {
+            console.error('Error in robot command processing:', error);
+            robotStatusDiv.innerHTML = '<span class="text-red-600 font-semibold">An unexpected error occurred during robot command processing.</span>';
+        }
+    }
+
+    sendRobotBtn.addEventListener('click', sendRobotCommand);
+    robotTargetInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            sendRobotCommand();
+        }
+    });
+
+    // Initial welcome message for robot control
+    robotStatusDiv.innerHTML = '<span class="text-gray-700">Enter a command to control the robot.</span>';
+    
+</script>
+</body>
+</html>

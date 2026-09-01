@@ -1,0 +1,1430 @@
+﻿baseline,query,expected_tier,returned_tier,latency,correct_answer,message,semantic_label
+Tiered,Apple iPhone 13,direct,direct,0.23180395807139575,Apple iPhone 13 is on Shelf A with stock 8 and unit price $599.99.,Found Apple iPhone 13 on Shelf A with 8 in stock.,
+Tiered,Samsung Galaxy Tab S9,direct,direct,0.016134193050675094,Samsung Galaxy Tab S9 is on Shelf B with stock 15 and unit price $699.99.,Found Samsung Galaxy Tab S9 on Shelf B with 15 in stock.,
+Tiered,Sony WH-CH720N,direct,direct,0.0331456889398396,Sony WH-CH720N is on Shelf C with stock 23 and unit price $129.99.,Found Sony WH-CH720N on Shelf C with 23 in stock.,
+Tiered,Sony Extra Bass Headphones,direct,direct,0.020482755033299327,Sony Extra Bass Headphones is on Shelf C with stock 31 and unit price $79.99.,Found Sony Extra Bass Headphones on Shelf C with 31 in stock.,
+Tiered,Dell Inspiron 14,direct,direct,0.02189803693909198,Dell Inspiron 14 is on Shelf D with stock 14 and unit price $699.99.,Found Dell Inspiron 14 on Shelf D with 14 in stock.,
+Tiered,Dell Laptop Bag,direct,direct,0.029421187937259674,Dell Laptop Bag is on Shelf D with stock 19 and unit price $49.99.,Found Dell Laptop Bag on Shelf D with 19 in stock.,
+Tiered,Bose QuietComfort Ultra,direct,direct,0.023734087008051574,Bose QuietComfort Ultra is on Shelf E with stock 7 and unit price $429.99.,Found Bose QuietComfort Ultra on Shelf E with 7 in stock.,
+Tiered,Bose Soundbar 600,direct,direct,0.015437348978593946,Bose Soundbar 600 is on Shelf E with stock 9 and unit price $399.99.,Found Bose Soundbar 600 on Shelf E with 9 in stock.,
+Tiered,Logitech G Pro X Superlight,direct,direct,0.02481967001222074,Logitech G Pro X Superlight is on Shelf F with stock 22 and unit price $149.99.,Found Logitech G Pro X Superlight on Shelf F with 22 in stock.,
+Tiered,Logitech Webcam C920,direct,direct,0.02286217501387,Logitech Webcam C920 is on Shelf F with stock 31 and unit price $69.99.,Found Logitech Webcam C920 on Shelf F with 31 in stock.,
+Tiered,PlayStation VR2,direct,direct,0.03500228200573474,PlayStation VR2 is on Shelf G with stock 12 and unit price $549.99.,Found PlayStation VR2 on Shelf G with 12 in stock.,
+Tiered,PlayStation 5 Games Bundle,direct,direct,0.03414988797158003,PlayStation 5 Games Bundle is on Shelf G with stock 8 and unit price $59.99.,Found PlayStation 5 Games Bundle on Shelf G with 8 in stock.,
+Tiered,PlayStation Charging Station,direct,direct,0.017071631969884038,PlayStation Charging Station is on Shelf G with stock 27 and unit price $29.99.,Found PlayStation Charging Station on Shelf G with 27 in stock.,
+Tiered,Bose Replacement Ear Pads,direct,direct,0.013544253073632717,Bose Replacement Ear Pads is on Shelf E with stock 36 and unit price $29.99.,Found Bose Replacement Ear Pads on Shelf E with 36 in stock.,
+Tiered,Logitech Mouse Pad,direct,direct,0.012674193014390767,Logitech Mouse Pad is on Shelf F with stock 58 and unit price $19.99.,Found Logitech Mouse Pad on Shelf F with 58 in stock.,
+Tiered,orange reflective vest,keyword,keyword,0.01470204594079405,High-visibility clothing may be yellow or orange and must be reflective.,"Found relevant information using keyword search:
+SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE)
+Safety Helmets – Required at all times inside loading areas.
+High-Visibility Vests – Fluorescent yellow or orange with reflective stripes.
+Steel-Toed Boots – Must conform to ISO 20345:2011.
+Cut-Resistant Gloves – Mandatory when handling sharp materials.
+Hearing Protection – Required in areas above 85 dB",
+Tiered,helmet use in loading zones,keyword,keyword,0.013211537036113441,Safety helmets are required in loading areas.,"Found relevant information using keyword search:
+SECTION 2: INVENTORY HANDLING
+-----------------------------
+- Use handheld scanners for all inventory movements.
+- Report discrepancies immediately to the Inventory Supervisor.
+- Damaged goods must be placed in the “Inspection Zone” before tagging.
+- Shelves are labeled using alphanumeric codes (e.g., A1-B3).",
+Tiered,forklift operator renewal,keyword,keyword,0.027529922081157565,Forklift operators must be recertified every 2 years.,"Found relevant information using keyword search:
+SECTION 5: MATERIAL HANDLING AND STORAGE
+Forklift operators must be certified and recertified every 2 years.
+Do not exceed 1500 kg per shelving level unless labeled otherwise.
+Use Class 2 ratchet straps for loads over 200 kg.
+Hazardous chemicals must be stored in locked ventilated cabinets.",
+Tiered,chemical storage ventilation,keyword,keyword,0.01974640495609492,"Hazardous chemicals must be stored in locked, ventilated cabinets.","Found relevant information using keyword search:
+SECTION 5: MATERIAL HANDLING AND STORAGE
+Forklift operators must be certified and recertified every 2 years.
+Do not exceed 1500 kg per shelving level unless labeled otherwise.
+Use Class 2 ratchet straps for loads over 200 kg.
+Hazardous chemicals must be stored in locked ventilated cabinets.",
+Tiered,emergency exit markings,keyword,keyword,0.012146688997745514,"Each zone must have at least 2 emergency exits, and the exits must be clearly marked.","Found relevant information using keyword search:
+SECTION 3: FIRE SAFETY & EVACUATION PROCEDURES
+Fire Extinguishers: One every 15 meters; monthly inspection.
+Emergency Exits: At least two per zone, clearly marked.
+Evacuation Drills: Every 6 months; missed drills require retraining.
+Assembly Points: 50 meters from building, marked with green signage.
+Never use elevators during evacuation.",
+Tiered,first aid inspection,keyword,keyword,0.014621885027736425,First-aid kits must be checked weekly.,"Found relevant information using keyword search:
+SECTION 6: FIRST AID AND INCIDENT REPORTING
+First Aid Kits must be:
+Available every 30 meters.
+Checked weekly by a safety officer.
+Incident Reports:
+Must be submitted within 2 hours using Form WHS-101.
+Use the internal safety portal for submission.
+Emergency contacts are listed on the main notice board and in Section 9.",
+Tiered,warehouse incident portal,keyword,keyword,0.01870879204943776,"Under the 2025 procedure, incidents are reported within 2 hours using Form WHS-101 through the internal portal.","Found relevant information using keyword search:
+SECTION 6: INCIDENT REPORTING & FEEDBACK
+----------------------------------------
+- Any injuries, equipment damage, or process violations must be reported within 1 hour.
+- Use Form WHS-207 and submit to the Shift Supervisor.
+- Anonymous feedback can be left in the box outside Room B-2 or submitted via the internal portal.",
+Tiered,LOTO annual review,keyword,keyword,0.014545914949849248,The lockout/tagout (LOTO) procedure is reviewed every 12 months.,No keyword match found.,
+Tiered,spill response pads,keyword,keyword,0.018177753896452487,Spills must be reported and cleaned immediately using absorbent pads.,"Found relevant information using keyword search:
+Item: Bose Replacement Ear Pads. Shelf Name: Shelf E. Shelf ID: E. Stock: 36.",
+Tiered,visitor safety gear,keyword,keyword,0.018800370977260172,Visitors are required to wear PPE. The manual does not specify a separate detailed visitor PPE list.,"Found relevant information using keyword search:
+SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE)
+Safety Helmets – Required at all times inside loading areas.
+High-Visibility Vests – Fluorescent yellow or orange with reflective stripes.
+Steel-Toed Boots – Must conform to ISO 20345:2011.
+Cut-Resistant Gloves – Mandatory when handling sharp materials.
+Hearing Protection – Required in areas above 85 dB",
+Tiered,fire drill schedule,keyword,keyword,0.009190310025587678,Fire drills are conducted every 6 months.,"Found relevant information using keyword search:
+SECTION 3: FIRE SAFETY & EVACUATION PROCEDURES
+Fire Extinguishers: One every 15 meters; monthly inspection.
+Emergency Exits: At least two per zone, clearly marked.
+Evacuation Drills: Every 6 months; missed drills require retraining.
+Assembly Points: 50 meters from building, marked with green signage.
+Never use elevators during evacuation.",
+Tiered,hearing protection rule,keyword,keyword,0.01651219103951007,Hearing protection is required where noise levels exceed 85 dB.,"Found relevant information using keyword search:
+SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE)
+Safety Helmets – Required at all times inside loading areas.
+High-Visibility Vests – Fluorescent yellow or orange with reflective stripes.
+Steel-Toed Boots – Must conform to ISO 20345:2011.
+Cut-Resistant Gloves – Mandatory when handling sharp materials.
+Hearing Protection – Required in areas above 85 dB",
+Tiered,green waste bin,keyword,keyword,0.015997886075638235,The green bin is used for plastic waste.,"Found relevant information using keyword search:
+SECTION 4: CLEANLINESS & WASTE DISPOSAL
+---------------------------------------
+- Floors must be swept at the end of each shift.
+- Spillages must be reported and cleaned immediately using absorbent pads.
+- Recycling bins are color-coded:
+  - Blue: Paper/Cardboard
+  - Green: Plastic
+  - Red: Hazardous waste
+- All cleaning supplies are stored in Room C-14.",
+Tiered,damaged item inspection area,keyword,keyword,0.013627389096654952,Damaged goods should be moved to the Inspection Zone.,"Found relevant information using keyword search:
+SECTION 2: INVENTORY HANDLING
+-----------------------------
+- Use handheld scanners for all inventory movements.
+- Report discrepancies immediately to the Inventory Supervisor.
+- Damaged goods must be placed in the “Inspection Zone” before tagging.
+- Shelves are labeled using alphanumeric codes (e.g., A1-B3).",
+Tiered,inventory discrepancy reporting,keyword,keyword,0.018021239899098873,Inventory discrepancies should be reported to the Inventory Supervisor.,"Found relevant information using keyword search:
+WAREHOUSE DAILY OPERATIONS GUIDE (2024)
+========================================
+
+SECTION 1: SHIFT SCHEDULES & WORKFLOW
+-------------------------------------
+- Morning Shift: 6:00 AM – 2:00 PM
+- Afternoon Shift: 2:00 PM – 10:00 PM
+- Night Shift: 10:00 PM – 6:00 AM
+- All workers must sign in 10 minutes before their shift and attend the team briefing.
+- Daily workload is divided into receiving, inventory update, picking, packing, and dispatch.",
+Tiered,What should a visitor wear before entering operational warehouse areas?,rag,rag,6.911835805047303,Visitors must wear PPE before entering operational warehouse areas. The manual does not provide a separate detailed list of visitor PPE items.,"According to the context, a visitor must wear a visitor badge and PPE (Personal Protective Equipment) before entering the warehouse floor. The specific PPE required is not specified in the visitor protocol section, but in SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE), it is mentioned that Safety Helmets are required at all times inside loading areas, and other PPE such as High-Visibility Vests, Steel-Toed Boots, Cut-Resistant Gloves, and Hearing Protection may also be required depending on the area and activities.",
+Tiered,What are the documented requirements for a safe chemical-storage cabinet?,rag,rag,2.7914432110264897,"Hazardous chemicals must be kept in locked, ventilated cabinets.",The documented requirements for a safe chemical-storage cabinet are that it must be locked and ventilated.,
+Tiered,What must an operator do to remain qualified to drive a forklift?,rag,rag,1.3818110970314592,Forklift operators must be certified and must be recertified every 2 years.,"To remain qualified to drive a forklift, an operator must be recertified every 2 years.",
+Tiered,What procedure is specified when an inventory discrepancy is discovered?,rag,rag,3.536365057923831,The inventory discrepancy should be reported to the Inventory Supervisor.,"When an inventory discrepancy is discovered, the procedure specified is to ""Report discrepancies immediately to the Inventory Supervisor.""",
+Tiered,What should happen to damaged goods before further handling?,rag,rag,0.8862588920164853,Damaged goods should be moved to the Inspection Zone for inspection.,Damaged goods must be placed in the “Inspection Zone” before tagging.,
+Tiered,What are the manual's requirements for emergency assembly locations?,rag,rag,1.60297815897502,Emergency assembly points must be located 50 m away and identified with green signage.,The manual requires that Assembly Points be 50 meters from the building and marked with green signage.,
+Tiered,What reporting steps apply to an injury under the current 2025 procedure?,rag,rag,3.7262908809352666,"Under the 2025 procedure, an injury/incident must be reported within 2 hours using Form WHS-101 through the internal portal.","According to the provided context, specifically in SECTION 6: INCIDENT REPORTING & FEEDBACK, any injuries must be reported within 1 hour using Form WHS-207 and submitted to the Shift Supervisor. 
+
+However, there is a conflicting report time in SECTION 6: FIRST AID AND INCIDENT REPORTING, which states that Incident Reports must be submitted within 2 hours using Form WHS-101.
+
+Since the question asks for the current 2025 procedure and there is no specific information provided about the year 2025, I will provide both possible answers based on the given context:
+
+1. Report the injury within 1 hour using Form WHS-207 and submit to the Shift Supervisor.
+2. Report the injury within 2 hours using Form WHS-101 and use the internal safety portal for submission.
+
+The correct procedure is not clear due to the conflicting information.",
+Tiered,What does the manual require after a safety violation?,rag,rag,1.6864036929327995,Additional safety training is required after a safety violation or accident; routine safety training is also conducted annually.,The manual requires Safety Training immediately after any safety violation or accident.,
+Tiered,What are workers instructed to do when a spill is discovered?,rag,rag,1.7558032179949805,Workers must report the spill and clean it immediately using absorbent pads.,"When a spill is discovered, workers are instructed to report it and clean it immediately using absorbent pads.",
+Tiered,What evacuation restrictions apply to elevators?,rag,rag,0.5383664279943332,Elevators must never be used during an evacuation.,Never use elevators during evacuation.,
+Tiered,What inspection schedule applies to firefighting equipment?,rag,rag,2.7805957059608772,Fire extinguishers are positioned every 15 m and are inspected monthly.,The inspection schedule for firefighting equipment (fire extinguishers) is monthly.,
+Tiered,What PPE is required when employees handle sharp objects?,rag,rag,1.50112719705794,Cut-resistant gloves are mandatory when handling sharp materials.,Cut-Resistant Gloves are mandatory when handling sharp materials.,
+Tiered,What does the manual specify for hearing protection in noisy areas?,rag,rag,1.5065018340246752,Hearing protection is required in areas where noise exceeds 85 dB.,The manual specifies that Hearing Protection is required in areas above 85 dB.,
+Tiered,What are the requirements for the number and marking of emergency exits?,rag,rag,0.7557365200482309,"There must be at least 2 emergency exits per zone, and they must be clearly marked.","The requirements for emergency exits are: 
+- At least two emergency exits per zone, and 
+- They must be clearly marked.",
+Tiered,What contact information is provided for a medical emergency?,rag,rag,3.7757104989141226,The medical emergency contact is extension 221.,"The contact information provided for a medical emergency is:
+
+- On-site Medical Officer: Ext. 221
+
+This information is found in SECTION 8: EMERGENCY CONTACTS of the Safety Manual.",
+Tiered,By how many units does Shelf B exceed Shelf C?,llm,llm,28.26397678896319,Shelf B has 326 units and Shelf C has 130 units. Shelf B exceeds Shelf C by 196 units.,"LLM response: To determine by how many units Shelf B exceeds Shelf C, we need to calculate the total stock on each shelf.
+
+Shelf B contains:
+- Samsung Galaxy S23: 196 units
+- Samsung Galaxy S24: 22 units
+- Samsung Galaxy Tab S9: 15 units
+- Samsung Wireless Earbuds: 27 units
+- Samsung Fast Charger: 66 units
+
+Total stock on Shelf B: 196 + 22 + 15 + 27 + 66 = 326 units
+
+Shelf C contains:
+- Sony WH-1000XM5: 16 units
+- Sony WH-CH720N: 23 units
+- Sony WF-1000XM5: 18 units
+- Sony Extra Bass Headphones: 31 units
+- Sony Carrying Case: 42 units
+
+Total stock on Shelf C: 16 + 23 + 18 + 31 + 42 = 130 units
+
+Shelf B exceeds Shelf C by 326 - 130 = 196 units.",
+Tiered,Which shelf is second highest in total stock?,llm,llm,6.678827172028832,Shelf G is second highest with 191 units. Shelf B is highest with 326 units.,"LLM response: To determine which shelf is second highest in total stock, I need to calculate the total stock for each shelf.
+
+Shelf A: 10 (Apple iPhone 14) + 10 (Apple iPhone 14 Pro) + 8 (Apple iPhone 13) + 45 (iPhone Charging Cable) + 32 (iPhone Screen Protector) = 105
+Shelf B: 196 (Samsung Galaxy S23) + 22 (Samsung Galaxy S24) + 15 (Samsung Galaxy Tab S9) + 27 (Samsung Wireless Earbuds) + 66 (Samsung Fast Charger) = 326
+Shelf C: 16 (Sony WH-1000XM5) + 23 (Sony WH-CH720N) + 18 (Sony WF-1000XM5) + 31 (Sony Extra Bass Headphones) + 42 (Sony Carrying Case) = 130
+Shelf D: 45 (Dell XPS 13) + 8 (Dell XPS 15) + 14 (Dell Inspiron 14) + 23 (Dell Laptop Charger) + 19 (Dell Laptop Bag) = 109
+Shelf E: 11 (Bose QuietComfort 45) + 7 (Bose QuietComfort Ultra) + 25 (Bose SoundLink Flex) + 9 (Bose Soundbar 600) + 36 (Bose Replacement Ear Pads) = 88
+Shelf F: 7 (Logitech MX Master 3) + 14 (Logitech MX Keys) + 22 (Logitech G Pro X Superlight) + 31 (Logitech Webcam C920) + 58 (Logitech Mouse Pad) = 132
+Shelf G: 99 (Sony PlayStation 5) + 45 (PlayStation DualSense Controller) + 12 (PlayStation VR2) + 8 (PlayStation 5 Games Bundle) + 27 (PlayStation Charging Station) = 191
+
+The shelves in order of total stock are:
+1. Shelf B: 326
+2. Shelf G: 191
+3. Shelf F: 132
+4. Shelf C: 130
+5. Shelf D: 109
+6. Shelf A: 105
+7. Shelf E: 88
+
+The shelf that is second highest in total stock is Shelf G.",
+Tiered,Calculate the combined stock of Shelves A and G.,llm,llm,2.041266271029599,"Shelf A has 105 units and Shelf G has 191 units, for a combined stock of 296 units.","LLM response: To calculate the combined stock of Shelves A and G, we need to add up the stock of all items on these shelves.
+
+Shelf A:
+- Apple iPhone 14: 10
+- Apple iPhone 14 Pro: 10
+- Apple iPhone 13: 8
+- iPhone Charging Cable: 45
+- iPhone Screen Protector: 32
+
+Total stock on Shelf A: 10 + 10 + 8 + 45 + 32 = 105
+
+Shelf G:
+- Sony PlayStation 5: 99
+- PlayStation DualSense Controller: 45
+- PlayStation VR2: 12
+- PlayStation 5 Games Bundle: 8
+- PlayStation Charging Station: 27
+
+Total stock on Shelf G: 99 + 45 + 12 + 8 + 27 = 191
+
+Combined stock of Shelves A and G: 105 + 191 = 296",
+Tiered,Which two products share the minimum stock level?,llm,llm,7.384253790951334,"Bose QC Ultra and Logitech MX Master 3 share the minimum stock level, with 7 units each.","LLM response: The two products that share the minimum stock level are:
+
+1. Dell XPS 15 - Stock: 8
+2. iPhone 13 - Stock: 8 
+3. PlayStation 5 Games Bundle - Stock: 8 
+4. PlayStation VR2 - Stock: 12 (not the minimum)
+5. Bose QuietComfort Ultra - Stock: 7 (lower than 8)
+6. Logitech MX Master 3 - Stock: 7 (lower than 8)
+
+The two products that actually share the minimum stock level are:
+
+1. Bose QuietComfort Ultra - Stock: 7
+2. Logitech MX Master 3 - Stock: 7",
+Tiered,How many total units are stored on Shelves D and E together?,llm,llm,4.922940965974703,"Shelf D has 109 units and Shelf E has 88 units, for a combined total of 197 units.","LLM response: To find the total units stored on Shelves D and E, we need to add up the stock of all items on these shelves.
+
+Shelf D:
+- Dell XPS 13: 45 units
+- Dell XPS 15: 8 units
+- Dell Inspiron 14: 14 units
+- Dell Laptop Charger: 23 units
+- Dell Laptop Bag: 19 units
+
+Total units on Shelf D: 45 + 8 + 14 + 23 + 19 = 109 units
+
+Shelf E:
+- Bose QuietComfort 45: 11 units
+- Bose QuietComfort Ultra: 7 units
+- Bose SoundLink Flex: 25 units
+- Bose Soundbar 600: 9 units
+- Bose Replacement Ear Pads: 36 units
+
+Total units on Shelf E: 11 + 7 + 25 + 9 + 36 = 88 units
+
+Total units on Shelves D and E: 109 + 88 = 197 units",
+Tiered,Compare the inventory value of Dell XPS 13 with Dell XPS 15.,llm,llm,5.574267415911891,"Dell XPS 13 inventory value is $53,999.55 (45 × $1,199.99). Dell XPS 15 inventory value is $14,399.92 (8 × $1,799.99). XPS 13 has $39,599.63 more total inventory value.","LLM response: To compare the inventory value of Dell XPS 13 and Dell XPS 15, we need to calculate the total value of each item in stock.
+
+For Dell XPS 13:
+Stock: 45
+Price: $1199.99
+Inventory Value = Stock * Price = 45 * $1199.99 = $53,999.55
+
+For Dell XPS 15:
+Stock: 8
+Price: $1799.99
+Inventory Value = Stock * Price = 8 * $1799.99 = $14,399.92
+
+The inventory value of Dell XPS 13 ($53,999.55) is higher than that of Dell XPS 15 ($14,399.92).",
+Tiered,What is the combined stock of all Bose products?,llm,llm,6.6152161420322955,All Bose products are on Shelf E and have a combined stock of 88 units.,"LLM response: To find the combined stock of all Bose products, I will look at the inventory list. 
+
+The Bose products are:
+- Bose QuietComfort 45, Stock: 11
+- Bose QuietComfort Ultra, Stock: 7
+- Bose SoundLink Flex, Stock: 25
+- Bose Soundbar 600, Stock: 9
+- Bose Replacement Ear Pads, Stock: 36
+
+Now, I will add up the stock of all Bose products:
+11 + 7 + 25 + 9 + 36 = 88
+
+The combined stock of all Bose products is 88.",
+Tiered,Which Samsung product contributes the most units to Shelf B?,llm,llm,1.542417903081514,"Samsung Galaxy S23 contributes the most units to Shelf B, with 196 units.","LLM response: The Samsung product that contributes the most units to Shelf B is the Samsung Galaxy S23, with a stock of 196 units.",
+Tiered,"Order Shelves D, E, and G from lowest to highest total stock.",llm,llm,7.21835265099071,"From lowest to highest: Shelf E = 88, Shelf D = 109, Shelf G = 191.","LLM response: To determine the order, I'll calculate the total stock for each shelf:
+
+Shelf D: 
+- Dell XPS 13: 45
+- Dell XPS 15: 8
+- Dell Inspiron 14: 14
+- Dell Laptop Charger: 23
+- Dell Laptop Bag: 19
+Total stock for Shelf D: 45 + 8 + 14 + 23 + 19 = 109
+
+Shelf E: 
+- Bose QuietComfort 45: 11
+- Bose QuietComfort Ultra: 7
+- Bose SoundLink Flex: 25
+- Bose Soundbar 600: 9
+- Bose Replacement Ear Pads: 36
+Total stock for Shelf E: 11 + 7 + 25 + 9 + 36 = 88
+
+Shelf G: 
+- Sony PlayStation 5: 99
+- PlayStation DualSense Controller: 45
+- PlayStation VR2: 12
+- PlayStation 5 Games Bundle: 8
+- PlayStation Charging Station: 27
+Total stock for Shelf G: 99 + 45 + 12 + 8 + 27 = 191
+
+Now, ordering the shelves from lowest to highest total stock:
+1. Shelf E (88)
+2. Shelf D (109)
+3. Shelf G (191)",
+Tiered,What fraction of Shelf G stock is Sony PlayStation 5?,llm,llm,4.013207586016506,"Sony PlayStation 5 accounts for 99 of Shelf G's 191 units, which is approximately 51.83%.","LLM response: To find the fraction of Shelf G stock that is Sony PlayStation 5, we need to know the total stock on Shelf G and the stock of Sony PlayStation 5.
+
+The items on Shelf G are:
+- Sony PlayStation 5, Stock: 99
+- PlayStation DualSense Controller, Stock: 45
+- PlayStation VR2, Stock: 12
+- PlayStation 5 Games Bundle, Stock: 8
+- PlayStation Charging Station, Stock: 27
+
+Total stock on Shelf G = 99 + 45 + 12 + 8 + 27 = 191
+
+Stock of Sony PlayStation 5 = 99
+
+Fraction of Shelf G stock that is Sony PlayStation 5 = 99 / 191 ≈ 0.518 or 51.8%",
+Tiered,How much inventory value is represented by the Sony PlayStation 5 stock?,llm,llm,4.848291338887066,"Sony PlayStation 5 inventory value is 99 × $499.99 = $49,499.01.","LLM response: To find the total inventory value of the Sony PlayStation 5 stock, we need to multiply the stock quantity by the price of each item.
+
+Stock quantity: 99
+Price: $499.99
+
+Total inventory value = Stock quantity * Price
+= 99 * $499.99
+= $49,499.01
+
+So, the total inventory value represented by the Sony PlayStation 5 stock is $49,499.01.",
+Tiered,Compare the combined stock of Apple phones with Samsung phones.,llm,llm,4.659930024994537,"Apple phones total 28 units (iPhone 14 = 10, iPhone 14 Pro = 10, iPhone 13 = 8). Samsung phones total 218 units (Galaxy S23 = 196, Galaxy S24 = 22). Samsung phones exceed Apple phones by 190 units.","LLM response: To compare the combined stock of Apple phones with Samsung phones, we need to calculate the total stock of each.
+
+Apple phones:
+- Apple iPhone 14: 10
+- Apple iPhone 14 Pro: 10
+- Apple iPhone 13: 8
+
+Total Apple phones stock: 10 + 10 + 8 = 28
+
+Samsung phones:
+- Samsung Galaxy S23: 196
+- Samsung Galaxy S24: 22
+- Samsung Galaxy Tab S9 is a tablet, not a phone, so it's excluded from this calculation.
+
+Total Samsung phones stock: 196 + 22 = 218
+
+The combined stock of Samsung phones (218) is higher than the combined stock of Apple phones (28).",
+Tiered,Which shelf is closest to the warehouse-wide average stock per shelf?,llm,llm,16.782342837075703,"Total warehouse stock is 1,081 units, so the average is 154.43 units per shelf. Shelf F, with 132 units, is closest to the average.","LLM response: To find the shelf closest to the warehouse-wide average stock per shelf, we need to calculate the average stock per shelf first. 
+
+Let's calculate the total stock:
+10 + 10 + 8 + 45 + 32 + 196 + 22 + 15 + 27 + 66 + 16 + 23 + 18 + 31 + 42 + 45 + 8 + 14 + 23 + 19 + 11 + 7 + 25 + 9 + 36 + 7 + 14 + 22 + 31 + 58 + 99 + 45 + 12 + 8 + 27 = 882
+
+There are 7 shelves (A, B, C, D, E, F, G) with the following total stock per shelf:
+- Shelf A: 10 + 10 + 8 + 45 + 32 = 105
+- Shelf B: 196 + 22 + 15 + 27 + 66 = 326
+- Shelf C: 16 + 23 + 18 + 31 + 42 = 130
+- Shelf D: 45 + 8 + 14 + 23 + 19 = 109
+- Shelf E: 11 + 7 + 25 + 9 + 36 = 88
+- Shelf F: 7 + 14 + 22 + 31 + 58 = 132
+- Shelf G: 99 + 45 + 12 + 8 + 27 = 191
+
+The total number of items is 882, and there are 34 items (since some items have the same shelf). However, to calculate the average stock per shelf, we should consider the number of shelves, which is 7. 
+
+The average stock per shelf is: 882 / 7 = 126
+
+Now, let's find the shelf closest to this average:
+- Shelf A: 105 (21 less than the average)
+- Shelf B: 326 (200 more than the average)
+- Shelf C: 130 (4 more than the average)
+- Shelf D: 109 (17 less than the average)
+- Shelf E: 88 (38 less than the average)
+- Shelf F: 132 (6 more than the average)
+- Shelf G: 191 (65 more than the average)
+
+The shelf closest to the warehouse-wide average stock per shelf is Shelf C with 130 items, which is only 4 more than the average.",
+Tiered,What is the combined stock of the three lowest-stock products?,llm,llm,3.414071989012882,"The two lowest-stock products are Bose QC Ultra (7) and Logitech MX Master 3 (7). The next-lowest level is 8 units, shared by Dell XPS 15 and Sony Games Bundle. Any valid three-product selection from these lowest levels totals 22 units; the third position is tied.","LLM response: To find the combined stock of the three lowest-stock products, I will first identify the products with the lowest stock.
+
+The products with the lowest stock are:
+1. PlayStation VR2 - Stock: 8
+2. Dell XPS 15 - Stock: 8
+3. PlayStation 5 Games Bundle - Stock: 8
+
+The combined stock of these three products is: 8 + 8 + 8 = 24",
+Tiered,"Give a short comparison of total stock on Shelves A, C, and F.",llm,llm,5.6868935050442815,"Shelf A has 105 units, Shelf C has 130 units, and Shelf F has 132 units. Shelf F is highest by 2 units over Shelf C; Shelf C exceeds Shelf A by 25 units.","LLM response: To compare the total stock on Shelves A, C, and F, I'll calculate the total stock for each shelf.
+
+Shelf A: 
+10 (Apple iPhone 14) + 10 (Apple iPhone 14 Pro) + 8 (Apple iPhone 13) + 45 (iPhone Charging Cable) + 32 (iPhone Screen Protector) = 105
+
+Shelf C: 
+16 (Sony WH-1000XM5) + 23 (Sony WH-CH720N) + 18 (Sony WF-1000XM5) + 31 (Sony Extra Bass Headphones) + 42 (Sony Carrying Case) = 130
+
+Shelf F: 
+7 (Logitech MX Master 3) + 14 (Logitech MX Keys) + 22 (Logitech G Pro X Superlight) + 31 (Logitech Webcam C920) + 58 (Logitech Mouse Pad) = 132
+
+Comparing the total stock, Shelf F has the highest stock with 132 items, followed closely by Shelf C with 130 items, and then Shelf A with 105 items.",
+Direct-only,Apple iPhone 13,direct,direct,0.0036451559280976653,Apple iPhone 13 is on Shelf A with stock 8 and unit price $599.99.,Found Apple iPhone 13 on Shelf A with 8 in stock.,
+Direct-only,Samsung Galaxy Tab S9,direct,direct,0.003191925003193319,Samsung Galaxy Tab S9 is on Shelf B with stock 15 and unit price $699.99.,Found Samsung Galaxy Tab S9 on Shelf B with 15 in stock.,
+Direct-only,Sony WH-CH720N,direct,direct,0.002157374983653426,Sony WH-CH720N is on Shelf C with stock 23 and unit price $129.99.,Found Sony WH-CH720N on Shelf C with 23 in stock.,
+Direct-only,Sony Extra Bass Headphones,direct,direct,0.0014717519516125321,Sony Extra Bass Headphones is on Shelf C with stock 31 and unit price $79.99.,Found Sony Extra Bass Headphones on Shelf C with 31 in stock.,
+Direct-only,Dell Inspiron 14,direct,direct,0.0016877719899639487,Dell Inspiron 14 is on Shelf D with stock 14 and unit price $699.99.,Found Dell Inspiron 14 on Shelf D with 14 in stock.,
+Direct-only,Dell Laptop Bag,direct,direct,0.004152304958552122,Dell Laptop Bag is on Shelf D with stock 19 and unit price $49.99.,Found Dell Laptop Bag on Shelf D with 19 in stock.,
+Direct-only,Bose QuietComfort Ultra,direct,direct,0.0018515799893066287,Bose QuietComfort Ultra is on Shelf E with stock 7 and unit price $429.99.,Found Bose QuietComfort Ultra on Shelf E with 7 in stock.,
+Direct-only,Bose Soundbar 600,direct,direct,0.0027847340097650886,Bose Soundbar 600 is on Shelf E with stock 9 and unit price $399.99.,Found Bose Soundbar 600 on Shelf E with 9 in stock.,
+Direct-only,Logitech G Pro X Superlight,direct,direct,0.0018126079812645912,Logitech G Pro X Superlight is on Shelf F with stock 22 and unit price $149.99.,Found Logitech G Pro X Superlight on Shelf F with 22 in stock.,
+Direct-only,Logitech Webcam C920,direct,direct,0.004513584077358246,Logitech Webcam C920 is on Shelf F with stock 31 and unit price $69.99.,Found Logitech Webcam C920 on Shelf F with 31 in stock.,
+Direct-only,PlayStation VR2,direct,direct,0.003537036944180727,PlayStation VR2 is on Shelf G with stock 12 and unit price $549.99.,Found PlayStation VR2 on Shelf G with 12 in stock.,
+Direct-only,PlayStation 5 Games Bundle,direct,direct,0.007641018950380385,PlayStation 5 Games Bundle is on Shelf G with stock 8 and unit price $59.99.,Found PlayStation 5 Games Bundle on Shelf G with 8 in stock.,
+Direct-only,PlayStation Charging Station,direct,direct,0.006551047903485596,PlayStation Charging Station is on Shelf G with stock 27 and unit price $29.99.,Found PlayStation Charging Station on Shelf G with 27 in stock.,
+Direct-only,Bose Replacement Ear Pads,direct,direct,0.0025928009999915957,Bose Replacement Ear Pads is on Shelf E with stock 36 and unit price $29.99.,Found Bose Replacement Ear Pads on Shelf E with 36 in stock.,
+Direct-only,Logitech Mouse Pad,direct,direct,0.004956960096023977,Logitech Mouse Pad is on Shelf F with stock 58 and unit price $19.99.,Found Logitech Mouse Pad on Shelf F with 58 in stock.,
+Direct-only,orange reflective vest,keyword,direct,0.003474361030384898,High-visibility clothing may be yellow or orange and must be reflective.,Item not found in direct lookup.,
+Direct-only,helmet use in loading zones,keyword,direct,0.0028007669607177377,Safety helmets are required in loading areas.,Item not found in direct lookup.,
+Direct-only,forklift operator renewal,keyword,direct,0.0016631140606477857,Forklift operators must be recertified every 2 years.,Item not found in direct lookup.,
+Direct-only,chemical storage ventilation,keyword,direct,0.00315191806294024,"Hazardous chemicals must be stored in locked, ventilated cabinets.",Item not found in direct lookup.,
+Direct-only,emergency exit markings,keyword,direct,0.004272260004654527,"Each zone must have at least 2 emergency exits, and the exits must be clearly marked.",Item not found in direct lookup.,
+Direct-only,first aid inspection,keyword,direct,0.0022328230552375317,First-aid kits must be checked weekly.,Item not found in direct lookup.,
+Direct-only,warehouse incident portal,keyword,direct,0.002050452050752938,"Under the 2025 procedure, incidents are reported within 2 hours using Form WHS-101 through the internal portal.",Item not found in direct lookup.,
+Direct-only,LOTO annual review,keyword,direct,0.00139731599483639,The lockout/tagout (LOTO) procedure is reviewed every 12 months.,Item not found in direct lookup.,
+Direct-only,spill response pads,keyword,direct,0.0015133009292185307,Spills must be reported and cleaned immediately using absorbent pads.,Item not found in direct lookup.,
+Direct-only,visitor safety gear,keyword,direct,0.0015967909712344408,Visitors are required to wear PPE. The manual does not specify a separate detailed visitor PPE list.,Item not found in direct lookup.,
+Direct-only,fire drill schedule,keyword,direct,0.004440917051397264,Fire drills are conducted every 6 months.,Item not found in direct lookup.,
+Direct-only,hearing protection rule,keyword,direct,0.00314721604809165,Hearing protection is required where noise levels exceed 85 dB.,Item not found in direct lookup.,
+Direct-only,green waste bin,keyword,direct,0.0025934939039871097,The green bin is used for plastic waste.,Item not found in direct lookup.,
+Direct-only,damaged item inspection area,keyword,direct,0.00347258395049721,Damaged goods should be moved to the Inspection Zone.,Item not found in direct lookup.,
+Direct-only,inventory discrepancy reporting,keyword,direct,0.0035082900431007147,Inventory discrepancies should be reported to the Inventory Supervisor.,Item not found in direct lookup.,
+Direct-only,What should a visitor wear before entering operational warehouse areas?,rag,direct,0.004605988971889019,Visitors must wear PPE before entering operational warehouse areas. The manual does not provide a separate detailed list of visitor PPE items.,Item not found in direct lookup.,
+Direct-only,What are the documented requirements for a safe chemical-storage cabinet?,rag,direct,0.0046676319325342774,"Hazardous chemicals must be kept in locked, ventilated cabinets.",Item not found in direct lookup.,
+Direct-only,What must an operator do to remain qualified to drive a forklift?,rag,direct,0.0029363540234044194,Forklift operators must be certified and must be recertified every 2 years.,Item not found in direct lookup.,
+Direct-only,What procedure is specified when an inventory discrepancy is discovered?,rag,direct,0.0024615710135549307,The inventory discrepancy should be reported to the Inventory Supervisor.,Item not found in direct lookup.,
+Direct-only,What should happen to damaged goods before further handling?,rag,direct,0.0044229020131751895,Damaged goods should be moved to the Inspection Zone for inspection.,Item not found in direct lookup.,
+Direct-only,What are the manual's requirements for emergency assembly locations?,rag,direct,0.002189924009144306,Emergency assembly points must be located 50 m away and identified with green signage.,Item not found in direct lookup.,
+Direct-only,What reporting steps apply to an injury under the current 2025 procedure?,rag,direct,0.0018753450131043792,"Under the 2025 procedure, an injury/incident must be reported within 2 hours using Form WHS-101 through the internal portal.",Item not found in direct lookup.,
+Direct-only,What does the manual require after a safety violation?,rag,direct,0.0013935460010543466,Additional safety training is required after a safety violation or accident; routine safety training is also conducted annually.,Item not found in direct lookup.,
+Direct-only,What are workers instructed to do when a spill is discovered?,rag,direct,0.001315077068284154,Workers must report the spill and clean it immediately using absorbent pads.,Item not found in direct lookup.,
+Direct-only,What evacuation restrictions apply to elevators?,rag,direct,0.0015597569290548563,Elevators must never be used during an evacuation.,Item not found in direct lookup.,
+Direct-only,What inspection schedule applies to firefighting equipment?,rag,direct,0.004690358997322619,Fire extinguishers are positioned every 15 m and are inspected monthly.,Item not found in direct lookup.,
+Direct-only,What PPE is required when employees handle sharp objects?,rag,direct,0.00380137306638062,Cut-resistant gloves are mandatory when handling sharp materials.,Item not found in direct lookup.,
+Direct-only,What does the manual specify for hearing protection in noisy areas?,rag,direct,0.001854892005212605,Hearing protection is required in areas where noise exceeds 85 dB.,Item not found in direct lookup.,
+Direct-only,What are the requirements for the number and marking of emergency exits?,rag,direct,0.0014665959170088172,"There must be at least 2 emergency exits per zone, and they must be clearly marked.",Item not found in direct lookup.,
+Direct-only,What contact information is provided for a medical emergency?,rag,direct,0.0015198480105027556,The medical emergency contact is extension 221.,Item not found in direct lookup.,
+Direct-only,By how many units does Shelf B exceed Shelf C?,llm,direct,0.0012972429394721985,Shelf B has 326 units and Shelf C has 130 units. Shelf B exceeds Shelf C by 196 units.,Item not found in direct lookup.,
+Direct-only,Which shelf is second highest in total stock?,llm,direct,0.004879646934568882,Shelf G is second highest with 191 units. Shelf B is highest with 326 units.,Item not found in direct lookup.,
+Direct-only,Calculate the combined stock of Shelves A and G.,llm,direct,0.003818542929366231,"Shelf A has 105 units and Shelf G has 191 units, for a combined stock of 296 units.",Item not found in direct lookup.,
+Direct-only,Which two products share the minimum stock level?,llm,direct,0.005982244969345629,"Bose QC Ultra and Logitech MX Master 3 share the minimum stock level, with 7 units each.",Item not found in direct lookup.,
+Direct-only,How many total units are stored on Shelves D and E together?,llm,direct,0.003345252014696598,"Shelf D has 109 units and Shelf E has 88 units, for a combined total of 197 units.",Item not found in direct lookup.,
+Direct-only,Compare the inventory value of Dell XPS 13 with Dell XPS 15.,llm,direct,0.004001955036073923,"Dell XPS 13 inventory value is $53,999.55 (45 × $1,199.99). Dell XPS 15 inventory value is $14,399.92 (8 × $1,799.99). XPS 13 has $39,599.63 more total inventory value.",Item not found in direct lookup.,
+Direct-only,What is the combined stock of all Bose products?,llm,direct,0.003229056019335985,All Bose products are on Shelf E and have a combined stock of 88 units.,Item not found in direct lookup.,
+Direct-only,Which Samsung product contributes the most units to Shelf B?,llm,direct,0.003985179937444627,"Samsung Galaxy S23 contributes the most units to Shelf B, with 196 units.",Item not found in direct lookup.,
+Direct-only,"Order Shelves D, E, and G from lowest to highest total stock.",llm,direct,0.0019520099740475416,"From lowest to highest: Shelf E = 88, Shelf D = 109, Shelf G = 191.",Item not found in direct lookup.,
+Direct-only,What fraction of Shelf G stock is Sony PlayStation 5?,llm,direct,0.002438178053125739,"Sony PlayStation 5 accounts for 99 of Shelf G's 191 units, which is approximately 51.83%.",Item not found in direct lookup.,
+Direct-only,How much inventory value is represented by the Sony PlayStation 5 stock?,llm,direct,0.002968679997138679,"Sony PlayStation 5 inventory value is 99 × $499.99 = $49,499.01.",Item not found in direct lookup.,
+Direct-only,Compare the combined stock of Apple phones with Samsung phones.,llm,direct,0.005317321978509426,"Apple phones total 28 units (iPhone 14 = 10, iPhone 14 Pro = 10, iPhone 13 = 8). Samsung phones total 218 units (Galaxy S23 = 196, Galaxy S24 = 22). Samsung phones exceed Apple phones by 190 units.",Item not found in direct lookup.,
+Direct-only,Which shelf is closest to the warehouse-wide average stock per shelf?,llm,direct,0.002550985082052648,"Total warehouse stock is 1,081 units, so the average is 154.43 units per shelf. Shelf F, with 132 units, is closest to the average.",Item not found in direct lookup.,
+Direct-only,What is the combined stock of the three lowest-stock products?,llm,direct,0.0034395899856463075,"The two lowest-stock products are Bose QC Ultra (7) and Logitech MX Master 3 (7). The next-lowest level is 8 units, shared by Dell XPS 15 and Sony Games Bundle. Any valid three-product selection from these lowest levels totals 22 units; the third position is tied.",Item not found in direct lookup.,
+Direct-only,"Give a short comparison of total stock on Shelves A, C, and F.",llm,direct,0.008470656001009047,"Shelf A has 105 units, Shelf C has 130 units, and Shelf F has 132 units. Shelf F is highest by 2 units over Shelf C; Shelf C exceeds Shelf A by 25 units.",Item not found in direct lookup.,
+Keyword-only,Apple iPhone 13,direct,keyword,0.0024210570845752954,Apple iPhone 13 is on Shelf A with stock 8 and unit price $599.99.,"Found relevant information using keyword search:
+Item: Apple iPhone 13. Shelf Name: Shelf A. Shelf ID: A. Stock: 8.",
+Keyword-only,Samsung Galaxy Tab S9,direct,keyword,0.001830306020565331,Samsung Galaxy Tab S9 is on Shelf B with stock 15 and unit price $699.99.,"Found relevant information using keyword search:
+Item: Samsung Galaxy Tab S9. Shelf Name: Shelf B. Shelf ID: B. Stock: 15.",
+Keyword-only,Sony WH-CH720N,direct,keyword,0.007574446965008974,Sony WH-CH720N is on Shelf C with stock 23 and unit price $129.99.,"Found relevant information using keyword search:
+Item: Sony WH-CH720N. Shelf Name: Shelf C. Shelf ID: C. Stock: 23.",
+Keyword-only,Sony Extra Bass Headphones,direct,keyword,0.0023679829901084304,Sony Extra Bass Headphones is on Shelf C with stock 31 and unit price $79.99.,"Found relevant information using keyword search:
+Item: Sony Extra Bass Headphones. Shelf Name: Shelf C. Shelf ID: C. Stock: 31.",
+Keyword-only,Dell Inspiron 14,direct,keyword,0.001911981962621212,Dell Inspiron 14 is on Shelf D with stock 14 and unit price $699.99.,"Found relevant information using keyword search:
+Item: Dell Inspiron 14. Shelf Name: Shelf D. Shelf ID: D. Stock: 14.",
+Keyword-only,Dell Laptop Bag,direct,keyword,0.0021535310661420226,Dell Laptop Bag is on Shelf D with stock 19 and unit price $49.99.,"Found relevant information using keyword search:
+Item: Dell Laptop Bag. Shelf Name: Shelf D. Shelf ID: D. Stock: 19.",
+Keyword-only,Bose QuietComfort Ultra,direct,keyword,0.004157756105996668,Bose QuietComfort Ultra is on Shelf E with stock 7 and unit price $429.99.,"Found relevant information using keyword search:
+Item: Bose QuietComfort Ultra. Shelf Name: Shelf E. Shelf ID: E. Stock: 7.",
+Keyword-only,Bose Soundbar 600,direct,keyword,0.004141017911024392,Bose Soundbar 600 is on Shelf E with stock 9 and unit price $399.99.,"Found relevant information using keyword search:
+Item: Bose Soundbar 600. Shelf Name: Shelf E. Shelf ID: E. Stock: 9.",
+Keyword-only,Logitech G Pro X Superlight,direct,keyword,0.00771669193636626,Logitech G Pro X Superlight is on Shelf F with stock 22 and unit price $149.99.,"Found relevant information using keyword search:
+Item: Logitech G Pro X Superlight. Shelf Name: Shelf F. Shelf ID: F. Stock: 22.",
+Keyword-only,Logitech Webcam C920,direct,keyword,0.007316478993743658,Logitech Webcam C920 is on Shelf F with stock 31 and unit price $69.99.,"Found relevant information using keyword search:
+Item: Logitech Webcam C920. Shelf Name: Shelf F. Shelf ID: F. Stock: 31.",
+Keyword-only,PlayStation VR2,direct,keyword,0.004756774986162782,PlayStation VR2 is on Shelf G with stock 12 and unit price $549.99.,"Found relevant information using keyword search:
+Item: PlayStation VR2. Shelf Name: Shelf G. Shelf ID: G. Stock: 12.",
+Keyword-only,PlayStation 5 Games Bundle,direct,keyword,0.003534925985150039,PlayStation 5 Games Bundle is on Shelf G with stock 8 and unit price $59.99.,"Found relevant information using keyword search:
+Item: PlayStation 5 Games Bundle. Shelf Name: Shelf G. Shelf ID: G. Stock: 8.",
+Keyword-only,PlayStation Charging Station,direct,keyword,0.005743576097302139,PlayStation Charging Station is on Shelf G with stock 27 and unit price $29.99.,"Found relevant information using keyword search:
+Item: PlayStation Charging Station. Shelf Name: Shelf G. Shelf ID: G. Stock: 27.",
+Keyword-only,Bose Replacement Ear Pads,direct,keyword,0.0024577840231359005,Bose Replacement Ear Pads is on Shelf E with stock 36 and unit price $29.99.,"Found relevant information using keyword search:
+Item: Bose Replacement Ear Pads. Shelf Name: Shelf E. Shelf ID: E. Stock: 36.",
+Keyword-only,Logitech Mouse Pad,direct,keyword,0.002231030957773328,Logitech Mouse Pad is on Shelf F with stock 58 and unit price $19.99.,"Found relevant information using keyword search:
+Item: Logitech Mouse Pad. Shelf Name: Shelf F. Shelf ID: F. Stock: 58.",
+Keyword-only,orange reflective vest,keyword,keyword,0.0022246299777179956,High-visibility clothing may be yellow or orange and must be reflective.,"Found relevant information using keyword search:
+SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE)
+Safety Helmets – Required at all times inside loading areas.
+High-Visibility Vests – Fluorescent yellow or orange with reflective stripes.
+Steel-Toed Boots – Must conform to ISO 20345:2011.
+Cut-Resistant Gloves – Mandatory when handling sharp materials.
+Hearing Protection – Required in areas above 85 dB",
+Keyword-only,helmet use in loading zones,keyword,keyword,0.0018314709886908531,Safety helmets are required in loading areas.,"Found relevant information using keyword search:
+SECTION 2: INVENTORY HANDLING
+-----------------------------
+- Use handheld scanners for all inventory movements.
+- Report discrepancies immediately to the Inventory Supervisor.
+- Damaged goods must be placed in the “Inspection Zone” before tagging.
+- Shelves are labeled using alphanumeric codes (e.g., A1-B3).",
+Keyword-only,forklift operator renewal,keyword,keyword,0.009072787943296134,Forklift operators must be recertified every 2 years.,"Found relevant information using keyword search:
+SECTION 5: MATERIAL HANDLING AND STORAGE
+Forklift operators must be certified and recertified every 2 years.
+Do not exceed 1500 kg per shelving level unless labeled otherwise.
+Use Class 2 ratchet straps for loads over 200 kg.
+Hazardous chemicals must be stored in locked ventilated cabinets.",
+Keyword-only,chemical storage ventilation,keyword,keyword,0.004332056967541575,"Hazardous chemicals must be stored in locked, ventilated cabinets.","Found relevant information using keyword search:
+SECTION 5: MATERIAL HANDLING AND STORAGE
+Forklift operators must be certified and recertified every 2 years.
+Do not exceed 1500 kg per shelving level unless labeled otherwise.
+Use Class 2 ratchet straps for loads over 200 kg.
+Hazardous chemicals must be stored in locked ventilated cabinets.",
+Keyword-only,emergency exit markings,keyword,keyword,0.00252506195101887,"Each zone must have at least 2 emergency exits, and the exits must be clearly marked.","Found relevant information using keyword search:
+SECTION 3: FIRE SAFETY & EVACUATION PROCEDURES
+Fire Extinguishers: One every 15 meters; monthly inspection.
+Emergency Exits: At least two per zone, clearly marked.
+Evacuation Drills: Every 6 months; missed drills require retraining.
+Assembly Points: 50 meters from building, marked with green signage.
+Never use elevators during evacuation.",
+Keyword-only,first aid inspection,keyword,keyword,0.004370321985334158,First-aid kits must be checked weekly.,"Found relevant information using keyword search:
+SECTION 6: FIRST AID AND INCIDENT REPORTING
+First Aid Kits must be:
+Available every 30 meters.
+Checked weekly by a safety officer.
+Incident Reports:
+Must be submitted within 2 hours using Form WHS-101.
+Use the internal safety portal for submission.
+Emergency contacts are listed on the main notice board and in Section 9.",
+Keyword-only,warehouse incident portal,keyword,keyword,0.0036200330359861255,"Under the 2025 procedure, incidents are reported within 2 hours using Form WHS-101 through the internal portal.","Found relevant information using keyword search:
+SECTION 6: INCIDENT REPORTING & FEEDBACK
+----------------------------------------
+- Any injuries, equipment damage, or process violations must be reported within 1 hour.
+- Use Form WHS-207 and submit to the Shift Supervisor.
+- Anonymous feedback can be left in the box outside Room B-2 or submitted via the internal portal.",
+Keyword-only,LOTO annual review,keyword,keyword,0.00876113900449127,The lockout/tagout (LOTO) procedure is reviewed every 12 months.,No keyword match found.,
+Keyword-only,spill response pads,keyword,keyword,0.005583786987699568,Spills must be reported and cleaned immediately using absorbent pads.,"Found relevant information using keyword search:
+Item: Bose Replacement Ear Pads. Shelf Name: Shelf E. Shelf ID: E. Stock: 36.",
+Keyword-only,visitor safety gear,keyword,keyword,0.0036868290044367313,Visitors are required to wear PPE. The manual does not specify a separate detailed visitor PPE list.,"Found relevant information using keyword search:
+SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE)
+Safety Helmets – Required at all times inside loading areas.
+High-Visibility Vests – Fluorescent yellow or orange with reflective stripes.
+Steel-Toed Boots – Must conform to ISO 20345:2011.
+Cut-Resistant Gloves – Mandatory when handling sharp materials.
+Hearing Protection – Required in areas above 85 dB",
+Keyword-only,fire drill schedule,keyword,keyword,0.0028229819145053625,Fire drills are conducted every 6 months.,"Found relevant information using keyword search:
+SECTION 3: FIRE SAFETY & EVACUATION PROCEDURES
+Fire Extinguishers: One every 15 meters; monthly inspection.
+Emergency Exits: At least two per zone, clearly marked.
+Evacuation Drills: Every 6 months; missed drills require retraining.
+Assembly Points: 50 meters from building, marked with green signage.
+Never use elevators during evacuation.",
+Keyword-only,hearing protection rule,keyword,keyword,0.001955151092261076,Hearing protection is required where noise levels exceed 85 dB.,"Found relevant information using keyword search:
+SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE)
+Safety Helmets – Required at all times inside loading areas.
+High-Visibility Vests – Fluorescent yellow or orange with reflective stripes.
+Steel-Toed Boots – Must conform to ISO 20345:2011.
+Cut-Resistant Gloves – Mandatory when handling sharp materials.
+Hearing Protection – Required in areas above 85 dB",
+Keyword-only,green waste bin,keyword,keyword,0.002014636993408203,The green bin is used for plastic waste.,"Found relevant information using keyword search:
+SECTION 4: CLEANLINESS & WASTE DISPOSAL
+---------------------------------------
+- Floors must be swept at the end of each shift.
+- Spillages must be reported and cleaned immediately using absorbent pads.
+- Recycling bins are color-coded:
+  - Blue: Paper/Cardboard
+  - Green: Plastic
+  - Red: Hazardous waste
+- All cleaning supplies are stored in Room C-14.",
+Keyword-only,damaged item inspection area,keyword,keyword,0.0020916920620948076,Damaged goods should be moved to the Inspection Zone.,"Found relevant information using keyword search:
+SECTION 2: INVENTORY HANDLING
+-----------------------------
+- Use handheld scanners for all inventory movements.
+- Report discrepancies immediately to the Inventory Supervisor.
+- Damaged goods must be placed in the “Inspection Zone” before tagging.
+- Shelves are labeled using alphanumeric codes (e.g., A1-B3).",
+Keyword-only,inventory discrepancy reporting,keyword,keyword,0.0019847439834848046,Inventory discrepancies should be reported to the Inventory Supervisor.,"Found relevant information using keyword search:
+WAREHOUSE DAILY OPERATIONS GUIDE (2024)
+========================================
+
+SECTION 1: SHIFT SCHEDULES & WORKFLOW
+-------------------------------------
+- Morning Shift: 6:00 AM – 2:00 PM
+- Afternoon Shift: 2:00 PM – 10:00 PM
+- Night Shift: 10:00 PM – 6:00 AM
+- All workers must sign in 10 minutes before their shift and attend the team briefing.
+- Daily workload is divided into receiving, inventory update, picking, packing, and dispatch.",
+Keyword-only,What should a visitor wear before entering operational warehouse areas?,rag,keyword,0.0017662009922787547,Visitors must wear PPE before entering operational warehouse areas. The manual does not provide a separate detailed list of visitor PPE items.,"Found relevant information using keyword search:
+SECTION 4: VISITOR PROTOCOL
+All visitors must sign in at the security desk and wear visitor badges.
+Visitors must be escorted by a warehouse employee at all times.
+PPE is required for visitors entering the warehouse floor.
+Visits should be scheduled at least 24 hours in advance.",
+Keyword-only,What are the documented requirements for a safe chemical-storage cabinet?,rag,keyword,0.007777880062349141,"Hazardous chemicals must be kept in locked, ventilated cabinets.","Found relevant information using keyword search:
+SECTION 6: FIRST AID AND INCIDENT REPORTING
+First Aid Kits must be:
+Available every 30 meters.
+Checked weekly by a safety officer.
+Incident Reports:
+Must be submitted within 2 hours using Form WHS-101.
+Use the internal safety portal for submission.
+Emergency contacts are listed on the main notice board and in Section 9.",
+Keyword-only,What must an operator do to remain qualified to drive a forklift?,rag,keyword,0.007563492050394416,Forklift operators must be certified and must be recertified every 2 years.,"Found relevant information using keyword search:
+SECTION 3: EQUIPMENT USAGE & MAINTENANCE
+----------------------------------------
+- Pallet jacks and forklifts must be returned to charging docks after shift.
+- Battery water levels should be checked every Monday morning.
+- Only trained staff may operate powered equipment (see list in Appendix A).
+- Monthly maintenance logs must be filled by the Maintenance Lead.",
+Keyword-only,What procedure is specified when an inventory discrepancy is discovered?,rag,keyword,0.002664237981662154,The inventory discrepancy should be reported to the Inventory Supervisor.,"Found relevant information using keyword search:
+WAREHOUSE DAILY OPERATIONS GUIDE (2024)
+========================================
+
+SECTION 1: SHIFT SCHEDULES & WORKFLOW
+-------------------------------------
+- Morning Shift: 6:00 AM – 2:00 PM
+- Afternoon Shift: 2:00 PM – 10:00 PM
+- Night Shift: 10:00 PM – 6:00 AM
+- All workers must sign in 10 minutes before their shift and attend the team briefing.
+- Daily workload is divided into receiving, inventory update, picking, packing, and dispatch.",
+Keyword-only,What should happen to damaged goods before further handling?,rag,keyword,0.0072730660904198885,Damaged goods should be moved to the Inspection Zone for inspection.,"Found relevant information using keyword search:
+SECTION 2: INVENTORY HANDLING
+-----------------------------
+- Use handheld scanners for all inventory movements.
+- Report discrepancies immediately to the Inventory Supervisor.
+- Damaged goods must be placed in the “Inspection Zone” before tagging.
+- Shelves are labeled using alphanumeric codes (e.g., A1-B3).",
+Keyword-only,What are the manual's requirements for emergency assembly locations?,rag,keyword,0.004527885001152754,Emergency assembly points must be located 50 m away and identified with green signage.,"Found relevant information using keyword search:
+SECTION 6: FIRST AID AND INCIDENT REPORTING
+First Aid Kits must be:
+Available every 30 meters.
+Checked weekly by a safety officer.
+Incident Reports:
+Must be submitted within 2 hours using Form WHS-101.
+Use the internal safety portal for submission.
+Emergency contacts are listed on the main notice board and in Section 9.",
+Keyword-only,What reporting steps apply to an injury under the current 2025 procedure?,rag,keyword,0.0037720759864896536,"Under the 2025 procedure, an injury/incident must be reported within 2 hours using Form WHS-101 through the internal portal.","Found relevant information using keyword search:
+SECTION 6: INCIDENT REPORTING & FEEDBACK
+----------------------------------------
+- Any injuries, equipment damage, or process violations must be reported within 1 hour.
+- Use Form WHS-207 and submit to the Shift Supervisor.
+- Anonymous feedback can be left in the box outside Room B-2 or submitted via the internal portal.",
+Keyword-only,What does the manual require after a safety violation?,rag,keyword,0.0022703349823132157,Additional safety training is required after a safety violation or accident; routine safety training is also conducted annually.,"Found relevant information using keyword search:
+SECTION 3: EQUIPMENT USAGE & MAINTENANCE
+----------------------------------------
+- Pallet jacks and forklifts must be returned to charging docks after shift.
+- Battery water levels should be checked every Monday morning.
+- Only trained staff may operate powered equipment (see list in Appendix A).
+- Monthly maintenance logs must be filled by the Maintenance Lead.",
+Keyword-only,What are workers instructed to do when a spill is discovered?,rag,keyword,0.003254016046412289,Workers must report the spill and clean it immediately using absorbent pads.,"Found relevant information using keyword search:
+WAREHOUSE DAILY OPERATIONS GUIDE (2024)
+========================================
+
+SECTION 1: SHIFT SCHEDULES & WORKFLOW
+-------------------------------------
+- Morning Shift: 6:00 AM – 2:00 PM
+- Afternoon Shift: 2:00 PM – 10:00 PM
+- Night Shift: 10:00 PM – 6:00 AM
+- All workers must sign in 10 minutes before their shift and attend the team briefing.
+- Daily workload is divided into receiving, inventory update, picking, packing, and dispatch.",
+Keyword-only,What evacuation restrictions apply to elevators?,rag,keyword,0.005436733947135508,Elevators must never be used during an evacuation.,"Found relevant information using keyword search:
+SECTION 3: FIRE SAFETY & EVACUATION PROCEDURES
+Fire Extinguishers: One every 15 meters; monthly inspection.
+Emergency Exits: At least two per zone, clearly marked.
+Evacuation Drills: Every 6 months; missed drills require retraining.
+Assembly Points: 50 meters from building, marked with green signage.
+Never use elevators during evacuation.",
+Keyword-only,What inspection schedule applies to firefighting equipment?,rag,keyword,0.004644701955839992,Fire extinguishers are positioned every 15 m and are inspected monthly.,"Found relevant information using keyword search:
+SECTION 2: INVENTORY HANDLING
+-----------------------------
+- Use handheld scanners for all inventory movements.
+- Report discrepancies immediately to the Inventory Supervisor.
+- Damaged goods must be placed in the “Inspection Zone” before tagging.
+- Shelves are labeled using alphanumeric codes (e.g., A1-B3).",
+Keyword-only,What PPE is required when employees handle sharp objects?,rag,keyword,0.002298532985150814,Cut-resistant gloves are mandatory when handling sharp materials.,"Found relevant information using keyword search:
+SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE)
+Safety Helmets – Required at all times inside loading areas.
+High-Visibility Vests – Fluorescent yellow or orange with reflective stripes.
+Steel-Toed Boots – Must conform to ISO 20345:2011.
+Cut-Resistant Gloves – Mandatory when handling sharp materials.
+Hearing Protection – Required in areas above 85 dB",
+Keyword-only,What does the manual specify for hearing protection in noisy areas?,rag,keyword,0.0023646309273317456,Hearing protection is required in areas where noise exceeds 85 dB.,"Found relevant information using keyword search:
+SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE)
+Safety Helmets – Required at all times inside loading areas.
+High-Visibility Vests – Fluorescent yellow or orange with reflective stripes.
+Steel-Toed Boots – Must conform to ISO 20345:2011.
+Cut-Resistant Gloves – Mandatory when handling sharp materials.
+Hearing Protection – Required in areas above 85 dB",
+Keyword-only,What are the requirements for the number and marking of emergency exits?,rag,keyword,0.004284689086489379,"There must be at least 2 emergency exits per zone, and they must be clearly marked.","Found relevant information using keyword search:
+SECTION 6: FIRST AID AND INCIDENT REPORTING
+First Aid Kits must be:
+Available every 30 meters.
+Checked weekly by a safety officer.
+Incident Reports:
+Must be submitted within 2 hours using Form WHS-101.
+Use the internal safety portal for submission.
+Emergency contacts are listed on the main notice board and in Section 9.",
+Keyword-only,What contact information is provided for a medical emergency?,rag,keyword,0.002504199044778943,The medical emergency contact is extension 221.,"Found relevant information using keyword search:
+SECTION 7: TRAINING AND CERTIFICATION
+Safety Training is required:
+Annually for all employees.
+Immediately after any safety violation or accident.
+Lockout/Tagout procedures must be reviewed every 12 months.
+
+
+SECTION 8: EMERGENCY CONTACTS
+Fire Department: 101
+Police: 100
+On-site Medical Officer: Ext. 221
+Warehouse Safety Lead: Ext. 115",
+Keyword-only,By how many units does Shelf B exceed Shelf C?,llm,keyword,0.0049966860096901655,Shelf B has 326 units and Shelf C has 130 units. Shelf B exceeds Shelf C by 196 units.,"Found relevant information using keyword search:
+Item: Samsung Galaxy S23. Shelf Name: Shelf B. Shelf ID: B. Stock: 196.",
+Keyword-only,Which shelf is second highest in total stock?,llm,keyword,0.007961404044181108,Shelf G is second highest with 191 units. Shelf B is highest with 326 units.,"Found relevant information using keyword search:
+Item: Apple iPhone 14. Shelf Name: Shelf A. Shelf ID: A. Stock: 10.",
+Keyword-only,Calculate the combined stock of Shelves A and G.,llm,keyword,0.006113909068517387,"Shelf A has 105 units and Shelf G has 191 units, for a combined stock of 296 units.","Found relevant information using keyword search:
+SECTION 2: INVENTORY HANDLING
+-----------------------------
+- Use handheld scanners for all inventory movements.
+- Report discrepancies immediately to the Inventory Supervisor.
+- Damaged goods must be placed in the “Inspection Zone” before tagging.
+- Shelves are labeled using alphanumeric codes (e.g., A1-B3).",
+Keyword-only,Which two products share the minimum stock level?,llm,keyword,0.004948277957737446,"Bose QC Ultra and Logitech MX Master 3 share the minimum stock level, with 7 units each.","Found relevant information using keyword search:
+Item: Apple iPhone 14. Shelf Name: Shelf A. Shelf ID: A. Stock: 10.",
+Keyword-only,How many total units are stored on Shelves D and E together?,llm,keyword,0.005980905028991401,"Shelf D has 109 units and Shelf E has 88 units, for a combined total of 197 units.","Found relevant information using keyword search:
+SECTION 2: INVENTORY HANDLING
+-----------------------------
+- Use handheld scanners for all inventory movements.
+- Report discrepancies immediately to the Inventory Supervisor.
+- Damaged goods must be placed in the “Inspection Zone” before tagging.
+- Shelves are labeled using alphanumeric codes (e.g., A1-B3).",
+Keyword-only,Compare the inventory value of Dell XPS 13 with Dell XPS 15.,llm,keyword,0.003475176985375583,"Dell XPS 13 inventory value is $53,999.55 (45 × $1,199.99). Dell XPS 15 inventory value is $14,399.92 (8 × $1,799.99). XPS 13 has $39,599.63 more total inventory value.","Found relevant information using keyword search:
+Item: Dell XPS 13. Shelf Name: Shelf D. Shelf ID: D. Stock: 45.",
+Keyword-only,What is the combined stock of all Bose products?,llm,keyword,0.0019643859704956412,All Bose products are on Shelf E and have a combined stock of 88 units.,"Found relevant information using keyword search:
+WAREHOUSE DAILY OPERATIONS GUIDE (2024)
+========================================
+
+SECTION 1: SHIFT SCHEDULES & WORKFLOW
+-------------------------------------
+- Morning Shift: 6:00 AM – 2:00 PM
+- Afternoon Shift: 2:00 PM – 10:00 PM
+- Night Shift: 10:00 PM – 6:00 AM
+- All workers must sign in 10 minutes before their shift and attend the team briefing.
+- Daily workload is divided into receiving, inventory update, picking, packing, and dispatch.",
+Keyword-only,Which Samsung product contributes the most units to Shelf B?,llm,keyword,0.008642208995297551,"Samsung Galaxy S23 contributes the most units to Shelf B, with 196 units.","Found relevant information using keyword search:
+Item: Samsung Galaxy S23. Shelf Name: Shelf B. Shelf ID: B. Stock: 196.",
+Keyword-only,"Order Shelves D, E, and G from lowest to highest total stock.",llm,keyword,0.006272025988437235,"From lowest to highest: Shelf E = 88, Shelf D = 109, Shelf G = 191.","Found relevant information using keyword search:
+SECTION 2: INVENTORY HANDLING
+-----------------------------
+- Use handheld scanners for all inventory movements.
+- Report discrepancies immediately to the Inventory Supervisor.
+- Damaged goods must be placed in the “Inspection Zone” before tagging.
+- Shelves are labeled using alphanumeric codes (e.g., A1-B3).",
+Keyword-only,What fraction of Shelf G stock is Sony PlayStation 5?,llm,keyword,0.007223607040941715,"Sony PlayStation 5 accounts for 99 of Shelf G's 191 units, which is approximately 51.83%.","Found relevant information using keyword search:
+Item: Sony PlayStation 5. Shelf Name: Shelf G. Shelf ID: G. Stock: 99.",
+Keyword-only,How much inventory value is represented by the Sony PlayStation 5 stock?,llm,keyword,0.0056331949308514595,"Sony PlayStation 5 inventory value is 99 × $499.99 = $49,499.01.","Found relevant information using keyword search:
+Item: Sony PlayStation 5. Shelf Name: Shelf G. Shelf ID: G. Stock: 99.",
+Keyword-only,Compare the combined stock of Apple phones with Samsung phones.,llm,keyword,0.003409246914088726,"Apple phones total 28 units (iPhone 14 = 10, iPhone 14 Pro = 10, iPhone 13 = 8). Samsung phones total 218 units (Galaxy S23 = 196, Galaxy S24 = 22). Samsung phones exceed Apple phones by 190 units.","Found relevant information using keyword search:
+Item: Apple iPhone 14. Shelf Name: Shelf A. Shelf ID: A. Stock: 10.",
+Keyword-only,Which shelf is closest to the warehouse-wide average stock per shelf?,llm,keyword,0.004014228004962206,"Total warehouse stock is 1,081 units, so the average is 154.43 units per shelf. Shelf F, with 132 units, is closest to the average.","Found relevant information using keyword search:
+SECTION 5: SECURITY & ACCESS CONTROL
+-------------------------------------
+- Entry to the warehouse requires ID badge scans.
+- All doors auto-lock after 8:00 PM.
+- Visitors must be logged in at the front desk and accompanied at all times.
+- Security footage is retained for 30 days and reviewed weekly.",
+Keyword-only,What is the combined stock of the three lowest-stock products?,llm,keyword,0.0026542070554569364,"The two lowest-stock products are Bose QC Ultra (7) and Logitech MX Master 3 (7). The next-lowest level is 8 units, shared by Dell XPS 15 and Sony Games Bundle. Any valid three-product selection from these lowest levels totals 22 units; the third position is tied.","Found relevant information using keyword search:
+WAREHOUSE DAILY OPERATIONS GUIDE (2024)
+========================================
+
+SECTION 1: SHIFT SCHEDULES & WORKFLOW
+-------------------------------------
+- Morning Shift: 6:00 AM – 2:00 PM
+- Afternoon Shift: 2:00 PM – 10:00 PM
+- Night Shift: 10:00 PM – 6:00 AM
+- All workers must sign in 10 minutes before their shift and attend the team briefing.
+- Daily workload is divided into receiving, inventory update, picking, packing, and dispatch.",
+Keyword-only,"Give a short comparison of total stock on Shelves A, C, and F.",llm,keyword,0.0022764289751648903,"Shelf A has 105 units, Shelf C has 130 units, and Shelf F has 132 units. Shelf F is highest by 2 units over Shelf C; Shelf C exceeds Shelf A by 25 units.","Found relevant information using keyword search:
+SECTION 4: CLEANLINESS & WASTE DISPOSAL
+---------------------------------------
+- Floors must be swept at the end of each shift.
+- Spillages must be reported and cleaned immediately using absorbent pads.
+- Recycling bins are color-coded:
+  - Blue: Paper/Cardboard
+  - Green: Plastic
+  - Red: Hazardous waste
+- All cleaning supplies are stored in Room C-14.",
+LLM-only,Apple iPhone 13,direct,llm,3.6024295340757817,Apple iPhone 13 is on Shelf A with stock 8 and unit price $599.99.,"LLM response: The Apple iPhone 13 is located on Shelf A (ID: A). We currently have 8 units in stock, and the price is $599.99. It falls under the category of Smartphones.",
+LLM-only,Samsung Galaxy Tab S9,direct,llm,1.9619517910759896,Samsung Galaxy Tab S9 is on Shelf B with stock 15 and unit price $699.99.,"LLM response: The Samsung Galaxy Tab S9 is located on Shelf B (ID: B) and we currently have 15 units in stock. The price of the Samsung Galaxy Tab S9 is $699.99, and it falls under the category of Tablets.",
+LLM-only,Sony WH-CH720N,direct,llm,2.004172559012659,Sony WH-CH720N is on Shelf C with stock 23 and unit price $129.99.,"LLM response: The Sony WH-CH720N is located on Shelf C (ID: C). The current stock is 23 units, and the price is $129.99. It falls under the category of Headphones.",
+LLM-only,Sony Extra Bass Headphones,direct,llm,1.7540961490012705,Sony Extra Bass Headphones is on Shelf C with stock 31 and unit price $79.99.,"LLM response: The Sony Extra Bass Headphones are located on Shelf C (ID: C). We currently have 31 units in stock, and the price is $79.99. They fall under the category of Headphones.",
+LLM-only,Dell Inspiron 14,direct,llm,1.5238536429824308,Dell Inspiron 14 is on Shelf D with stock 14 and unit price $699.99.,"LLM response: The Dell Inspiron 14 is located on Shelf D (ID: D). We currently have 14 units in stock, and the price is $699.99. It falls under the category of Laptops.",
+LLM-only,Dell Laptop Bag,direct,llm,3.1981996189570054,Dell Laptop Bag is on Shelf D with stock 19 and unit price $49.99.,"LLM response: The Dell Laptop Bag is located on Shelf D (ID: D), and we currently have 19 in stock. The price is $49.99, and it falls under the category of Accessories.",
+LLM-only,Bose QuietComfort Ultra,direct,llm,1.09668821899686,Bose QuietComfort Ultra is on Shelf E with stock 7 and unit price $429.99.,"LLM response: The Bose QuietComfort Ultra is located on Shelf E (ID: E). We currently have 7 units in stock, and the price is $429.99. It falls under the category of Headphones.",
+LLM-only,Bose Soundbar 600,direct,llm,1.540737368981354,Bose Soundbar 600 is on Shelf E with stock 9 and unit price $399.99.,"LLM response: The Bose Soundbar 600 is located on Shelf E (ID: E). The current stock is 9 units, and the price is $399.99. It falls under the category of Home Audio.",
+LLM-only,Logitech G Pro X Superlight,direct,llm,1.8427803160157055,Logitech G Pro X Superlight is on Shelf F with stock 22 and unit price $149.99.,"LLM response: The Logitech G Pro X Superlight is located on Shelf F (ID: F). We currently have 22 units in stock, and the price is $149.99. It falls under the category of Gaming Mouse.",
+LLM-only,Logitech Webcam C920,direct,llm,0.9254665659973398,Logitech Webcam C920 is on Shelf F with stock 31 and unit price $69.99.,"LLM response: The Logitech Webcam C920 is located on Shelf F (ID: F). We currently have 31 units in stock, and the price is $69.99. It falls under the category of Webcams.",
+LLM-only,PlayStation VR2,direct,llm,1.725359631003812,PlayStation VR2 is on Shelf G with stock 12 and unit price $549.99.,"LLM response: The PlayStation VR2 is located on Shelf G (ID: G). We currently have 12 units in stock, and the price is $549.99. It falls under the category of Virtual Reality.",
+LLM-only,PlayStation 5 Games Bundle,direct,llm,2.2611376140266657,PlayStation 5 Games Bundle is on Shelf G with stock 8 and unit price $59.99.,"LLM response: The PlayStation 5 Games Bundle is located on Shelf G (ID: G) and we currently have 8 in stock. The price is $59.99, and it falls under the category of Software.",
+LLM-only,PlayStation Charging Station,direct,llm,2.2938182030338794,PlayStation Charging Station is on Shelf G with stock 27 and unit price $29.99.,"LLM response: The PlayStation Charging Station is located on Shelf G (ID: G) and has the following details:
+
+- Stock: 27
+- Price: $29.99
+- Category: Accessories",
+LLM-only,Bose Replacement Ear Pads,direct,llm,1.7530403459677473,Bose Replacement Ear Pads is on Shelf E with stock 36 and unit price $29.99.,"LLM response: The Bose Replacement Ear Pads are located on Shelf E (ID: E). We currently have 36 in stock, and they are priced at $29.99. They fall under the category of Accessories.",
+LLM-only,Logitech Mouse Pad,direct,llm,1.7110458739334717,Logitech Mouse Pad is on Shelf F with stock 58 and unit price $19.99.,"LLM response: The Logitech Mouse Pad is located on Shelf F (ID: F) and we currently have 58 in stock. The price is $19.99, and it falls under the category of Accessories.",
+LLM-only,orange reflective vest,keyword,llm,1.3664338069502264,High-visibility clothing may be yellow or orange and must be reflective.,"LLM response: I'm not aware of any information about an orange reflective vest in the provided inventory or safety manual. If you're looking for personal protective equipment (PPE) or safety gear, I can suggest checking the safety manual or consulting with a supervisor, but I don't have any specific information about an orange reflective vest. Can I help you with something else?",
+LLM-only,helmet use in loading zones,keyword,llm,5.647766228066757,Safety helmets are required in loading areas.,"LLM response: According to the provided Safety Manual, there is no specific section or mention of helmet use in loading zones. However, it does mention the use of powered equipment, such as forklifts and pallet jacks, in Section 3: EQUIPMENT USAGE & MAINTENANCE.
+
+It is generally considered a best practice to wear personal protective equipment (PPE), including helmets, in areas where there is a risk of injury from falling objects or equipment. But since it's not explicitly mentioned in the provided Safety Manual, I would recommend checking with the warehouse supervisor or referring to additional safety guidelines for specific protocols on helmet use in loading zones.",
+LLM-only,forklift operator renewal,keyword,llm,7.430067087057978,Forklift operators must be recertified every 2 years.,"LLM response: To renew your forklift operator certification, you will need to follow the procedures outlined in our warehouse's safety manual. According to Section 3: EQUIPMENT USAGE & MAINTENANCE, only trained staff may operate powered equipment, and the list of trained staff is found in Appendix A.
+
+To renew your certification, I recommend the following steps:
+
+1. Check your current certification expiration date to ensure you are eligible for renewal.
+2. Review the warehouse's forklift operating procedures and safety guidelines to familiarize yourself with any updates or changes.
+3. Schedule a renewal training session with the Maintenance Lead or a designated trainer.
+4. Complete the required training and assessment to demonstrate your competence in operating a forklift safely and efficiently.
+5. Update your certification records and notify the Maintenance Lead or HR department to ensure your certification is renewed and reflected in Appendix A.
+
+If you have any questions or concerns about the renewal process, please let me know, and I'll be happy to assist you.",
+LLM-only,chemical storage ventilation,keyword,llm,5.324221990071237,"Hazardous chemicals must be stored in locked, ventilated cabinets.","LLM response: I'm not aware of any information regarding chemical storage ventilation in the provided inventory or safety manual. The safety manual does mention hazardous waste disposal in Section 4, which states that hazardous waste should be disposed of in red-colored recycling bins, but it does not provide specific information on chemical storage ventilation. If you're looking for information on this topic, I would recommend consulting a more detailed or specialized safety guide or regulations.",
+LLM-only,emergency exit markings,keyword,llm,4.688568335026503,"Each zone must have at least 2 emergency exits, and the exits must be clearly marked.","LLM response: According to the provided Safety Manual, there is no specific information about emergency exit markings. The manual covers various aspects of warehouse operations, including shift schedules, inventory handling, equipment usage, cleanliness, security, and incident reporting, but it does not mention emergency exit markings. If you need information on emergency exit markings, I would recommend checking the warehouse's specific safety protocols or consulting with a supervisor or safety officer.",
+LLM-only,first aid inspection,keyword,llm,5.25199901801534,First-aid kits must be checked weekly.,"LLM response: According to the provided Safety Manual, there is no specific section dedicated to ""First Aid Inspection"". However, it does mention incident reporting and feedback in Section 6, which includes reporting any injuries.
+
+If you're looking for information on first aid or medical emergency procedures, I would recommend checking the warehouse's separate first aid policy or guidelines, which may not be included in this Safety Manual. 
+
+If you need more information, I would say ""I don't know"" as the provided Safety Manual does not cover this topic.",
+LLM-only,warehouse incident portal,keyword,llm,3.826624552020803,"Under the 2025 procedure, incidents are reported within 2 hours using Form WHS-101 through the internal portal.","LLM response: You're looking to report an incident in the warehouse. According to the Safety Manual, Section 6: INCIDENT REPORTING & FEEDBACK, any injuries, equipment damage, or process violations must be reported within 1 hour.
+
+To report an incident, you should:
+
+1. Fill out Form WHS-207, which is the standard incident reporting form.
+2. Submit the completed form to the Shift Supervisor.
+
+If you need assistance or have questions about the incident reporting process, you can reach out to your supervisor or the warehouse management team.
+
+Is there a specific incident you'd like to report, or would you like more information on the incident reporting process?",
+LLM-only,LOTO annual review,keyword,llm,2.0714802040020004,The lockout/tagout (LOTO) procedure is reviewed every 12 months.,"LLM response: I'm not familiar with the term ""LOTO annual review"" in the context of our warehouse operations. Could you please provide more information or clarify what you mean by ""LOTO annual review""? I'll do my best to help or direct you to the relevant resource.",
+LLM-only,spill response pads,keyword,llm,4.762028674944304,Spills must be reported and cleaned immediately using absorbent pads.,"LLM response: According to the Safety Manual, Section 4: CLEANLINESS & WASTE DISPOSAL, spillages must be reported and cleaned immediately using absorbent pads. However, it does not specify the location of the absorbent pads. It only mentions that all cleaning supplies are stored in Room C-14. Therefore, I would assume that the absorbent pads for spill response are likely stored in Room C-14, but I don't have enough information to confirm this.",
+LLM-only,visitor safety gear,keyword,llm,3.7511255859863013,Visitors are required to wear PPE. The manual does not specify a separate detailed visitor PPE list.,"LLM response: According to the Safety Manual, there is no specific section that mentions ""visitor safety gear"". However, it does mention that visitors must be logged in at the front desk and accompanied at all times (Section 5: SECURITY & ACCESS CONTROL).
+
+As a warehouse assistant, I would recommend that visitors wear personal protective equipment (PPE) such as high-visibility vests, safety glasses, and steel-toed shoes to ensure their safety while in the warehouse. However, I don't have specific information on the types of safety gear that are available for visitors.
+
+If you need more information, I would suggest checking with the warehouse management or the safety officer to see if they have any specific guidelines or procedures for visitor safety gear.",
+LLM-only,fire drill schedule,keyword,llm,3.0855017190333456,Fire drills are conducted every 6 months.,"LLM response: I'm not aware of the fire drill schedule as it's not mentioned in the provided safety manual or inventory list. I can only provide information based on the given data, and I don't have any information about the fire drill schedule. If you need to know the fire drill schedule, I recommend checking the warehouse's official safety protocols or contacting the relevant personnel.",
+LLM-only,hearing protection rule,keyword,llm,1.9542206430342048,Hearing protection is required where noise levels exceed 85 dB.,"LLM response: According to the provided Safety Manual, there is no specific section or rule mentioned regarding hearing protection. If you're looking for information on hearing protection rules in the warehouse, I would say that I don't know, as it's not explicitly stated in the provided manual.",
+LLM-only,green waste bin,keyword,llm,1.1618243069387972,The green bin is used for plastic waste.,"LLM response: According to the Safety Manual, the green waste bin is for disposing of plastic waste.",
+LLM-only,damaged item inspection area,keyword,llm,3.0626427649986,Damaged goods should be moved to the Inspection Zone.,"LLM response: According to the Safety Manual, damaged goods must be placed in the ""Inspection Zone"" before tagging. However, the exact location of the Inspection Zone is not specified in the provided information. I don't have enough information to provide a specific location or details about the Inspection Zone.",
+LLM-only,inventory discrepancy reporting,keyword,llm,3.3431941339513287,Inventory discrepancies should be reported to the Inventory Supervisor.,"LLM response: According to the Safety Manual, Section 2: INVENTORY HANDLING, if I encounter an inventory discrepancy, I should ""Report discrepancies immediately to the Inventory Supervisor."" 
+
+I will use a handheld scanner to verify the inventory movement and then notify the Inventory Supervisor right away. If needed, I will also fill out the necessary forms, such as Form WHS-207, as mentioned in Section 6: INCIDENT REPORTING & FEEDBACK, to document the discrepancy.",
+LLM-only,What should a visitor wear before entering operational warehouse areas?,rag,llm,2.765469740028493,Visitors must wear PPE before entering operational warehouse areas. The manual does not provide a separate detailed list of visitor PPE items.,"LLM response: The Safety Manual does not specify what a visitor should wear before entering operational warehouse areas. It only mentions that visitors must be logged in at the front desk and accompanied at all times. If you're looking for information on personal protective equipment (PPE) or specific attire requirements, I don't have that information.",
+LLM-only,What are the documented requirements for a safe chemical-storage cabinet?,rag,llm,5.287184524931945,"Hazardous chemicals must be kept in locked, ventilated cabinets.","LLM response: The safety manual provided does not specifically mention the requirements for a safe chemical-storage cabinet. It only mentions that hazardous waste should be disposed of in red-colored recycling bins, but it does not provide detailed guidelines for chemical storage.
+
+If you're looking for information on safe chemical storage, I would recommend consulting a more comprehensive safety manual or a dedicated resource on chemical storage and handling. I don't want to provide any potentially incorrect or incomplete information, so I'll say that I don't know the specific requirements for a safe chemical-storage cabinet based on the provided safety manual.",
+LLM-only,What must an operator do to remain qualified to drive a forklift?,rag,llm,1.9592158450977877,Forklift operators must be certified and must be recertified every 2 years.,"LLM response: According to the Safety Manual, only trained staff may operate powered equipment, including forklifts (see list in Appendix A). However, it does not specify the requirements for remaining qualified to drive a forklift. I don't have enough information to provide a complete answer.",
+LLM-only,What procedure is specified when an inventory discrepancy is discovered?,rag,llm,0.9536011520540342,The inventory discrepancy should be reported to the Inventory Supervisor.,"LLM response: According to the Safety Manual, Section 2: INVENTORY HANDLING, when an inventory discrepancy is discovered, it must be reported immediately to the Inventory Supervisor.",
+LLM-only,What should happen to damaged goods before further handling?,rag,llm,1.4230012740008533,Damaged goods should be moved to the Inspection Zone for inspection.,"LLM response: According to the Safety Manual, Section 2: INVENTORY HANDLING, damaged goods must be placed in the ""Inspection Zone"" before tagging.",
+LLM-only,What are the manual's requirements for emergency assembly locations?,rag,llm,3.027383847045712,Emergency assembly points must be located 50 m away and identified with green signage.,"LLM response: The provided safety manual does not mention the requirements for emergency assembly locations. It covers various aspects such as shift schedules, inventory handling, equipment usage, cleanliness, security, and incident reporting, but it does not provide information on emergency assembly locations. If you need information on this topic, I would recommend checking a different section of the manual or consulting with a supervisor or safety expert.",
+LLM-only,What reporting steps apply to an injury under the current 2025 procedure?,rag,llm,4.5062989050056785,"Under the 2025 procedure, an injury/incident must be reported within 2 hours using Form WHS-101 through the internal portal.","LLM response: According to the provided Safety Manual, which is the 2024 Warehouse Daily Operations Guide, in the event of an injury, the reporting steps are as follows:
+
+1. The incident must be reported within 1 hour.
+2. Use Form WHS-207 to report the incident.
+3. Submit the completed form to the Shift Supervisor.
+
+Please note that the manual provided is for 2024, and I'm not aware of any updates or changes for 2025. If there have been updates, I would not be aware of them based on the information provided.",
+LLM-only,What does the manual require after a safety violation?,rag,llm,2.6985729220323265,Additional safety training is required after a safety violation or accident; routine safety training is also conducted annually.,"LLM response: According to the manual, Section 6: INCIDENT REPORTING & FEEDBACK, after a safety violation (or any incident, including injuries, equipment damage, or process violations), the following is required:
+
+1. The incident must be reported within 1 hour.
+2. Form WHS-207 must be used to report the incident.
+3. The completed form must be submitted to the Shift Supervisor.",
+LLM-only,What are workers instructed to do when a spill is discovered?,rag,llm,3.3837257949635386,Workers must report the spill and clean it immediately using absorbent pads.,"LLM response: According to the Safety Manual, Section 4: CLEANLINESS & WASTE DISPOSAL, when a spillage is discovered, workers are instructed to report it and clean it immediately using absorbent pads.",
+LLM-only,What evacuation restrictions apply to elevators?,rag,llm,5.2098675860324875,Elevators must never be used during an evacuation.,"LLM response: The provided safety manual does not mention evacuation restrictions for elevators. If you're looking for information on evacuation procedures or elevator usage during emergencies, I would recommend checking a more comprehensive safety manual or consulting with a supervisor or safety expert. I don't have enough information to provide a specific answer to your question.",
+LLM-only,What inspection schedule applies to firefighting equipment?,rag,llm,3.83295365201775,Fire extinguishers are positioned every 15 m and are inspected monthly.,"LLM response: The provided safety manual does not mention a specific inspection schedule for firefighting equipment. It only discusses general equipment usage and maintenance, such as checking battery water levels and monthly maintenance logs for powered equipment. If you're looking for information on firefighting equipment inspection schedules, I would recommend checking a separate fire safety manual or guidelines, as it is not covered in the provided warehouse safety manual.",
+LLM-only,What PPE is required when employees handle sharp objects?,rag,llm,3.636133830063045,Cut-resistant gloves are mandatory when handling sharp materials.,"LLM response: The Safety Manual does not specifically mention the required PPE (Personal Protective Equipment) for handling sharp objects. It covers various aspects of warehouse operations, including inventory handling, equipment usage, cleanliness, security, and incident reporting, but does not provide detailed information on PPE for handling sharp objects. Therefore, I don't know the answer to this question.",
+LLM-only,What does the manual specify for hearing protection in noisy areas?,rag,llm,6.242451419006102,Hearing protection is required in areas where noise exceeds 85 dB.,"LLM response: The manual does not specify anything about hearing protection in noisy areas. It covers various aspects of warehouse operations, including shift schedules, inventory handling, equipment usage, cleanliness, security, and incident reporting, but it does not mention hearing protection. If you're looking for information on hearing protection, I would say that I don't know and would recommend checking a different resource or consulting with a supervisor.",
+LLM-only,What are the requirements for the number and marking of emergency exits?,rag,llm,3.237765801954083,"There must be at least 2 emergency exits per zone, and they must be clearly marked.","LLM response: The provided safety manual does not specify the requirements for the number and marking of emergency exits. It covers various aspects of warehouse operations, including shift schedules, inventory handling, equipment usage, cleanliness, security, and incident reporting, but it does not provide information on emergency exit requirements. If you need information on emergency exits, I recommend consulting a separate safety protocol or regulation specific to your warehouse or facility.",
+LLM-only,What contact information is provided for a medical emergency?,rag,llm,1.4956166479969397,The medical emergency contact is extension 221.,"LLM response: The provided text does not include any contact information for a medical emergency. It only mentions the general procedures for incident reporting and feedback, but it does not provide specific contact details for emergency situations.",
+LLM-only,By how many units does Shelf B exceed Shelf C?,llm,llm,6.336965986993164,Shelf B has 326 units and Shelf C has 130 units. Shelf B exceeds Shelf C by 196 units.,"LLM response: To determine by how many units Shelf B exceeds Shelf C, we need to calculate the total stock on each shelf.
+
+Shelf B contains:
+- Samsung Galaxy S23: 196 units
+- Samsung Galaxy S24: 22 units
+- Samsung Galaxy Tab S9: 15 units
+- Samsung Wireless Earbuds: 27 units
+- Samsung Fast Charger: 66 units
+
+Total stock on Shelf B: 196 + 22 + 15 + 27 + 66 = 326 units
+
+Shelf C contains:
+- Sony WH-1000XM5: 16 units
+- Sony WH-CH720N: 23 units
+- Sony WF-1000XM5: 18 units
+- Sony Extra Bass Headphones: 31 units
+- Sony Carrying Case: 42 units
+
+Total stock on Shelf C: 16 + 23 + 18 + 31 + 42 = 130 units
+
+Shelf B exceeds Shelf C by 326 - 130 = 196 units.",
+LLM-only,Which shelf is second highest in total stock?,llm,llm,13.231379675096832,Shelf G is second highest with 191 units. Shelf B is highest with 326 units.,"LLM response: To find the shelf that is second highest in total stock, I need to calculate the total stock for each shelf.
+
+Shelf A: 10 (Apple iPhone 14) + 10 (Apple iPhone 14 Pro) + 8 (Apple iPhone 13) + 45 (iPhone Charging Cable) + 32 (iPhone Screen Protector) = 105
+Shelf B: 196 (Samsung Galaxy S23) + 22 (Samsung Galaxy S24) + 15 (Samsung Galaxy Tab S9) + 27 (Samsung Wireless Earbuds) + 66 (Samsung Fast Charger) = 326
+Shelf C: 16 (Sony WH-1000XM5) + 23 (Sony WH-CH720N) + 18 (Sony WF-1000XM5) + 31 (Sony Extra Bass Headphones) + 42 (Sony Carrying Case) = 130
+Shelf D: 45 (Dell XPS 13) + 8 (Dell XPS 15) + 14 (Dell Inspiron 14) + 23 (Dell Laptop Charger) + 19 (Dell Laptop Bag) = 109
+Shelf E: 11 (Bose QuietComfort 45) + 7 (Bose QuietComfort Ultra) + 25 (Bose SoundLink Flex) + 9 (Bose Soundbar 600) + 36 (Bose Replacement Ear Pads) = 88
+Shelf F: 7 (Logitech MX Master 3) + 14 (Logitech MX Keys) + 22 (Logitech G Pro X Superlight) + 31 (Logitech Webcam C920) + 58 (Logitech Mouse Pad) = 132
+Shelf G: 99 (Sony PlayStation 5) + 45 (PlayStation DualSense Controller) + 12 (PlayStation VR2) + 8 (PlayStation 5 Games Bundle) + 27 (PlayStation Charging Station) = 191
+
+The shelves in order of total stock are:
+1. Shelf B: 326
+2. Shelf G: 191
+3. Shelf F: 132
+4. Shelf C: 130
+5. Shelf D: 109
+6. Shelf A: 105
+7. Shelf E: 88
+
+The shelf that is second highest in total stock is Shelf G.",
+LLM-only,Calculate the combined stock of Shelves A and G.,llm,llm,5.470892642973922,"Shelf A has 105 units and Shelf G has 191 units, for a combined stock of 296 units.","LLM response: To calculate the combined stock of Shelves A and G, we need to add up the stock of all items on these shelves.
+
+Shelf A:
+- Apple iPhone 14: 10
+- Apple iPhone 14 Pro: 10
+- Apple iPhone 13: 8
+- iPhone Charging Cable: 45
+- iPhone Screen Protector: 32
+
+Total stock on Shelf A: 10 + 10 + 8 + 45 + 32 = 105
+
+Shelf G:
+- Sony PlayStation 5: 99
+- PlayStation DualSense Controller: 45
+- PlayStation VR2: 12
+- PlayStation 5 Games Bundle: 8
+- PlayStation Charging Station: 27
+
+Total stock on Shelf G: 99 + 45 + 12 + 8 + 27 = 191
+
+Combined stock of Shelves A and G: 105 + 191 = 296",
+LLM-only,Which two products share the minimum stock level?,llm,llm,2.5555689530447125,"Bose QC Ultra and Logitech MX Master 3 share the minimum stock level, with 7 units each.","LLM response: The two products that share the minimum stock level are:
+
+1. Dell XPS 15 - Stock: 8
+2. Apple iPhone 13 - Stock: 8 
+3. PlayStation 5 Games Bundle - Stock: 8 
+4. PlayStation VR2 - Stock: 12 (not the minimum)
+5. Other products have higher stock levels.
+
+There are actually three products with the minimum stock level of 8.",
+LLM-only,How many total units are stored on Shelves D and E together?,llm,llm,5.077961023082025,"Shelf D has 109 units and Shelf E has 88 units, for a combined total of 197 units.","LLM response: To find the total units stored on Shelves D and E, we need to add up the stock of all items on these shelves.
+
+Shelf D:
+- Dell XPS 13: 45
+- Dell XPS 15: 8
+- Dell Inspiron 14: 14
+- Dell Laptop Charger: 23
+- Dell Laptop Bag: 19
+
+Total units on Shelf D: 45 + 8 + 14 + 23 + 19 = 109
+
+Shelf E:
+- Bose QuietComfort 45: 11
+- Bose QuietComfort Ultra: 7
+- Bose SoundLink Flex: 25
+- Bose Soundbar 600: 9
+- Bose Replacement Ear Pads: 36
+
+Total units on Shelf E: 11 + 7 + 25 + 9 + 36 = 88
+
+Total units on Shelves D and E: 109 + 88 = 197
+
+So, there are 197 total units stored on Shelves D and E together.",
+LLM-only,Compare the inventory value of Dell XPS 13 with Dell XPS 15.,llm,llm,6.16584806307219,"Dell XPS 13 inventory value is $53,999.55 (45 × $1,199.99). Dell XPS 15 inventory value is $14,399.92 (8 × $1,799.99). XPS 13 has $39,599.63 more total inventory value.","LLM response: To compare the inventory value of Dell XPS 13 and Dell XPS 15, we need to calculate the total value of each item in stock.
+
+For Dell XPS 13:
+Stock: 45
+Price: $1199.99
+Inventory Value = Stock * Price = 45 * $1199.99 = $53,999.55
+
+For Dell XPS 15:
+Stock: 8
+Price: $1799.99
+Inventory Value = Stock * Price = 8 * $1799.99 = $14,399.92
+
+The inventory value of Dell XPS 13 ($53,999.55) is higher than that of Dell XPS 15 ($14,399.92).",
+LLM-only,What is the combined stock of all Bose products?,llm,llm,2.488282707054168,All Bose products are on Shelf E and have a combined stock of 88 units.,"LLM response: To find the combined stock of all Bose products, I will look at the inventory list. 
+
+The Bose products are:
+- Bose QuietComfort 45, Stock: 11
+- Bose QuietComfort Ultra, Stock: 7
+- Bose SoundLink Flex, Stock: 25
+- Bose Soundbar 600, Stock: 9
+- Bose Replacement Ear Pads, Stock: 36
+
+Now, I will add up the stock of all these items:
+11 + 7 + 25 + 9 + 36 = 88
+
+The combined stock of all Bose products is 88.",
+LLM-only,Which Samsung product contributes the most units to Shelf B?,llm,llm,1.4050385620212182,"Samsung Galaxy S23 contributes the most units to Shelf B, with 196 units.","LLM response: The Samsung product that contributes the most units to Shelf B is the Samsung Galaxy S23, with a stock of 196 units.",
+LLM-only,"Order Shelves D, E, and G from lowest to highest total stock.",llm,llm,6.645310038002208,"From lowest to highest: Shelf E = 88, Shelf D = 109, Shelf G = 191.","LLM response: To determine the order, we need to calculate the total stock for each shelf.
+
+Shelf D:
+- Dell XPS 13: 45
+- Dell XPS 15: 8
+- Dell Inspiron 14: 14
+- Dell Laptop Charger: 23
+- Dell Laptop Bag: 19
+Total stock for Shelf D: 45 + 8 + 14 + 23 + 19 = 109
+
+Shelf E:
+- Bose QuietComfort 45: 11
+- Bose QuietComfort Ultra: 7
+- Bose SoundLink Flex: 25
+- Bose Soundbar 600: 9
+- Bose Replacement Ear Pads: 36
+Total stock for Shelf E: 11 + 7 + 25 + 9 + 36 = 88
+
+Shelf G:
+- Sony PlayStation 5: 99
+- PlayStation DualSense Controller: 45
+- PlayStation VR2: 12
+- PlayStation 5 Games Bundle: 8
+- PlayStation Charging Station: 27
+Total stock for Shelf G: 99 + 45 + 12 + 8 + 27 = 191
+
+Now, ordering the shelves from lowest to highest total stock:
+1. Shelf E (88)
+2. Shelf D (109)
+3. Shelf G (191)
+
+So, the order is: Shelf E, Shelf D, Shelf G.",
+LLM-only,What fraction of Shelf G stock is Sony PlayStation 5?,llm,llm,5.181916096946225,"Sony PlayStation 5 accounts for 99 of Shelf G's 191 units, which is approximately 51.83%.","LLM response: To find the fraction of Shelf G stock that is Sony PlayStation 5, we need to know the total stock on Shelf G and the stock of Sony PlayStation 5.
+
+The items on Shelf G are:
+1. Sony PlayStation 5 - Stock: 99
+2. PlayStation DualSense Controller - Stock: 45
+3. PlayStation VR2 - Stock: 12
+4. PlayStation 5 Games Bundle - Stock: 8
+5. PlayStation Charging Station - Stock: 27
+
+Total stock on Shelf G = 99 + 45 + 12 + 8 + 27 = 191
+
+Stock of Sony PlayStation 5 = 99
+
+Fraction of Shelf G stock that is Sony PlayStation 5 = 99 / 191 ≈ 0.518 or 51.8%",
+LLM-only,How much inventory value is represented by the Sony PlayStation 5 stock?,llm,llm,2.5895997480256483,"Sony PlayStation 5 inventory value is 99 × $499.99 = $49,499.01.","LLM response: To find the total inventory value of the Sony PlayStation 5 stock, we need to multiply the stock quantity by the price of each item.
+
+Stock quantity: 99
+Price: $499.99
+
+Total inventory value = Stock quantity * Price
+= 99 * $499.99
+= $49,499.01
+
+So, the total inventory value represented by the Sony PlayStation 5 stock is $49,499.01.",
+LLM-only,Compare the combined stock of Apple phones with Samsung phones.,llm,llm,2.951415273011662,"Apple phones total 28 units (iPhone 14 = 10, iPhone 14 Pro = 10, iPhone 13 = 8). Samsung phones total 218 units (Galaxy S23 = 196, Galaxy S24 = 22). Samsung phones exceed Apple phones by 190 units.","LLM response: To compare the combined stock of Apple phones with Samsung phones, we need to identify the relevant items in the inventory.
+
+Apple phones:
+- Apple iPhone 14: 10
+- Apple iPhone 14 Pro: 10
+- Apple iPhone 13: 8
+
+Combined stock of Apple phones: 10 + 10 + 8 = 28
+
+Samsung phones:
+- Samsung Galaxy S23: 196
+- Samsung Galaxy S24: 22
+
+Combined stock of Samsung phones: 196 + 22 = 218
+
+The combined stock of Samsung phones (218) is higher than the combined stock of Apple phones (28).",
+LLM-only,Which shelf is closest to the warehouse-wide average stock per shelf?,llm,llm,7.183589422958903,"Total warehouse stock is 1,081 units, so the average is 154.43 units per shelf. Shelf F, with 132 units, is closest to the average.","LLM response: To find the shelf closest to the warehouse-wide average stock per shelf, we need to calculate the average stock per shelf first. 
+
+Let's calculate the total stock:
+10 + 10 + 8 + 45 + 32 + 196 + 22 + 15 + 27 + 66 + 16 + 23 + 18 + 31 + 42 + 45 + 8 + 14 + 23 + 19 + 11 + 7 + 25 + 9 + 36 + 7 + 14 + 22 + 31 + 58 + 99 + 45 + 12 + 8 + 27 = 892
+
+There are 7 shelves (A, B, C, D, E, F, G) with items, but some shelves have multiple items. To calculate the average stock per shelf, we need to calculate the total stock per shelf:
+Shelf A: 10 + 10 + 8 + 45 + 32 = 105
+Shelf B: 196 + 22 + 15 + 27 + 66 = 326
+Shelf C: 16 + 23 + 18 + 31 + 42 = 130
+Shelf D: 45 + 8 + 14 + 23 + 19 = 109
+Shelf E: 11 + 7 + 25 + 9 + 36 = 88
+Shelf F: 7 + 14 + 22 + 31 + 58 = 132
+Shelf G: 99 + 45 + 12 + 8 + 27 = 191
+
+Now, let's calculate the average stock per shelf:
+(105 + 326 + 130 + 109 + 88 + 132 + 191) / 7 = 1143 / 7 ≈ 163.29
+
+The shelf closest to the warehouse-wide average stock per shelf is Shelf D with a total stock of 109, which is closest to the average of 163.29.",
+LLM-only,What is the combined stock of the three lowest-stock products?,llm,llm,5.971123720053583,"The two lowest-stock products are Bose QC Ultra (7) and Logitech MX Master 3 (7). The next-lowest level is 8 units, shared by Dell XPS 15 and Sony Games Bundle. Any valid three-product selection from these lowest levels totals 22 units; the third position is tied.","LLM response: To find the combined stock of the three lowest-stock products, I need to identify the products with the lowest stock levels.
+
+After reviewing the inventory, I found the following products with the lowest stock levels:
+
+1. PlayStation VR2 - Stock: 8
+2. Dell XPS 15 - Stock: 8
+3. PlayStation 5 Games Bundle - Stock: 8
+
+The combined stock of these three products is: 8 + 8 + 8 = 24
+
+So, the combined stock of the three lowest-stock products is 24.",
+LLM-only,"Give a short comparison of total stock on Shelves A, C, and F.",llm,llm,6.144400493009016,"Shelf A has 105 units, Shelf C has 130 units, and Shelf F has 132 units. Shelf F is highest by 2 units over Shelf C; Shelf C exceeds Shelf A by 25 units.","LLM response: To compare the total stock on Shelves A, C, and F, I'll calculate the total stock for each shelf.
+
+Shelf A: 
+10 (Apple iPhone 14) + 10 (Apple iPhone 14 Pro) + 8 (Apple iPhone 13) + 45 (iPhone Charging Cable) + 32 (iPhone Screen Protector) = 105
+
+Shelf C: 
+16 (Sony WH-1000XM5) + 23 (Sony WH-CH720N) + 18 (Sony WF-1000XM5) + 31 (Sony Extra Bass Headphones) + 42 (Sony Carrying Case) = 130
+
+Shelf F: 
+7 (Logitech MX Master 3) + 14 (Logitech MX Keys) + 22 (Logitech G Pro X Superlight) + 31 (Logitech Webcam C920) + 58 (Logitech Mouse Pad) = 132
+
+Based on the calculations, Shelf F has the highest total stock (132), followed closely by Shelf C (130), and then Shelf A (105).",
+RAG-only,Apple iPhone 13,direct,rag,2.1479416550137103,Apple iPhone 13 is on Shelf A with stock 8 and unit price $599.99.,"The Apple iPhone 13 is located on Shelf A with the following details: 
+- Shelf ID: A
+- Location: (-0.151, 2.203, 0.001)
+- Stock: 8
+- Price: $599.99
+- Category: Smartphones",
+RAG-only,Samsung Galaxy Tab S9,direct,rag,2.641094480990432,Samsung Galaxy Tab S9 is on Shelf B with stock 15 and unit price $699.99.,"The Samsung Galaxy Tab S9 is located on Shelf B, with a stock of 15 and a price of $699.99. It belongs to the category of Tablets.",
+RAG-only,Sony WH-CH720N,direct,rag,1.4651353120571002,Sony WH-CH720N is on Shelf C with stock 23 and unit price $129.99.,"The Sony WH-CH720N is located on Shelf C, with the following details: 
+- Shelf ID: C
+- Location: (3.265, 2.080, 0.001)
+- Stock: 23
+- Price: $129.99
+- Category: Headphones",
+RAG-only,Sony Extra Bass Headphones,direct,rag,1.7865332779474556,Sony Extra Bass Headphones is on Shelf C with stock 31 and unit price $79.99.,"The Sony Extra Bass Headphones are located on Shelf C, with a stock of 31 and a price of $79.99. They belong to the category of Headphones.",
+RAG-only,Dell Inspiron 14,direct,rag,2.062940309057012,Dell Inspiron 14 is on Shelf D with stock 14 and unit price $699.99.,"The Dell Inspiron 14 is located on Shelf D, with a stock of 14 and a price of $699.99. It belongs to the Laptops category.",
+RAG-only,Dell Laptop Bag,direct,rag,1.521266159019433,Dell Laptop Bag is on Shelf D with stock 19 and unit price $49.99.,"The Dell Laptop Bag is located on Shelf D, with a stock of 19 and a price of $49.99. It belongs to the Accessories category.",
+RAG-only,Bose QuietComfort Ultra,direct,rag,2.064310133922845,Bose QuietComfort Ultra is on Shelf E with stock 7 and unit price $429.99.,"The Bose QuietComfort Ultra is located on Shelf E, with a stock of 7 and a price of $429.99. It belongs to the category of Headphones.",
+RAG-only,Bose Soundbar 600,direct,rag,1.858167732018046,Bose Soundbar 600 is on Shelf E with stock 9 and unit price $399.99.,"The Bose Soundbar 600 is located on Shelf E, with a stock of 9 units, and a price of $399.99. It belongs to the Home Audio category.",
+RAG-only,Logitech G Pro X Superlight,direct,rag,1.6369446020107716,Logitech G Pro X Superlight is on Shelf F with stock 22 and unit price $149.99.,"The Logitech G Pro X Superlight is located on Shelf F, with the following details: 
+- Shelf ID: F
+- Location: (8.776, 2.159, 0.003)
+- Stock: 22
+- Price: $149.99
+- Category: Gaming Mouse",
+RAG-only,Logitech Webcam C920,direct,rag,2.6153765129856765,Logitech Webcam C920 is on Shelf F with stock 31 and unit price $69.99.,"The Logitech Webcam C920 is located on Shelf F, with a Shelf ID of F, at the location (8.776, 2.159, 0.003). The current stock is 31 units, and the price is $69.99. It belongs to the category of Webcams.",
+RAG-only,PlayStation VR2,direct,rag,1.2035177620127797,PlayStation VR2 is on Shelf G with stock 12 and unit price $549.99.,"The PlayStation VR2 is located on Shelf G, with the following details: 
+- Shelf ID: G
+- Location: (6.213, 3.981, 0.001)
+- Stock: 12
+- Price: $549.99
+- Category: Virtual Reality",
+RAG-only,PlayStation 5 Games Bundle,direct,rag,2.103786278050393,PlayStation 5 Games Bundle is on Shelf G with stock 8 and unit price $59.99.,"The PlayStation 5 Games Bundle is located on Shelf G with the following details: 
+- Shelf ID: G
+- Location: (6.213, 3.981, 0.001)
+- Stock: 8
+- Price: $59.99
+- Category: Software",
+RAG-only,PlayStation Charging Station,direct,rag,3.025560175999999,PlayStation Charging Station is on Shelf G with stock 27 and unit price $29.99.,"The PlayStation Charging Station is located on Shelf G, with a stock of 27 and a price of $29.99. It belongs to the Accessories category.",
+RAG-only,Bose Replacement Ear Pads,direct,rag,2.6175079259555787,Bose Replacement Ear Pads is on Shelf E with stock 36 and unit price $29.99.,"The Bose Replacement Ear Pads are located on Shelf E, with a stock of 36 and a price of $29.99. They belong to the Accessories category.",
+RAG-only,Logitech Mouse Pad,direct,rag,1.2386445819865912,Logitech Mouse Pad is on Shelf F with stock 58 and unit price $19.99.,"The Logitech Mouse Pad is located on Shelf F, with a stock of 58 units, and a price of $19.99. It belongs to the Accessories category. Its location coordinates are (8.776, 2.159, 0.003).",
+RAG-only,orange reflective vest,keyword,rag,2.41576120397076,High-visibility clothing may be yellow or orange and must be reflective.,"According to the context, High-Visibility Vests should be ""Fluorescent yellow or orange with reflective stripes."" Therefore, an orange reflective vest is an acceptable option for a High-Visibility Vest.",
+RAG-only,helmet use in loading zones,keyword,rag,0.6621457969304174,Safety helmets are required in loading areas.,"According to the context, Safety Helmets are ""Required at all times inside loading areas.""",
+RAG-only,forklift operator renewal,keyword,rag,1.7162684999639168,Forklift operators must be recertified every 2 years.,Forklift operators must be recertified every 2 years.,
+RAG-only,chemical storage ventilation,keyword,rag,0.5047485949471593,"Hazardous chemicals must be stored in locked, ventilated cabinets.",Hazardous chemicals must be stored in locked ventilated cabinets.,
+RAG-only,emergency exit markings,keyword,rag,1.181786980945617,"Each zone must have at least 2 emergency exits, and the exits must be clearly marked.",Emergency Exits are clearly marked.,
+RAG-only,first aid inspection,keyword,rag,0.4655938509386033,First-aid kits must be checked weekly.,First Aid Kits must be checked weekly by a safety officer.,
+RAG-only,warehouse incident portal,keyword,rag,3.08065150200855,"Under the 2025 procedure, incidents are reported within 2 hours using Form WHS-101 through the internal portal.","The warehouse incident portal is mentioned in two sections: 
+
+1. SECTION 6: INCIDENT REPORTING & FEEDBACK (Chunk 6) - Anonymous feedback can be submitted via the internal portal.
+2. SECTION 6: FIRST AID AND INCIDENT REPORTING (Chunk 12) - Incident Reports can be submitted using the internal safety portal.
+
+However, the exact URL or location of the portal is not provided in the given context.",
+RAG-only,LOTO annual review,keyword,rag,0.6445199269801378,The lockout/tagout (LOTO) procedure is reviewed every 12 months.,The review of Lockout/Tagout (LOTO) procedures is required every 12 months.,
+RAG-only,spill response pads,keyword,rag,1.096805521985516,Spills must be reported and cleaned immediately using absorbent pads.,Spillages must be reported and cleaned immediately using absorbent pads.,
+RAG-only,visitor safety gear,keyword,rag,4.81860473100096,Visitors are required to wear PPE. The manual does not specify a separate detailed visitor PPE list.,"According to the context, visitor safety gear is mentioned in Source: Safety Manual, Chunk 10, SECTION 4: VISITOR PROTOCOL. It states that ""PPE is required for visitors entering the warehouse floor."" 
+
+The required PPE is specified in Source: Safety Manual, Chunk 8, SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE) as:
+- Safety Helmets 
+- High-Visibility Vests 
+- Steel-Toed Boots 
+- Cut-Resistant Gloves 
+- Hearing Protection (in areas above 85 dB)",
+RAG-only,fire drill schedule,keyword,rag,0.8774043560260907,Fire drills are conducted every 6 months.,"The fire drill schedule is every 6 months. If a drill is missed, retraining is required.",
+RAG-only,hearing protection rule,keyword,rag,0.46410371095407754,Hearing protection is required where noise levels exceed 85 dB.,Hearing protection is required in areas above 85 dB.,
+RAG-only,green waste bin,keyword,rag,0.9702093820087612,The green bin is used for plastic waste.,The green waste bin is for Plastic.,
+RAG-only,damaged item inspection area,keyword,rag,1.051147143007256,Damaged goods should be moved to the Inspection Zone.,"The damaged goods must be placed in the ""Inspection Zone"" before tagging.",
+RAG-only,inventory discrepancy reporting,keyword,rag,1.7127689380431548,Inventory discrepancies should be reported to the Inventory Supervisor.,"According to the context, inventory discrepancies must be reported immediately to the Inventory Supervisor (Source: Safety Manual, Chunk 2, SECTION 2: INVENTORY HANDLING).",
+RAG-only,What should a visitor wear before entering operational warehouse areas?,rag,rag,4.122236546012573,Visitors must wear PPE before entering operational warehouse areas. The manual does not provide a separate detailed list of visitor PPE items.,"According to the context, a visitor must wear a visitor badge (as stated in SECTION 4: VISITOR PROTOCOL) and PPE (Personal Protective Equipment) is required for visitors entering the warehouse floor. 
+
+The specific PPE required is not specified in the visitor protocol section, but in SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE), it is stated that Safety Helmets are required at all times inside loading areas, and other PPE such as High-Visibility Vests, Steel-Toed Boots, Cut-Resistant Gloves, and Hearing Protection may be required depending on the area and activities. 
+
+Therefore, before entering operational warehouse areas, a visitor should at least wear a visitor badge and the required PPE for the specific area they will be entering.",
+RAG-only,What are the documented requirements for a safe chemical-storage cabinet?,rag,rag,0.837449107086286,"Hazardous chemicals must be kept in locked, ventilated cabinets.",The documented requirements for a safe chemical-storage cabinet are that it must be locked and ventilated.,
+RAG-only,What must an operator do to remain qualified to drive a forklift?,rag,rag,0.8554294520290568,Forklift operators must be certified and must be recertified every 2 years.,"To remain qualified to drive a forklift, an operator must be recertified every 2 years.",
+RAG-only,What procedure is specified when an inventory discrepancy is discovered?,rag,rag,0.6931196580408141,The inventory discrepancy should be reported to the Inventory Supervisor.,"When an inventory discrepancy is discovered, the procedure specified is to ""Report discrepancies immediately to the Inventory Supervisor.""",
+RAG-only,What should happen to damaged goods before further handling?,rag,rag,1.1126362719805911,Damaged goods should be moved to the Inspection Zone for inspection.,Damaged goods must be placed in the “Inspection Zone” before tagging.,
+RAG-only,What are the manual's requirements for emergency assembly locations?,rag,rag,2.250656091957353,Emergency assembly points must be located 50 m away and identified with green signage.,"The manual requires that Assembly Points be 50 meters from the building and marked with green signage. (Source: Safety Manual, Chunk 9, SECTION 3: FIRE SAFETY & EVACUATION PROCEDURES)",
+RAG-only,What reporting steps apply to an injury under the current 2025 procedure?,rag,rag,6.018946784897707,"Under the 2025 procedure, an injury/incident must be reported within 2 hours using Form WHS-101 through the internal portal.","According to the provided context, the reporting steps for an injury are as follows:
+
+1. The incident must be reported within a certain time frame, but there are conflicting time frames given: 
+   - 1 hour (Source: Safety Manual, Chunk 6, SECTION 6: INCIDENT REPORTING & FEEDBACK)
+   - 2 hours (Source: Safety Manual, Chunk 12, SECTION 6: FIRST AID AND INCIDENT REPORTING)
+
+2. The report must be submitted using a specific form, but again, there are conflicting forms given:
+   - Form WHS-207 (Source: Safety Manual, Chunk 6, SECTION 6: INCIDENT REPORTING & FEEDBACK)
+   - Form WHS-101 (Source: Safety Manual, Chunk 12, SECTION 6: FIRST AID AND INCIDENT REPORTING)
+
+3. The report should be submitted to the Shift Supervisor (Source: Safety Manual, Chunk 6, SECTION 6: INCIDENT REPORTING & FEEDBACK) or via the internal safety portal (Source: Safety Manual, Chunk 12, SECTION 6: FIRST AID AND INCIDENT REPORTING).
+
+Since the context does not specify which procedure is current or takes precedence, both sets of instructions are provided.",
+RAG-only,What does the manual require after a safety violation?,rag,rag,1.2777624709997326,Additional safety training is required after a safety violation or accident; routine safety training is also conducted annually.,The manual requires Safety Training immediately after any safety violation or accident.,
+RAG-only,What are workers instructed to do when a spill is discovered?,rag,rag,0.6235079569742084,Workers must report the spill and clean it immediately using absorbent pads.,"When a spill is discovered, workers are instructed to report it and clean it immediately using absorbent pads.",
+RAG-only,What evacuation restrictions apply to elevators?,rag,rag,0.941430598963052,Elevators must never be used during an evacuation.,Never use elevators during evacuation.,
+RAG-only,What inspection schedule applies to firefighting equipment?,rag,rag,0.6250536709558219,Fire extinguishers are positioned every 15 m and are inspected monthly.,The inspection schedule for firefighting equipment (fire extinguishers) is monthly.,
+RAG-only,What PPE is required when employees handle sharp objects?,rag,rag,0.7863411450525746,Cut-resistant gloves are mandatory when handling sharp materials.,Cut-Resistant Gloves are mandatory when handling sharp materials.,
+RAG-only,What does the manual specify for hearing protection in noisy areas?,rag,rag,3.10139129194431,Hearing protection is required in areas where noise exceeds 85 dB.,The manual specifies that Hearing Protection is required in areas above 85 dB.,
+RAG-only,What are the requirements for the number and marking of emergency exits?,rag,rag,2.5520456800004467,"There must be at least 2 emergency exits per zone, and they must be clearly marked.","The requirements for emergency exits are: 
+- At least two emergency exits per zone, and 
+- They must be clearly marked.",
+RAG-only,What contact information is provided for a medical emergency?,rag,rag,2.636255479999818,The medical emergency contact is extension 221.,"The contact information provided for a medical emergency is:
+
+- On-site Medical Officer: Ext. 221
+
+This information is found in SECTION 8: EMERGENCY CONTACTS of the Safety Manual.",
+RAG-only,By how many units does Shelf B exceed Shelf C?,llm,rag,5.142913597985171,Shelf B has 326 units and Shelf C has 130 units. Shelf B exceeds Shelf C by 196 units.,"To find the answer, we need to calculate the total stock of Shelf B and Shelf C.
+
+Shelf B items: 
+- Samsung Fast Charger: 66 units
+- Samsung Galaxy S24: 22 units
+- Samsung Galaxy S23: 196 units
+Total stock of Shelf B: 66 + 22 + 196 = 284 units
+
+Shelf C items: 
+- Sony WF-1000XM5: 18 units
+- Sony WH-CH720N: 23 units
+- Sony WH-1000XM5: 16 units
+- Sony Carrying Case: 42 units
+Total stock of Shelf C: 18 + 23 + 16 + 42 = 99 units
+
+Now, let's calculate the difference: 
+284 (Shelf B) - 99 (Shelf C) = 185 units
+
+Shelf B exceeds Shelf C by 185 units.",
+RAG-only,Which shelf is second highest in total stock?,llm,rag,11.858685998944566,Shelf G is second highest with 191 units. Shelf B is highest with 326 units.,"To find the shelf that is second highest in total stock, we need to calculate the total stock for each shelf.
+
+Shelf F: Logitech G Pro X Superlight (22) + Logitech MX Master 3 (7) + Logitech Webcam C920 (31) = 22 + 7 + 31 = 60
+
+Shelf B: Samsung Galaxy S24 (22) + Samsung Fast Charger (66) = 22 + 66 = 88
+
+Shelf D: Dell XPS 13 (45) + Dell XPS 15 (8) = 45 + 8 = 53
+
+Shelf C: Sony WH-1000XM5 (16) + Sony Carrying Case (42) = 16 + 42 = 58
+
+Now, let's compare the total stock for each shelf:
+- Shelf B: 88
+- Shelf D: 53
+- Shelf F: 60
+- Shelf C: 58
+
+The shelf with the highest total stock is Shelf B (88). The shelf that is second highest in total stock is Shelf F (60).",
+RAG-only,Calculate the combined stock of Shelves A and G.,llm,rag,4.591625398024917,"Shelf A has 105 units and Shelf G has 191 units, for a combined stock of 296 units.","To calculate the combined stock of Shelves A and G, we need to find the stock of items on these shelves.
+
+For Shelf G, we have:
+- PlayStation 5 Games Bundle: Stock = 8
+- Sony PlayStation 5: Stock = 99
+
+Combined stock of Shelf G = 8 + 99 = 107
+
+For Shelf A, there is no item listed in the context. 
+
+Since there is no stock information for Shelf A, we cannot calculate the combined stock of Shelves A and G. The answer is not in the context for Shelf A. However, we can say the stock of Shelf G is 107.",
+RAG-only,Which two products share the minimum stock level?,llm,rag,5.936300356988795,"Bose QC Ultra and Logitech MX Master 3 share the minimum stock level, with 7 units each.","To find the products with the minimum stock level, we need to compare the stock levels of all the products.
+
+The stock levels are:
+- Sony Carrying Case: 42
+- PlayStation 5 Games Bundle: 8
+- PlayStation DualSense Controller: 45
+- Logitech G Pro X Superlight: 22
+- Samsung Fast Charger: 66
+- Sony WH-1000XM5: 16
+- Sony WH-CH720N: 23
+- Sony PlayStation 5: 99
+- Logitech MX Master 3: 7
+
+The minimum stock level is 7, which is shared by the Logitech MX Master 3. However, the PlayStation 5 Games Bundle has a stock level of 8, which is close to the minimum. 
+
+The product with the minimum stock level is the Logitech MX Master 3 with a stock level of 7. The next lowest stock level is 8, which is the PlayStation 5 Games Bundle.
+
+So, the two products with the minimum and next to minimum stock levels are the Logitech MX Master 3 and the PlayStation 5 Games Bundle.",
+RAG-only,How many total units are stored on Shelves D and E together?,llm,rag,3.835812245029956,"Shelf D has 109 units and Shelf E has 88 units, for a combined total of 197 units.","To find the total units stored on Shelves D and E, we need to add the stock of items on these shelves.
+
+For Shelf D: 
+- Dell XPS 13 has a stock of 45 units.
+- Dell XPS 15 has a stock of 8 units.
+
+Total units on Shelf D = 45 + 8 = 53 units.
+
+There are no items listed for Shelf E. 
+
+Since there are no items on Shelf E, the total units on Shelf E = 0 units.
+
+Total units on Shelves D and E = 53 + 0 = 53 units.",
+RAG-only,Compare the inventory value of Dell XPS 13 with Dell XPS 15.,llm,rag,4.448290870990604,"Dell XPS 13 inventory value is $53,999.55 (45 × $1,199.99). Dell XPS 15 inventory value is $14,399.92 (8 × $1,799.99). XPS 13 has $39,599.63 more total inventory value.","To compare the inventory value of Dell XPS 13 with Dell XPS 15, we need to calculate the total value of each item.
+
+For Dell XPS 13:
+Stock: 45
+Price: $1199.99
+Total Value = Stock * Price = 45 * $1199.99 = $53999.55
+
+For Dell XPS 15:
+Stock: 8
+Price: $1799.99
+Total Value = Stock * Price = 8 * $1799.99 = $14399.92
+
+Comparing the two:
+$53999.55 (Dell XPS 13) > $14399.92 (Dell XPS 15)
+
+The inventory value of Dell XPS 13 is greater than that of Dell XPS 15.",
+RAG-only,What is the combined stock of all Bose products?,llm,rag,3.5096015349263325,All Bose products are on Shelf E and have a combined stock of 88 units.,"To find the combined stock of all Bose products, we need to add the stock of each Bose item.
+
+Bose Replacement Ear Pads: 36
+Bose QuietComfort 45: 11
+Bose QuietComfort Ultra: 7
+Bose SoundLink Flex: 25
+Bose Soundbar 600: 9
+
+Combined stock = 36 + 11 + 7 + 25 + 9
+Combined stock = 88
+
+The answer is 88.",
+RAG-only,Which Samsung product contributes the most units to Shelf B?,llm,rag,4.884190995944664,"Samsung Galaxy S23 contributes the most units to Shelf B, with 196 units.","To find out which Samsung product contributes the most units to Shelf B, we need to compare the stock of each Samsung product on Shelf B.
+
+The Samsung products on Shelf B are:
+- Samsung Fast Charger with a stock of 66
+- Samsung Galaxy S24 with a stock of 22
+- Samsung Galaxy S23 with a stock of 196
+- Samsung Galaxy Tab S9 with a stock of 15
+- Samsung Wireless Earbuds with a stock of 27
+
+Comparing these stocks:
+196 (Samsung Galaxy S23) > 66 (Samsung Fast Charger) > 27 (Samsung Wireless Earbuds) > 22 (Samsung Galaxy S24) > 15 (Samsung Galaxy Tab S9)
+
+So, the Samsung Galaxy S23 contributes the most units to Shelf B with a stock of 196 units.",
+RAG-only,"Order Shelves D, E, and G from lowest to highest total stock.",llm,rag,6.060708662960678,"From lowest to highest: Shelf E = 88, Shelf D = 109, Shelf G = 191.","To determine the order, we need to calculate the total stock for each shelf.
+
+Shelf D: 
+Dell XPS 13: 45
+Dell Laptop Bag: 19
+Dell XPS 15: 8
+Dell Inspiron 14: 14
+Total stock for Shelf D: 45 + 19 + 8 + 14 = 86
+
+Shelf E: 
+There is no information about Shelf E in the context.
+
+Shelf G: 
+Sony PlayStation 5: 99
+PlayStation 5 Games Bundle: 8
+Total stock for Shelf G: 99 + 8 = 107
+
+Since Shelf E has no information, we can only compare Shelves D and G. 
+The order from lowest to highest total stock is: 
+1. Shelf D: 86
+2. Shelf G: 107
+
+Note: Shelf E is not included in the order as there is no information about it in the context.",
+RAG-only,What fraction of Shelf G stock is Sony PlayStation 5?,llm,rag,2.473751906072721,"Sony PlayStation 5 accounts for 99 of Shelf G's 191 units, which is approximately 51.83%.","To find the fraction of Shelf G stock that is Sony PlayStation 5, we need to calculate the total stock on Shelf G and then divide the stock of Sony PlayStation 5 by the total stock.
+
+The items on Shelf G are:
+- Sony PlayStation 5 (Stock: 99)
+- PlayStation 5 Games Bundle (Stock: 8)
+- PlayStation DualSense Controller (Stock: 45)
+- PlayStation Charging Station (Stock: 27)
+- PlayStation VR2 (Stock: 12)
+
+Total stock on Shelf G = 99 + 8 + 45 + 27 + 12 = 191
+
+Stock of Sony PlayStation 5 = 99
+
+Fraction of Shelf G stock that is Sony PlayStation 5 = 99 / 191 ≈ 0.518 or 51.8%",
+RAG-only,How much inventory value is represented by the Sony PlayStation 5 stock?,llm,rag,1.4917755839414895,"Sony PlayStation 5 inventory value is 99 × $499.99 = $49,499.01.","To find the inventory value of the Sony PlayStation 5 stock, we need to multiply the stock quantity by the price.
+
+Stock quantity: 99
+Price: $499.99
+
+Inventory value = Stock quantity * Price
+= 99 * $499.99
+= $49499.01
+
+So, the inventory value represented by the Sony PlayStation 5 stock is $49499.01.",
+RAG-only,Compare the combined stock of Apple phones with Samsung phones.,llm,rag,9.296923149027862,"Apple phones total 28 units (iPhone 14 = 10, iPhone 14 Pro = 10, iPhone 13 = 8). Samsung phones total 218 units (Galaxy S23 = 196, Galaxy S24 = 22). Samsung phones exceed Apple phones by 190 units.","To compare the combined stock of Apple phones with Samsung phones, we need to calculate the total stock of each.
+
+Apple phones:
+- Apple iPhone 14 Pro: 10
+- Apple iPhone 14: 10
+- Apple iPhone 13: 8
+Total Apple phones stock: 10 + 10 + 8 = 28
+
+Samsung phones:
+- Samsung Galaxy S24: 22
+- Samsung Galaxy S23: 196
+Total Samsung phones stock: 22 + 196 = 218
+
+Comparison: The combined stock of Samsung phones (218) is greater than the combined stock of Apple phones (28).",
+RAG-only,Which shelf is closest to the warehouse-wide average stock per shelf?,llm,rag,14.88683728594333,"Total warehouse stock is 1,081 units, so the average is 154.43 units per shelf. Shelf F, with 132 units, is closest to the average.","To find the warehouse-wide average stock per shelf, we need to calculate the total stock and divide it by the number of shelves.
+
+Total stock = 45 + 42 + 22 + 16 + 18 + 66 + 23 + 7 + 8 = 247
+
+Number of shelves = 4 (Shelf B, Shelf C, Shelf D, Shelf F, but Shelf C has multiple items, it's still one shelf)
+
+Average stock per shelf = Total stock / Number of shelves = 247 / 4 = 61.75
+
+Now, let's compare the stock of each shelf to the average:
+- Shelf B: 66 (stock of Samsung Fast Charger) - 66 - 61.75 = 4.25
+- Shelf C: 42 + 16 + 18 + 23 = 99 (stock of Sony Carrying Case, Sony WH-1000XM5, Sony WF-1000XM5, Sony WH-CH720N) - 99 - 61.75 = 37.25
+- Shelf D: 45 + 8 = 53 (stock of Dell XPS 13 and Dell XPS 15) - 53 - 61.75 = -8.75
+- Shelf F: 22 + 7 = 29 (stock of Logitech G Pro X Superlight and Logitech MX Master 3) - 29 - 61.75 = -32.75
+
+The shelf closest to the warehouse-wide average stock per shelf is Shelf B with a difference of 4.25.",
+RAG-only,What is the combined stock of the three lowest-stock products?,llm,rag,4.646222945069894,"The two lowest-stock products are Bose QC Ultra (7) and Logitech MX Master 3 (7). The next-lowest level is 8 units, shared by Dell XPS 15 and Sony Games Bundle. Any valid three-product selection from these lowest levels totals 22 units; the third position is tied.","To find the combined stock of the three lowest-stock products, we need to identify the products with the lowest stock and add their stock quantities.
+
+The products with the lowest stock are:
+1. PlayStation 5 Games Bundle (Stock: 8)
+2. Logitech MX Master 3 (Stock: 7)
+3. Bose QuietComfort Ultra (Stock: 7)
+
+Now, let's add their stock quantities:
+8 (PlayStation 5 Games Bundle) + 7 (Logitech MX Master 3) + 7 (Bose QuietComfort Ultra) = 22
+
+The combined stock of the three lowest-stock products is 22.",
+RAG-only,"Give a short comparison of total stock on Shelves A, C, and F.",llm,rag,8.34010962001048,"Shelf A has 105 units, Shelf C has 130 units, and Shelf F has 132 units. Shelf F is highest by 2 units over Shelf C; Shelf C exceeds Shelf A by 25 units.","To compare the total stock on Shelves A, C, and F, we need to calculate the total stock for each shelf.
+
+Shelf A: There is no information about Shelf A, so we cannot calculate the total stock.
+
+Shelf C: 
+- Sony WH-1000XM5: 16
+- Sony Carrying Case: 42
+- Sony WF-1000XM5: 18
+- Sony WH-CH720N: 23
+Total stock on Shelf C = 16 + 42 + 18 + 23 = 99
+
+Shelf F: 
+- Logitech G Pro X Superlight: 22
+- Logitech MX Master 3: 7
+Total stock on Shelf F = 22 + 7 = 29
+
+Since there is no information about Shelf A, we can only compare Shelves C and F. Shelf C has a total stock of 99, which is more than Shelf F's total stock of 29.",

@@ -1,0 +1,105 @@
+WAREHOUSE DAILY OPERATIONS GUIDE (2024)
+========================================
+
+SECTION 1: SHIFT SCHEDULES & WORKFLOW
+-------------------------------------
+- Morning Shift: 6:00 AM – 2:00 PM
+- Afternoon Shift: 2:00 PM – 10:00 PM
+- Night Shift: 10:00 PM – 6:00 AM
+- All workers must sign in 10 minutes before their shift and attend the team briefing.
+- Daily workload is divided into receiving, inventory update, picking, packing, and dispatch.
+
+SECTION 2: INVENTORY HANDLING
+-----------------------------
+- Use handheld scanners for all inventory movements.
+- Report discrepancies immediately to the Inventory Supervisor.
+- Damaged goods must be placed in the “Inspection Zone” before tagging.
+- Shelves are labeled using alphanumeric codes (e.g., A1-B3).
+
+SECTION 3: EQUIPMENT USAGE & MAINTENANCE
+----------------------------------------
+- Pallet jacks and forklifts must be returned to charging docks after shift.
+- Battery water levels should be checked every Monday morning.
+- Only trained staff may operate powered equipment (see list in Appendix A).
+- Monthly maintenance logs must be filled by the Maintenance Lead.
+
+SECTION 4: CLEANLINESS & WASTE DISPOSAL
+---------------------------------------
+- Floors must be swept at the end of each shift.
+- Spillages must be reported and cleaned immediately using absorbent pads.
+- Recycling bins are color-coded:
+  - Blue: Paper/Cardboard
+  - Green: Plastic
+  - Red: Hazardous waste
+- All cleaning supplies are stored in Room C-14.
+
+SECTION 5: SECURITY & ACCESS CONTROL
+-------------------------------------
+- Entry to the warehouse requires ID badge scans.
+- All doors auto-lock after 8:00 PM.
+- Visitors must be logged in at the front desk and accompanied at all times.
+- Security footage is retained for 30 days and reviewed weekly.
+
+SECTION 6: INCIDENT REPORTING & FEEDBACK
+----------------------------------------
+- Any injuries, equipment damage, or process violations must be reported within 1 hour.
+- Use Form WHS-207 and submit to the Shift Supervisor.
+- Anonymous feedback can be left in the box outside Room B-2 or submitted via the internal portal.
+
+WAREHOUSE DAILY OPERATIONS GUIDE (2025)
+========================================
+SECTION 1: SHIFT TIMINGS
+Morning Shift: 6:00 AM – 2:00 PM
+Afternoon Shift: 2:00 PM – 10:00 PM
+Night Shift: 10:00 PM – 6:00 AM
+All employees must clock in no later than 5 minutes before shift start,
+
+SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE)
+Safety Helmets – Required at all times inside loading areas.
+High-Visibility Vests – Fluorescent yellow or orange with reflective stripes.
+Steel-Toed Boots – Must conform to ISO 20345:2011.
+Cut-Resistant Gloves – Mandatory when handling sharp materials.
+Hearing Protection – Required in areas above 85 dB
+
+SECTION 3: FIRE SAFETY & EVACUATION PROCEDURES
+Fire Extinguishers: One every 15 meters; monthly inspection.
+Emergency Exits: At least two per zone, clearly marked.
+Evacuation Drills: Every 6 months; missed drills require retraining.
+Assembly Points: 50 meters from building, marked with green signage.
+Never use elevators during evacuation.
+
+
+SECTION 4: VISITOR PROTOCOL
+All visitors must sign in at the security desk and wear visitor badges.
+Visitors must be escorted by a warehouse employee at all times.
+PPE is required for visitors entering the warehouse floor.
+Visits should be scheduled at least 24 hours in advance.
+
+SECTION 5: MATERIAL HANDLING AND STORAGE
+Forklift operators must be certified and recertified every 2 years.
+Do not exceed 1500 kg per shelving level unless labeled otherwise.
+Use Class 2 ratchet straps for loads over 200 kg.
+Hazardous chemicals must be stored in locked ventilated cabinets.
+
+SECTION 6: FIRST AID AND INCIDENT REPORTING
+First Aid Kits must be:
+Available every 30 meters.
+Checked weekly by a safety officer.
+Incident Reports:
+Must be submitted within 2 hours using Form WHS-101.
+Use the internal safety portal for submission.
+Emergency contacts are listed on the main notice board and in Section 9.
+
+SECTION 7: TRAINING AND CERTIFICATION
+Safety Training is required:
+Annually for all employees.
+Immediately after any safety violation or accident.
+Lockout/Tagout procedures must be reviewed every 12 months.
+
+
+SECTION 8: EMERGENCY CONTACTS
+Fire Department: 101
+Police: 100
+On-site Medical Officer: Ext. 221
+Warehouse Safety Lead: Ext. 115
+

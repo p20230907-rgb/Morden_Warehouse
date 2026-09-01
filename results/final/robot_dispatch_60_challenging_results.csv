@@ -1,0 +1,364 @@
+﻿difficulty,query,expected_shelf,predicted_shelf,dispatch_correct,latency,message
+simple,Navigate to Apple iPhone 14.,A,A,True,1.278700057999231,"LLM response: The Apple iPhone 14 is located on Shelf A (ID: A). I can navigate to that shelf to retrieve or update the inventory of the Apple iPhone 14. The current stock level is 10 units, and the price is $799.99."
+simple,Navigate to Apple iPhone 14 Pro.,A,A,True,1.7349682740168646,"LLM response: To navigate to the Apple iPhone 14 Pro, I will head to Shelf A (ID: A) as it is the designated storage location for this item. According to the inventory, there are 10 units of Apple iPhone 14 Pro in stock, priced at $999.99 each, and categorized under Smartphones. I will use the handheld scanner to locate and confirm the item's presence on the shelf."
+simple,Navigate to Apple iPhone 13.,A,A,True,1.389458546997048,"LLM response: To navigate to the Apple iPhone 13, I would locate it on Shelf A (ID: A). According to the inventory, the Apple iPhone 13 is stocked on Shelf A, along with other Apple products such as the iPhone 14 and iPhone 14 Pro, as well as some accessories. I will make my way to Shelf A to find the Apple iPhone 13."
+simple,Navigate to iPhone Charging Cable.,A,A,True,4.972604960901663,"LLM response: To navigate to the iPhone Charging Cable, I would head to Shelf A (ID: A), as that is where the iPhone Charging Cable is stocked, according to the inventory."
+simple,Navigate to iPhone Screen Protector.,A,A,True,2.6340785649372265,"LLM response: To navigate to the iPhone Screen Protector, I would locate it on Shelf A (ID: A). According to the inventory, the iPhone Screen Protector is stocked on Shelf A, along with other Apple products and accessories. I would make my way to Shelf A to find the iPhone Screen Protector, which has a current stock of 32 units and a price of $9.99."
+simple,Send the robot to Samsung Galaxy S23.,B,B,True,5.284888574969955,"LLM response: To send the robot to the Samsung Galaxy S23, I need to locate it in the warehouse. According to the inventory, the Samsung Galaxy S23 is stored on Shelf B (ID: B). I will now dispatch the robot to Shelf B to retrieve or interact with the Samsung Galaxy S23 stock."
+simple,Send the robot to Samsung Galaxy S24.,B,B,True,3.7422089600004256,"LLM response: To send the robot to the Samsung Galaxy S24, I need to locate it in the warehouse. According to the inventory, the Samsung Galaxy S24 is stored on Shelf B (ID: B). I will now dispatch the robot to Shelf B to retrieve or interact with the Samsung Galaxy S24. Please let me know what action the robot should take once it reaches the location."
+simple,Send the robot to Samsung Galaxy Tab S9.,B,B,True,3.0063822680385783,"LLM response: To send the robot to the Samsung Galaxy Tab S9, I need to check the inventory. According to the inventory, the Samsung Galaxy Tab S9 is located on Shelf B (ID: B). I will now send the robot to Shelf B to retrieve the Samsung Galaxy Tab S9. Please stand by."
+simple,Send the robot to Samsung Wireless Earbuds.,B,B,True,4.223357455921359,"LLM response: To send the robot to the Samsung Wireless Earbuds, I need to locate them in the warehouse. According to the inventory, the Samsung Wireless Earbuds are stored on Shelf B (ID: B). I will now dispatch the robot to Shelf B to retrieve or perform tasks related to the Samsung Wireless Earbuds."
+simple,Send the robot to Samsung Fast Charger.,B,B,True,0.633948276983574,"LLM response: To send the robot to the Samsung Fast Charger, I need to locate it in the inventory. According to the inventory list, the Samsung Fast Charger is located on Shelf B (ID: B). I will now send the robot to Shelf B to retrieve the Samsung Fast Charger."
+simple,Go to Sony WH-1000XM5.,C,C,True,2.7735260700574145,"LLM response: The Sony WH-1000XM5 is located on Shelf C (ID: C). The current stock is 16 units, and the price is $399.99. It belongs to the category of Headphones."
+simple,Go to Sony WH-CH720N.,C,C,True,0.5467926459386945,"LLM response: The Sony WH-CH720N is located on Shelf C (ID: C). The current stock is 23, and the price is $129.99. It belongs to the category of Headphones."
+simple,Go to Sony WF-1000XM5.,C,C,True,2.442768531036563,"LLM response: The Sony WF-1000XM5 is located on Shelf C (ID: C). The current stock is 18 units, and the price is $299.99. It belongs to the Earbuds category."
+simple,Go to Sony Extra Bass Headphones.,C,C,True,5.524796356912702,"LLM response: The Sony Extra Bass Headphones are located on Shelf C (ID: C). The current stock is 31, and the price is $79.99. They belong to the category of Headphones."
+simple,Go to Sony Carrying Case.,C,C,True,11.660179733065888,"LLM response: The Sony Carrying Case is located on Shelf C (ID: C). The current stock is 42, and the price is $19.99. It falls under the category of Accessories."
+simple,Move to Dell XPS 13.,D,D,True,0.9015844940440729,"LLM response: I'm moving to the Dell XPS 13. According to the inventory, the Dell XPS 13 is located on Shelf D (ID: D). The current stock is 45, and the price is $1199.99. It falls under the category of Laptops."
+simple,Move to Dell XPS 15.,D,D,True,15.799865374923684,"LLM response: I'm moving to the Dell XPS 15. According to the inventory, the Dell XPS 15 is located on Shelf D (ID: D). The current stock is 8, and the price is $1799.99. It falls under the category of Laptops."
+simple,Move to Dell Inspiron 14.,D,D,True,5.0300549690146,"LLM response: I'm moving to the Dell Inspiron 14. According to the inventory, it's located on Shelf D (ID: D). The current stock is 14, and the price is $699.99. It's categorized as a Laptop."
+simple,Move to Dell Laptop Charger.,D,D,True,1.5347186980070546,"LLM response: The Dell Laptop Charger is located on Shelf D (ID: D). The current stock is 23, and the price is $89.99. It falls under the category of Accessories."
+simple,Move to Dell Laptop Bag.,D,D,True,2.3217449960066006,"LLM response: I'm moving to the Dell Laptop Bag. According to the inventory, the Dell Laptop Bag is located on Shelf D (ID: D), and we have a stock of 19 units with a price of $49.99. It falls under the category of Accessories."
+simple,Navigate to Bose QuietComfort 45.,E,E,True,2.660499428980984,"LLM response: To navigate to the Bose QuietComfort 45, I need to locate it on the shelves. According to the inventory, the Bose QuietComfort 45 is located on Shelf E (ID: E). I will make my way to Shelf E to find the Bose QuietComfort 45. 
+
+Once I arrive at Shelf E, I will use the handheld scanner to confirm the location and stock level of the Bose QuietComfort 45. The inventory indicates that there are 11 units in stock, priced at $329.99, and categorized as Headphones."
+simple,Navigate to Bose QuietComfort Ultra.,E,E,True,2.2261705230921507,"LLM response: To navigate to the Bose QuietComfort Ultra, I would need to go to Shelf E (ID: E). According to the inventory, the Bose QuietComfort Ultra is located on this shelf, with a stock of 7 and a price of $429.99. It is categorized as Headphones."
+simple,Navigate to Bose SoundLink Flex.,E,E,True,2.2263623889302835,LLM response: The Bose SoundLink Flex is located on Shelf E (ID: E). It has a stock of 25 units and is priced at $149.99. It falls under the category of Speakers.
+simple,Navigate to Bose Soundbar 600.,E,E,True,3.8024876889539883,"LLM response: To navigate to the Bose Soundbar 600, I will check the inventory list. According to the list, the Bose Soundbar 600 is located on Shelf E (ID: E). I will make my way to Shelf E to find the Bose Soundbar 600."
+simple,Navigate to Bose Replacement Ear Pads.,E,E,True,1.4623057049466297,"LLM response: To navigate to the Bose Replacement Ear Pads, I would need to go to Shelf E (ID: E). According to the inventory, the Bose Replacement Ear Pads are stocked on this shelf, with a current stock of 36 and a price of $29.99. They are categorized as Accessories."
+simple,Send the robot to Logitech MX Master 3.,F,F,True,4.4810555160511285,"LLM response: To send the robot to the Logitech MX Master 3, I need to check the inventory. According to the inventory, the Logitech MX Master 3 is located on Shelf F (ID: F). I will now send the robot to Shelf F to retrieve the Logitech MX Master 3. Please stand by. 
+
+The robot has been dispatched to Shelf F. Please note that the current stock of Logitech MX Master 3 is 7 units, and the price is $99.99. It is categorized as a Computer Mouse."
+simple,Send the robot to Logitech MX Keys.,F,F,True,10.3982911540661,"LLM response: To send the robot to the Logitech MX Keys, I need to check the inventory. According to the inventory, the Logitech MX Keys are located on Shelf F (ID: F). I will now send the robot to Shelf F to retrieve the Logitech MX Keys. Please wait for further confirmation."
+simple,Send the robot to Logitech G Pro X Superlight.,F,F,True,2.2894816839834675,"LLM response: To send the robot to the Logitech G Pro X Superlight, I need to locate it in the warehouse. According to the inventory, the Logitech G Pro X Superlight is stored on Shelf F (ID: F). I will now dispatch the robot to Shelf F to retrieve or interact with the Logitech G Pro X Superlight. Please stand by."
+simple,Send the robot to Logitech Webcam C920.,F,F,True,1.8934856270207092,"LLM response: To send the robot to the Logitech Webcam C920, I need to locate it in the warehouse. According to the inventory, the Logitech Webcam C920 is stored on Shelf F (ID: F). I will now dispatch the robot to Shelf F to retrieve the Logitech Webcam C920. Please stand by."
+simple,Send the robot to Logitech Mouse Pad.,F,F,True,1.6330476970179006,"LLM response: To send the robot to the Logitech Mouse Pad, I need to locate it in the inventory. According to the inventory list, the Logitech Mouse Pad is located on Shelf F (ID: F). I will now send the robot to Shelf F to retrieve the Logitech Mouse Pad. Please stand by. Robot dispatched to Shelf F."
+difficult,Send the robot to the shelf that stores the gaming console with 99 units in stock.,G,G,True,2.7857047090074047,"LLM response: To locate the shelf with the gaming console that has 99 units in stock, I will check the inventory. 
+
+According to the inventory, the Sony PlayStation 5 has 99 units in stock, and it is stored on Shelf G (ID: G). I will send the robot to Shelf G."
+difficult,Navigate to the location of the laptop model whose stock is 45 units.,D,D,True,5.1784744610777125,"LLM response: To find the location of the laptop model with a stock of 45 units, I will check the inventory list. 
+
+According to the inventory list, the Dell XPS 13 has a stock of 45 units. The Dell XPS 13 is located on Shelf D (ID: D). 
+
+I will navigate to Shelf D to find the Dell XPS 13."
+difficult,Go to the shelf containing the Bose product with the lowest stock level.,E,E,True,2.717707197065465,"LLM response: The Bose products are located on Shelf E (ID: E). To find the one with the lowest stock level, I will check the stock levels of the Bose products:
+
+1. **Bose QuietComfort 45**: Stock: 11
+2. **Bose QuietComfort Ultra**: Stock: 7
+3. **Bose SoundLink Flex**: Stock: 25
+4. **Bose Soundbar 600**: Stock: 9
+5. **Bose Replacement Ear Pads**: Stock: 36
+
+The Bose product with the lowest stock level is the Bose QuietComfort Ultra with a stock level of 7. I will go to Shelf E (ID: E) to locate it."
+difficult,Dispatch the robot to the shelf where the most heavily stocked Samsung phone is stored.,B,B,True,3.9625574430683628,"LLM response: To determine which Samsung phone is the most heavily stocked, I will review the inventory.
+
+The Samsung phones in stock are:
+- Samsung Galaxy S23 (Stock: 196)
+- Samsung Galaxy S24 (Stock: 22)
+
+The Samsung Galaxy S23 has the highest stock level, at 196 units. According to the inventory, the Samsung Galaxy S23 is stored on Shelf B (ID: B).
+
+I will dispatch the robot to Shelf B (ID: B) to access the Samsung Galaxy S23."
+difficult,Move to the shelf containing the Logitech product with the highest quantity.,F,F,True,5.843143322039396,"LLM response: To find the Logitech product with the highest quantity, I will review the inventory. 
+
+The Logitech products are:
+- Logitech MX Master 3, Shelf: Shelf F (ID: F), Stock: 7
+- Logitech MX Keys, Shelf: Shelf F (ID: F), Stock: 14
+- Logitech G Pro X Superlight, Shelf: Shelf F (ID: F), Stock: 22
+- Logitech Webcam C920, Shelf: Shelf F (ID: F), Stock: 31
+- Logitech Mouse Pad, Shelf: Shelf F (ID: F), Stock: 58
+
+The Logitech product with the highest quantity is the Logitech Mouse Pad with a stock of 58. It is located on Shelf F (ID: F). I will move to Shelf F."
+difficult,Take the robot to the shelf that contains the product priced at 549.99 dollars.,G,G,True,3.6442483300343156,"LLM response: To locate the product priced at $549.99, I will check the inventory list. 
+
+According to the inventory, the product priced at $549.99 is the PlayStation VR2, which is located on Shelf G (ID: G). I will take the robot to Shelf G."
+difficult,Navigate to the shelf containing the Sony headphones with 23 units remaining.,C,C,True,4.550411300035194,"LLM response: To find the shelf with the Sony headphones that have 23 units remaining, I will check the inventory list. 
+
+According to the inventory, the Sony WH-CH720N headphones have 23 units remaining. They are located on Shelf C (ID: C). I will navigate to Shelf C to find the Sony WH-CH720N headphones."
+difficult,Go to the shelf that contains the Apple phone with the lowest stock.,A,A,True,7.559095120988786,"LLM response: To find the shelf with the Apple phone that has the lowest stock, I will review the inventory.
+
+The Apple phones in stock are:
+- Apple iPhone 14: 10 units
+- Apple iPhone 14 Pro: 10 units
+- Apple iPhone 13: 8 units
+
+The Apple iPhone 13 has the lowest stock with 8 units. According to the inventory, the Apple iPhone 13 is located on Shelf A (ID: A). I will proceed to Shelf A."
+difficult,Send the robot to the shelf whose total stock is the highest in the warehouse.,B,A,False,7.536880612024106,"LLM response: To find the shelf with the highest total stock, I will calculate the total stock for each shelf.
+
+Shelf A: 10 (Apple iPhone 14) + 10 (Apple iPhone 14 Pro) + 8 (Apple iPhone 13) + 45 (iPhone Charging Cable) + 32 (iPhone Screen Protector) = 105
+Shelf B: 196 (Samsung Galaxy S23) + 22 (Samsung Galaxy S24) + 15 (Samsung Galaxy Tab S9) + 27 (Samsung Wireless Earbuds) + 66 (Samsung Fast Charger) = 326
+Shelf C: 16 (Sony WH-1000XM5) + 23 (Sony WH-CH720N) + 18 (Sony WF-1000XM5) + 31 (Sony Extra Bass Headphones) + 42 (Sony Carrying Case) = 130
+Shelf D: 45 (Dell XPS 13) + 8 (Dell XPS 15) + 14 (Dell Inspiron 14) + 23 (Dell Laptop Charger) + 19 (Dell Laptop Bag) = 109
+Shelf E: 11 (Bose QuietComfort 45) + 7 (Bose QuietComfort Ultra) + 25 (Bose SoundLink Flex) + 9 (Bose Soundbar 600) + 36 (Bose Replacement Ear Pads) = 88
+Shelf F: 7 (Logitech MX Master 3) + 14 (Logitech MX Keys) + 22 (Logitech G Pro X Superlight) + 31 (Logitech Webcam C920) + 58 (Logitech Mouse Pad) = 132
+Shelf G: 99 (Sony PlayStation 5) + 45 (PlayStation DualSense Controller) + 12 (PlayStation VR2) + 6 (PlayStation 5 Games Bundle) + 27 (PlayStation Charging Station) = 189
+
+The shelf with the highest total stock is Shelf B with a total stock of 326. I will send the robot to Shelf B."
+difficult,Navigate to the shelf with the second-highest total number of units.,G,A,False,13.289323297911324,"LLM response: To find the shelf with the second-highest total number of units, I need to calculate the total number of units on each shelf.
+
+Shelf A: 10 (iPhone 14) + 10 (iPhone 14 Pro) + 8 (iPhone 13) + 45 (iPhone Charging Cable) + 32 (iPhone Screen Protector) = 105 units
+Shelf B: 196 (Samsung Galaxy S23) + 22 (Samsung Galaxy S24) + 15 (Samsung Galaxy Tab S9) + 27 (Samsung Wireless Earbuds) + 66 (Samsung Fast Charger) = 326 units
+Shelf C: 16 (Sony WH-1000XM5) + 23 (Sony WH-CH720N) + 18 (Sony WF-1000XM5) + 31 (Sony Extra Bass Headphones) + 42 (Sony Carrying Case) = 130 units
+Shelf D: 45 (Dell XPS 13) + 8 (Dell XPS 15) + 14 (Dell Inspiron 14) + 23 (Dell Laptop Charger) + 19 (Dell Laptop Bag) = 109 units
+Shelf E: 11 (Bose QuietComfort 45) + 7 (Bose QuietComfort Ultra) + 25 (Bose SoundLink Flex) + 9 (Bose Soundbar 600) + 36 (Bose Replacement Ear Pads) = 88 units
+Shelf F: 7 (Logitech MX Master 3) + 14 (Logitech MX Keys) + 22 (Logitech G Pro X Superlight) + 31 (Logitech Webcam C920) + 58 (Logitech Mouse Pad) = 132 units
+Shelf G: 99 (Sony PlayStation 5) + 45 (PlayStation DualSense Controller) + 12 (PlayStation VR2) + 6 (PlayStation 5 Games Bundle) + 27 (PlayStation Charging Station) = 189 units
+
+The shelves with the total number of units in descending order are:
+1. Shelf B: 326 units
+2. Shelf G: 189 units
+3. Shelf F: 132 units
+4. Shelf C: 130 units
+5. Shelf D: 109 units
+6. Shelf A: 105 units
+7. Shelf E: 88 units
+
+I will navigate to Shelf G, which has the second-highest total number of units (189 units)."
+difficult,Move the robot to the shelf with the lowest aggregate inventory quantity.,E,A,False,26.5426618529018,"LLM response: To determine the shelf with the lowest aggregate inventory quantity, I will calculate the total stock for each shelf.
+
+Shelf A: 10 (Apple iPhone 14) + 10 (Apple iPhone 14 Pro) + 8 (Apple iPhone 13) + 45 (iPhone Charging Cable) + 32 (iPhone Screen Protector) = 105
+Shelf B: 196 (Samsung Galaxy S23) + 22 (Samsung Galaxy S24) + 15 (Samsung Galaxy Tab S9) + 27 (Samsung Wireless Earbuds) + 66 (Samsung Fast Charger) = 326
+Shelf C: 16 (Sony WH-1000XM5) + 23 (Sony WH-CH720N) + 18 (Sony WF-1000XM5) + 31 (Sony Extra Bass Headphones) + 42 (Sony Carrying Case) = 130
+Shelf D: 45 (Dell XPS 13) + 8 (Dell XPS 15) + 14 (Dell Inspiron 14) + 23 (Dell Laptop Charger) + 19 (Dell Laptop Bag) = 109
+Shelf E: 11 (Bose QuietComfort 45) + 7 (Bose QuietComfort Ultra) + 25 (Bose SoundLink Flex) + 9 (Bose Soundbar 600) + 36 (Bose Replacement Ear Pads) = 88
+Shelf F: 7 (Logitech MX Master 3) + 14 (Logitech MX Keys) + 22 (Logitech G Pro X Superlight) + 31 (Logitech Webcam C920) + 58 (Logitech Mouse Pad) = 132
+Shelf G: 99 (Sony PlayStation 5) + 45 (PlayStation DualSense Controller) + 12 (PlayStation VR2) + 6 (PlayStation 5 Games Bundle) + 27 (PlayStation Charging Station) = 189
+
+The shelf with the lowest aggregate inventory quantity is Shelf E with a total stock of 88. I will move the robot to Shelf E."
+difficult,Go to the shelf whose total stock is closest to the average stock per shelf.,F,F,True,27.111809393041767,"LLM response: To find the shelf whose total stock is closest to the average stock per shelf, I need to calculate the average stock per shelf first.
+
+There are 7 shelves (A, B, C, D, E, F, G) with the following total stocks:
+- Shelf A: 10 + 10 + 8 + 45 + 32 = 105
+- Shelf B: 196 + 22 + 15 + 27 + 66 = 326
+- Shelf C: 16 + 23 + 18 + 31 + 42 = 130
+- Shelf D: 45 + 8 + 14 + 23 + 19 = 109
+- Shelf E: 11 + 7 + 25 + 9 + 36 = 88
+- Shelf F: 7 + 14 + 22 + 31 + 58 = 132
+- Shelf G: 99 + 45 + 12 + 6 + 27 = 189
+
+The total stock across all shelves is: 105 + 326 + 130 + 109 + 88 + 132 + 189 = 979
+
+The average stock per shelf is: 979 / 7 = 139.86 (approximately)
+
+Now, I need to find the shelf whose total stock is closest to this average. 
+- Shelf A: 105 (difference from average: 34.86)
+- Shelf B: 326 (difference from average: 186.14)
+- Shelf C: 130 (difference from average: 9.86)
+- Shelf D: 109 (difference from average: 30.86)
+- Shelf E: 88 (difference from average: 51.86)
+- Shelf F: 132 (difference from average: 7.86)
+- Shelf G: 189 (difference from average: 49.14)
+
+The shelf with the total stock closest to the average stock per shelf is Shelf F, with a difference of 7.86. I will go to Shelf F."
+difficult,Send the robot to the shelf that has two more units than Shelf C.,F,A,False,6.69820859702304,"LLM response: To determine which shelf has two more units than Shelf C, I need to calculate the total stock on Shelf C. 
+
+Shelf C contains the following items and their respective stocks:
+- Sony WH-1000XM5: 16
+- Sony WH-CH720N: 23
+- Sony WF-1000XM5: 18
+- Sony Extra Bass Headphones: 31
+- Sony Carrying Case: 42
+
+The total stock on Shelf C is: 16 + 23 + 18 + 31 + 42 = 130
+
+Now, I need to find the shelf that has 130 + 2 = 132 units. 
+
+Let's calculate the total stock on each shelf:
+- Shelf A: 10 + 10 + 8 + 45 + 32 = 105
+- Shelf B: 196 + 22 + 15 + 27 + 66 = 326
+- Shelf C: 130 (already calculated)
+- Shelf D: 45 + 8 + 14 + 23 + 19 = 109
+- Shelf E: 11 + 7 + 25 + 9 + 36 = 88
+- Shelf F: 7 + 14 + 22 + 31 + 58 = 132
+- Shelf G: 99 + 45 + 12 + 6 + 27 = 189
+
+The shelf that has 132 units, which is two more units than the total stock on Shelf C (if we consider the question as asking for a shelf with a total stock two more than the total of Shelf C, which seems to be a misunderstanding of the original question), is Shelf F. 
+
+However, if the question is asking for a shelf with an item that has two more units than an item on Shelf C, it would require a different approach, and the answer might vary depending on the specific item on Shelf C being compared. 
+
+Given the information and the most straightforward interpretation, the robot should be sent to Shelf F."
+difficult,Navigate to the shelf that has 196 fewer units than Shelf B.,C,B,False,5.310260300990194,"LLM response: To find the shelf with 196 fewer units, we need to first determine the total number of units on Shelf B. 
+
+Shelf B contains the following items and their quantities:
+- Samsung Galaxy S23: 196 units
+- Samsung Galaxy S24: 22 units
+- Samsung Galaxy Tab S9: 15 units
+- Samsung Wireless Earbuds: 27 units
+- Samsung Fast Charger: 66 units
+
+Total units on Shelf B = 196 + 22 + 15 + 27 + 66 = 326 units
+
+Now, we need to find a shelf with 196 fewer units than Shelf B. 
+196 fewer units than Shelf B would be 326 - 196 = 130 units.
+
+Let's check the other shelves to see if any have around 130 units.
+
+Shelf A contains the following items and their quantities:
+- Apple iPhone 14: 10 units
+- Apple iPhone 14 Pro: 10 units
+- Apple iPhone 13: 8 units
+- iPhone Charging Cable: 45 units
+- iPhone Screen Protector: 32 units
+
+Total units on Shelf A = 10 + 10 + 8 + 45 + 32 = 105 units
+
+Shelf C contains the following items and their quantities:
+- Sony WH-1000XM5: 16 units
+- Sony WH-CH720N: 23 units
+- Sony WF-1000XM5: 18 units
+- Sony Extra Bass Headphones: 31 units
+- Sony Carrying Case: 42 units
+
+Total units on Shelf C = 16 + 23 + 18 + 31 + 42 = 130 units
+
+Shelf D contains the following items and their quantities:
+- Dell XPS 13: 45 units
+- Dell XPS 15: 8 units
+- Dell Inspiron 14: 14 units
+- Dell Laptop Charger: 23 units
+- Dell Laptop Bag: 19 units
+
+Total units on Shelf D = 45 + 8 + 14 + 23 + 19 = 109 units
+
+Shelf E contains the following items and their quantities:
+- Bose QuietComfort 45: 11 units
+- Bose QuietComfort Ultra: 7 units
+- Bose SoundLink Flex: 25 units
+- Bose Soundbar 600: 9 units
+- Bose Replacement Ear Pads: 36 units
+
+Total units on Shelf E = 11 + 7 + 25 + 9 + 36 = 88 units
+
+Shelf F contains the following items and their quantities:
+- Logitech MX Master 3: 7 units
+- Logitech MX Keys: 14 units
+- Logitech G Pro X Superlight: 22 units
+- Logitech Webcam C920: 31 units
+- Logitech Mouse Pad: 58 units
+
+Total units on Shelf F = 7 + 14 + 22 + 31 + 58 = 132 units
+
+Shelf G contains the following items and their quantities:
+- Sony PlayStation 5: 99 units
+- PlayStation DualSense Controller: 45 units
+- PlayStation VR2: 12 units
+- PlayStation 5 Games Bundle: 6 units
+- PlayStation Charging Station: 27 units
+
+Total units on Shelf G = 99 + 45 + 12 + 6 + 27 = 189 units
+
+The shelf that has 196 fewer units than Shelf B (which has 326 units) is Shelf C, with a total of 130 units."
+difficult,Take the robot to the shelf containing both the PlayStation VR2 and the DualSense Controller.,G,G,True,3.562350764987059,"LLM response: To locate the shelf containing both the PlayStation VR2 and the DualSense Controller, I will check the inventory.
+
+According to the inventory, both the PlayStation VR2 and the DualSense Controller are located on Shelf G (ID: G). I will take the robot to Shelf G."
+difficult,Go to the shelf where both Dell XPS models are stored.,D,D,True,2.131730976048857,"LLM response: To find the Dell XPS models, I'll check the inventory. According to the inventory, both the Dell XPS 13 and Dell XPS 15 are stored on Shelf D (ID: D). I'm heading to Shelf D now."
+difficult,Dispatch the robot to the shelf containing both Bose QuietComfort models.,E,E,True,3.15457024902571,"LLM response: To dispatch the robot to the shelf containing both Bose QuietComfort models, I need to locate the shelf with both Bose QuietComfort 45 and Bose QuietComfort Ultra.
+
+According to the inventory, both Bose QuietComfort 45 and Bose QuietComfort Ultra are located on Shelf E (ID: E). I will dispatch the robot to Shelf E."
+difficult,Navigate to the location that stores both the MX Keys and MX Master 3.,F,F,True,2.405744174029678,"LLM response: To find the location that stores both the MX Keys and MX Master 3, I will check the inventory list. 
+
+According to the inventory, the Logitech MX Keys and Logitech MX Master 3 are both stored on Shelf F (ID: F). I will navigate to Shelf F to locate these items."
+difficult,Send the robot to the shelf containing both Galaxy S23 and Galaxy S24.,B,B,True,2.666800203965977,"LLM response: To locate the shelf containing both Galaxy S23 and Galaxy S24, I will check the inventory. 
+
+According to the inventory, both Samsung Galaxy S23 and Samsung Galaxy S24 are located on Shelf B (ID: B). I will send the robot to Shelf B."
+difficult,Take the robot to the shelf holding the product tied for the minimum stock level that belongs to Logitech.,F,F,True,9.733360104029998,"LLM response: To find the product tied for the minimum stock level that belongs to Logitech, I need to check the inventory.
+
+The Logitech products are:
+- Logitech MX Master 3, Shelf: Shelf F (ID: F), Stock: 7
+- Logitech MX Keys, Shelf: Shelf F (ID: F), Stock: 14
+- Logitech G Pro X Superlight, Shelf: Shelf F (ID: F), Stock: 22
+- Logitech Webcam C920, Shelf: Shelf F (ID: F), Stock: 31
+- Logitech Mouse Pad, Shelf: Shelf F (ID: F), Stock: 58
+
+The minimum stock level among these products is 7, which belongs to the Logitech MX Master 3. 
+
+I will take the robot to Shelf F (ID: F), which holds the Logitech MX Master 3."
+difficult,"Go to the shelf holding the other minimum-stock product, excluding Logitech.",E,G,False,8.144118049065582,"LLM response: To find the shelf holding the other minimum-stock product, excluding Logitech, I will review the inventory.
+
+The minimum-stock products are:
+- Apple iPhone 13 (Stock: 8)
+- Dell XPS 15 (Stock: 8)
+- PlayStation VR2 (Stock: 12)
+- PlayStation 5 Games Bundle (Stock: 6)
+- Bose QuietComfort Ultra (Stock: 7)
+- Logitech MX Master 3 (Stock: 7)
+
+Excluding Logitech, the minimum-stock products are:
+- Apple iPhone 13 (Stock: 8)
+- Dell XPS 15 (Stock: 8)
+- PlayStation VR2 (Stock: 12)
+- PlayStation 5 Games Bundle (Stock: 6)
+- Bose QuietComfort Ultra (Stock: 7)
+
+The minimum-stock product, excluding Logitech, with the lowest stock is the PlayStation 5 Games Bundle (Stock: 6) and Bose QuietComfort Ultra is not the lowest. 
+
+The PlayStation 5 Games Bundle is located on Shelf G (ID: G)."
+difficult,"Send the robot to the shelf with the highest total stock, but not the shelf containing PlayStation products.",B,C,False,5.647857800940983,"LLM response: To find the shelf with the highest total stock (excluding the shelf containing PlayStation products), I will calculate the total stock for each shelf.
+
+Shelf A: 10 (Apple iPhone 14) + 10 (Apple iPhone 14 Pro) + 8 (Apple iPhone 13) + 45 (iPhone Charging Cable) + 32 (iPhone Screen Protector) = 105
+Shelf B: 196 (Samsung Galaxy S23) + 22 (Samsung Galaxy S24) + 15 (Samsung Galaxy Tab S9) + 27 (Samsung Wireless Earbuds) + 66 (Samsung Fast Charger) = 326
+Shelf C: 16 (Sony WH-1000XM5) + 23 (Sony WH-CH720N) + 18 (Sony WF-1000XM5) + 31 (Sony Extra Bass Headphones) + 42 (Sony Carrying Case) = 130
+Shelf D: 45 (Dell XPS 13) + 8 (Dell XPS 15) + 14 (Dell Inspiron 14) + 23 (Dell Laptop Charger) + 19 (Dell Laptop Bag) = 109
+Shelf E: 11 (Bose QuietComfort 45) + 7 (Bose QuietComfort Ultra) + 25 (Bose SoundLink Flex) + 9 (Bose Soundbar 600) + 36 (Bose Replacement Ear Pads) = 88
+Shelf F: 7 (Logitech MX Master 3) + 14 (Logitech MX Keys) + 22 (Logitech G Pro X Superlight) + 31 (Logitech Webcam C920) + 58 (Logitech Mouse Pad) = 132
+
+Shelf G contains PlayStation products, so it will be excluded.
+
+The shelf with the highest total stock (excluding Shelf G) is Shelf B with a total stock of 326. I will send the robot to Shelf B."
+difficult,"Go to the shelf containing headphones, but not Sony headphones; choose the shelf with the lowest-stock headphone product.",E,E,True,8.7862715680385,"LLM response: To find the shelf with headphones that are not Sony, I'll review the inventory. 
+
+I found the following non-Sony headphones:
+- Bose QuietComfort 45, Shelf: Shelf E (ID: E), Stock: 11, Price: $329.99, Category: Headphones
+- Bose QuietComfort Ultra, Shelf: Shelf E (ID: E), Stock: 7, Price: $429.99, Category: Headphones
+
+The lowest-stock headphone product is the Bose QuietComfort Ultra with a stock of 7. I will go to Shelf E (ID: E) to find this product."
+difficult,"Navigate to the shelf containing the smartphone with 196 units, not the shelf containing Apple phones.",B,B,True,1.660201866994612,"LLM response: To find the shelf with the smartphone that has 196 units, I will look through the inventory list. 
+
+The item with 196 units is the Samsung Galaxy S23. According to the inventory, the Samsung Galaxy S23 is located on Shelf B (ID: B). I will navigate to Shelf B."
+difficult,Send the robot to the shelf containing the 19.99-dollar accessory with the highest stock.,F,F,True,10.25990767008625,"LLM response: To find the $19.99 accessory with the highest stock, I'll review the inventory.
+
+The $19.99 accessories are:
+- iPhone Charging Cable (Stock: 45)
+- Logitech Mouse Pad (Stock: 58)
+- Sony Carrying Case (Stock: 42)
+- Bose Replacement Ear Pads (Stock: 36)
+- PlayStation Charging Station (Stock: 27)
+
+The $19.99 accessory with the highest stock is the Logitech Mouse Pad with a stock of 58, located on Shelf F (ID: F).
+
+I will send the robot to Shelf F (ID: F) to retrieve the Logitech Mouse Pad."
+difficult,Move to the shelf containing the 29.99-dollar accessory with the greatest stock.,B,B,True,2.15118280693423,"LLM response: To find the shelf containing the $29.99 accessory with the greatest stock, I will review the inventory.
+
+The $29.99 accessories are:
+- Samsung Fast Charger, Shelf: Shelf B (ID: B), Stock: 66
+- Bose Replacement Ear Pads, Shelf: Shelf E (ID: E), Stock: 36
+- PlayStation Charging Station, Shelf: Shelf G (ID: G), Stock: 27
+- Dell Laptop Charger, Shelf: Shelf D (ID: D), Stock: 23
+
+The $29.99 accessory with the greatest stock is the Samsung Fast Charger with a stock of 66, located on Shelf B (ID: B). I will move to Shelf B."
+difficult,Navigate to the shelf containing the most expensive Dell product.,D,D,True,3.854605922009796,"LLM response: To find the shelf containing the most expensive Dell product, I will review the inventory list.
+
+The Dell products are:
+- Dell XPS 13, Price: $1199.99
+- Dell XPS 15, Price: $1799.99
+- Dell Inspiron 14, Price: $699.99
+- Dell Laptop Charger, Price: $89.99
+- Dell Laptop Bag, Price: $49.99
+
+The most expensive Dell product is the Dell XPS 15, priced at $1799.99. According to the inventory list, the Dell XPS 15 is located on Shelf D (ID: D). I will navigate to Shelf D."
+difficult,Go to the shelf containing the most expensive Bose product.,E,E,True,8.060504724038765,"LLM response: To find the shelf containing the most expensive Bose product, I will review the inventory list.
+
+The Bose products are:
+- Bose QuietComfort 45, Shelf: Shelf E (ID: E), Price: $329.99
+- Bose QuietComfort Ultra, Shelf: Shelf E (ID: E), Price: $429.99
+- Bose SoundLink Flex, Shelf: Shelf E (ID: E), Price: $149.99
+- Bose Soundbar 600, Shelf: Shelf E (ID: E), Price: $399.99
+- Bose Replacement Ear Pads, Shelf: Shelf E (ID: E), Price: $29.99
+
+The most expensive Bose product is the Bose QuietComfort Ultra, priced at $429.99, which is located on Shelf E (ID: E). I will proceed to Shelf E."
+difficult,I need the 699.99-dollar product that is not a tablet. Navigate to its shelf.,D,D,True,2.18747344694566,"LLM response: The $699.99 product that is not a tablet is the Dell Inspiron 14, which is a laptop, and the Samsung Galaxy S23 is also $749.99 and the Samsung Galaxy Tab S9 is $699.99. However, the Dell Inspiron 14 is $699.99 and it's a laptop. It's located on Shelf D (ID: D). I'm navigating to Shelf D."
+difficult,Dispatch to the shelf containing the 8-unit product that is a laptop rather than software.,D,D,True,7.771660985075869,"LLM response: To dispatch to the shelf containing the 8-unit product that is a laptop rather than software, I would look for laptops with a stock of 8.
+
+According to the inventory, the item ""Apple iPhone 13"" has a stock of 8, but it's a smartphone, not a laptop. However, I found that the item ""Dell XPS 15"" has a stock of 8 and it's a laptop.
+
+The ""Dell XPS 15"" is located on Shelf D (ID: D). I will dispatch to Shelf D."

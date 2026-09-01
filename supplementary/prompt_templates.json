@@ -1,0 +1,30 @@
+{
+  "llm_shelf_extractor_prompt": [
+    [
+      "system",
+      "You are a warehouse assistant. Extract a shelf ID (e.g., 'A') or full shelf name (e.g., 'Shelf A') from the query. If none, respond 'NONE'."
+    ],
+    [
+      "human",
+      "{query}"
+    ]
+  ],
+  "rag_llm_prompt": [
+    [
+      "human",
+      "Context: {context}\\n\\nQuestion: {query}"
+    ]
+  ],
+  "llm_answer_template_prompt": [
+    [
+      "human",
+      "{query}"
+    ]
+  ],
+  "deep_thinking_prompt": [
+    [
+      "human",
+      "User Query: {query}"
+    ]
+  ]
+}

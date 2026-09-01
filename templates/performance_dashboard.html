@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Performance Dashboard</title>
+    <link rel="stylesheet" href="static/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Warehouse Robot Assistant</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Shelf Map</a></li>
+                    <li><a href="/assistance">Assistant</a></li>
+                    <li><a href="/performance_dashboard" class="current">Performance Dashboard</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Live Performance Dashboard</h2>
+        <p>Run predefined queries and see their real-time performance metrics.</p>
+        <button id="run-tests-btn" class="run-button">Run All Tests</button>
+        <button id="clear-results-btn" class="clear-button">Clear Results</button>
+        <div id="loading-indicator" class="loading-spinner" style="display:none;"></div>
+        <div id="overall-summary" class="overall-summary"></div>
+        <div id="results-container" class="results-container">
+            <!-- Results will be dynamically loaded here -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Warehouse Robot Assistant</p>
+        </div>
+    </footer>
+
+    <script>
+        const FLASK_APP_URL = "http://127.0.0.1:5000"; // Ensure this matches your Flask app URL
+        const QUERY_ENDPOINT = `${FLASK_APP_URL}/query`;
+
+        const sampleQueries = [
+            // --- Direct Item Lookup Queries ---
+            {"query": "Apple iPhone 14", "mode": "auto", "type": "Direct Item Lookup"},
+            {"query": "Samsung Galaxy S23", "mode": "auto", "type": "Direct Item Lookup"},
+            {"query": "Sony WH-1000XM5", "mode": "auto", "type": "Direct Item Lookup"},
+            
+            // --- LLM Extracted Shelf Queries ---
+            {"query": "What's in Shelf A?", "mode": "auto", "type": "LLM Shelf Extraction (by name)"},
+            {"query": "Show me items on Shelf D.", "mode": "auto", "type": "LLM Shelf Extraction (by name)"},
+            {"query": "I need assistance near shelf B", "mode": "auto", "type": "LLM Shelf Extraction (by ID)"},
+
+            // --- RAG Safety Queries ---
+            {"query": "What PPE is required for handling chemicals?", "mode": "auto", "type": "RAG Safety (Specific PPE)"},
+            {"query": "What are the rules for emergency exits?", "mode": "auto", "type": "RAG Safety (Fire Safety)"},
+            {"query": "What is the LOTO procedure?", "mode": "auto", "type": "RAG Safety (LOTO)"},
+
+            // --- Traditional Search Specific Queries (Designed for keyword match) ---
+            {"query": "Safety Helmets", "mode": "traditional_search_only", "type": "Traditional Search (Safety Exact)"},
+            {"query": "Fire Extinguishers", "mode": "traditional_search_only", "type": "Traditional Search (Safety Exact)"},
+            {"query": "Shelf B", "mode": "traditional_search_only", "type": "Traditional Search (Shelf Exact)"},
+
+            // --- Traditional Search Semantic Failures (Expected to be less effective for these) ---
+            {"query": "protective gloves for chemicals", "mode": "traditional_search_only", "type": "Traditional Search (Semantic Fail)"},
+            {"query": "exits for fire emergencies", "mode": "traditional_search_only", "type": "Traditional Search (Semantic Fail)"},
+            {"query": "location of Shelf A", "mode": "traditional_search_only", "type": "Traditional Search (Semantic Fail)"},
+
+            // --- RAG Queries for comparison with Traditional Search Failures ---
+            {"query": "protective gloves for chemicals", "mode": "rag_only", "type": "RAG (Semantic Success - vs Trad.)"},
+            {"query": "exits for fire emergencies", "mode": "rag_only", "type": "RAG (Semantic Success - vs Trad.)"},
+            {"query": "location of Shelf A", "mode": "rag_only", "type": "RAG (Semantic Success - vs Trad.)"},
+
+            // --- NEW: RAG Evaluation Cases (Replacing simulated failures) ---
+            {"query": "Summarize the key safety points from the manual", "type": "RAG - Summarization", "mode": "rag_only"},
+            {"query": "Compare the safety requirements for chemicals vs machinery", "type": "RAG - Comparative Analysis", "mode": "rag_only"},
+            {"query": "Generate a checklist for new employee safety orientation", "type": "RAG - Generation", "mode": "rag_only"},
+
+            // --- Remaining Failure Cases ---
+            {"query": "Where is the Quantum Teleporter?", "mode": "auto", "type": "Failure (Item Not Found)"},
+            {"query": "Tell me about Shelf Z.", "mode": "auto", "type": "Failure (Shelf Not Found)"},
+            {"query": "What are the rules for flying drones in the warehouse?", "mode": "auto", "type": "Failure (Safety Not in Manual)"},
+            {"query": "Who is the CEO?", "mode": "auto", "type": "Failure (General Knowledge)"},
+        ];
+
+        let allTestResults = []; // To store results for overall summary
+
+        async function runLiveTests() {
+            const resultsContainer = document.getElementById('results-container');
+            const runButton = document.getElementById('run-tests-btn');
+            const loadingIndicator = document.getElementById('loading-indicator');
+            const overallSummaryDiv = document.getElementById('overall-summary');
+
+            resultsContainer.innerHTML = ''; // Clear previous results
+            overallSummaryDiv.innerHTML = '';
+            runButton.disabled = true;
+            loadingIndicator.style.display = 'block';
+            allTestResults = []; // Reset results for a new run
+
+            for (let i = 0; i < sampleQueries.length; i++) {
+                const queryData = sampleQueries[i];
+                const queryText = queryData.query;
+                const queryMode = queryData.mode;
+                const queryType = queryData.type;
+
+                const queryCard = document.createElement('div');
+                queryCard.classList.add('query-card');
+                queryCard.innerHTML = `
+                    <div class="query-header">
+                        <strong>Query ${i + 1}:</strong> "${queryText}"
+                    </div>
+                    <div class="query-details">
+                        Mode: ${queryMode} | Type: ${queryType}
+                    </div>
+                    <div class="status-message">Sending request...</div>
+                    <div class="metrics"></div>
+                `;
+                resultsContainer.appendChild(queryCard);
+                queryCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+                const statusMessageDiv = queryCard.querySelector('.status-message');
+                const metricsDiv = queryCard.querySelector('.metrics');
+
+                try {
+                    const startTime = performance.now();
+                    const response = await fetch(QUERY_ENDPOINT, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ query: queryText, mode: queryMode }),
+                        signal: AbortSignal.timeout(6000) // 6 second timeout for fetch
+                    });
+                    const endTime = performance.now();
+                    const totalFetchTime = (endTime - startTime) / 1000; // in seconds
+
+                    const data = await response.json();
+
+                    // Collect all performance times from the backend response
+                    const backendTotalTime = data.total_processing_time || 0;
+                    const llmExtrTime = data.llm_time_without_rag || 0;
+                    const ragSearchTime = data.rag_time || 0;
+                    const llmRagSynthTime = data.llm_rag_synthesis_time || 0;
+                    const directLookupTime = data.direct_lookup_time || 0;
+                    const traditionalSearchTime = data.traditional_search_time || 0;
+
+                    let statusClass = 'status-error';
+                    let messageHtml = `<strong>Status:</strong> ${data.status.toUpperCase()}`;
+                    if (data.status === 'success') {
+                        statusClass = 'status-success';
+                        messageHtml += `<br><strong>Method:</strong> ${data.method || 'N/A'}`;
+                        if (data.message && data.message.length > 0) {
+                             messageHtml += `<br><strong>Response:</strong> ${data.message.substring(0, 150)}...`;
+                        } else {
+                            messageHtml += `<br><strong>Response:</strong> No specific message.`;
+                        }
+                       
+                        if (data.data && data.data.safety_info && data.data.safety_info !== 'N/A') {
+                            messageHtml += `<br><strong class="safety-info-label">Safety Info:</strong> <pre class="safety-info-content">${data.data.safety_info.substring(0, 100)}...</pre>`;
+                        }
+                    } else {
+                        messageHtml += `<br><strong>Error:</strong> ${data.message || 'Unknown error'}`;
+                    }
+
+                    statusMessageDiv.classList.add(statusClass);
+                    statusMessageDiv.innerHTML = messageHtml;
+
+                    metricsDiv.innerHTML = `
+                        Total (Backend): ${backendTotalTime.toFixed(4)}s<br>
+                        ${llmExtrTime > 0 ? `LLM Extr: ${llmExtrTime.toFixed(4)}s<br>` : ''}
+                        ${ragSearchTime > 0 ? `RAG Search: ${ragSearchTime.toFixed(4)}s<br>` : ''}
+                        ${llmRagSynthTime > 0 ? `RAG Synth: ${llmRagSynthTime.toFixed(4)}s<br>` : ''}
+                        ${directLookupTime > 0 ? `Direct Lookup: ${directLookupTime.toFixed(4)}s<br>` : ''}
+                        ${traditionalSearchTime > 0 ? `Traditional Search: ${traditionalSearchTime.toFixed(4)}s<br>` : ''}
+                    `;
+
+                    allTestResults.push({
+                        query: queryText,
+                        type: queryType,
+                        mode: queryMode,
+                        status: data.status,
+                        total_processing_time: backendTotalTime,
+                        llm_time_without_rag: llmExtrTime,
+                        rag_time: ragSearchTime,
+                        llm_rag_synthesis_time: llmRagSynthTime,
+                        direct_lookup_time: directLookupTime,
+                        traditional_search_time: traditionalSearchTime,
+                        method: data.method
+                    });
+
+                } catch (error) {
+                    let errorMessage = `Request failed: ${error.message}`;
+                    if (error.name === 'TimeoutError') {
+                        errorMessage = `Request timed out (client-side 6s timeout). Server might still be processing.`;
+                    }
+                    statusMessageDiv.classList.add('status-error');
+                    statusMessageDiv.innerHTML = `<strong>Error:</strong> ${errorMessage}`;
+                    metricsDiv.innerHTML = `Total (Client-side): N/A`;
+
+                    allTestResults.push({
+                        query: queryText,
+                        type: queryType,
+                        mode: queryMode,
+                        status: 'error',
+                        message: errorMessage,
+                        total_processing_time: 0, // Mark as 0 as it failed
+                        llm_time_without_rag: 0, rag_time: 0, llm_rag_synthesis_time: 0,
+                        direct_lookup_time: 0, traditional_search_time: 0,
+                        method: 'Failed'
+                    });
+                }
+                await new Promise(resolve => setTimeout(resolve, 500)); // Small delay between queries
+            }
+
+            loadingIndicator.style.display = 'none';
+            runButton.disabled = false;
+            displayOverallSummary(allTestResults);
+        }
+
+        function displayOverallSummary(results) {
+            const overallSummaryDiv = document.getElementById('overall-summary');
+            overallSummaryDiv.innerHTML = '<h2>Overall Performance Summary</h2>';
+
+            const summaryByMethod = {};
+            let totalSuccessful = 0;
+            let totalQueries = 0;
+
+            results.forEach(res => {
+                totalQueries++;
+                if (res.status === 'success') {
+                    totalSuccessful++;
+                }
+
+                const method = res.method || 'Unknown';
+                if (!summaryByMethod[method]) {
+                    summaryByMethod[method] = { count: 0, totalTime: 0, successCount: 0 };
+                }
+                summaryByMethod[method].count++;
+                summaryByMethod[method].totalTime += res.total_processing_time;
+                if (res.status === 'success') {
+                    summaryByMethod[method].successCount++;
+                }
+            });
+
+            overallSummaryDiv.innerHTML += `<p>Total Queries Run: <strong>${totalQueries}</strong></p>`;
+            overallSummaryDiv.innerHTML += `<p>Overall Success Rate: <strong>${((totalSuccessful / totalQueries) * 100).toFixed(2)}%</strong></p>`;
+
+            overallSummaryDiv.innerHTML += '<h3>Breakdown by Method:</h3>';
+            const table = document.createElement('table');
+            table.innerHTML = `
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Count</th>
+                        <th>Success Rate</th>
+                        <th>Avg. Time (s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            `;
+            const tbody = table.querySelector('tbody');
+
+            for (const method in summaryByMethod) {
+                const stats = summaryByMethod[method];
+                const avgTime = stats.totalTime / stats.count;
+                const successRate = (stats.successCount / stats.count) * 100;
+                const row = `
+                    <tr>
+                        <td>${method}</td>
+                        <td>${stats.count}</td>
+                        <td>${successRate.toFixed(2)}%</td>
+                        <td>${avgTime.toFixed(4)}</td>
+                    </tr>
+                `;
+                tbody.innerHTML += row;
+            }
+            overallSummaryDiv.appendChild(table);
+        }
+
+        document.getElementById('run-tests-btn').addEventListener('click', runLiveTests);
+        document.getElementById('clear-results-btn').addEventListener('click', () => {
+            document.getElementById('results-container').innerHTML = '';
+            document.getElementById('overall-summary').innerHTML = '';
+        });
+
+        // Initial welcome message (optional)
+        // runLiveTests(); // Uncomment to run tests automatically on page load
+    </script>
+</body>
+</html>

@@ -1,0 +1,1430 @@
+model,query,type,mode,tier,confidence,latency,correct,message,timestamp,chunk_size,chunk_overlap,fusion_weights,router_mode_env
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Apple iPhone 13,Direct Item Lookup,auto,direct,0.999670098088234,0.0184407234191894,True,Found Apple iPhone 13 on Shelf A with 8 in stock.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Samsung Galaxy Tab S9,Direct Item Lookup,auto,direct,0.9990437237479316,0.0143184661865234,True,Found Samsung Galaxy Tab S9 on Shelf B with 15 in stock.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Sony WH-CH720N,Direct Item Lookup,auto,direct,0.9994910178630448,0.0150988101959228,True,Found Sony WH-CH720N on Shelf C with 23 in stock.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Sony Extra Bass Headphones,Direct Item Lookup,auto,direct,0.9967624511095998,0.0187611579895019,True,Found Sony Extra Bass Headphones on Shelf C with 31 in stock.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Dell Inspiron 14,Direct Item Lookup,auto,direct,0.9966881659280769,0.0234866142272949,True,Found Dell Inspiron 14 on Shelf D with 14 in stock.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Dell Laptop Bag,Direct Item Lookup,auto,direct,0.9849993324303274,0.0168216228485107,True,Found Dell Laptop Bag on Shelf D with 19 in stock.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Bose QuietComfort Ultra,Direct Item Lookup,auto,direct,0.9888948716016672,0.0153489112854003,True,Found Bose QuietComfort Ultra on Shelf E with 7 in stock.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Bose Soundbar 600,Direct Item Lookup,auto,direct,0.9978873309631984,0.0204787254333496,True,Found Bose Soundbar 600 on Shelf E with 9 in stock.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Logitech G Pro X Superlight,Direct Item Lookup,auto,direct,0.9987364297125276,0.0164642333984375,True,Found Logitech G Pro X Superlight on Shelf F with 22 in stock.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Logitech Webcam C920,Direct Item Lookup,auto,direct,0.995095555709602,0.016514778137207,True,Found Logitech Webcam C920 on Shelf F with 31 in stock.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,PlayStation VR2,Direct Item Lookup,auto,direct,0.9392779998337238,0.0154519081115722,True,Found PlayStation VR2 on Shelf G with 12 in stock.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,PlayStation 5 Games Bundle,Direct Item Lookup,auto,direct,0.9306506385034634,0.0180583000183105,True,Found PlayStation 5 Games Bundle on Shelf G with 6 in stock.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,PlayStation Charging Station,Direct Item Lookup,auto,direct,0.9871037035597352,0.0135397911071777,True,Found PlayStation Charging Station on Shelf G with 27 in stock.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Bose Replacement Ear Pads,Direct Item Lookup,auto,direct,0.95986744613011,0.0104982852935791,True,Found Bose Replacement Ear Pads on Shelf E with 36 in stock.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Logitech Mouse Pad,Direct Item Lookup,auto,direct,0.9868474923675634,0.013066291809082,True,Found Logitech Mouse Pad on Shelf F with 58 in stock.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,orange reflective vest,Keyword Search,auto,keyword,0.9976407453448826,0.0158441066741943,True,"Found relevant information using keyword search:
+SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE)
+Safety Helmets – Required at all times inside loading areas.
+High-Visibility Vests – Fluorescent yellow or orange with reflective stripes.
+Steel-Toed Boots – Must conform to ISO 20345:2011.
+Cut-Resistant Gloves – Mandatory when handling sharp materials.
+Hearing Protection – Required in areas above 85 dB",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,helmet use in loading zones,Keyword Search,auto,keyword,0.9090248442019347,0.0133900642395019,True,"Found relevant information using keyword search:
+SECTION 2: INVENTORY HANDLING
+-----------------------------
+- Use handheld scanners for all inventory movements.
+- Report discrepancies immediately to the Inventory Supervisor.
+- Damaged goods must be placed in the “Inspection Zone” before tagging.
+- Shelves are labeled using alphanumeric codes (e.g., A1-B3).",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,forklift operator renewal,Keyword Search,auto,keyword,0.9979312330365026,0.0148885250091552,True,"Found relevant information using keyword search:
+SECTION 5: MATERIAL HANDLING AND STORAGE
+Forklift operators must be certified and recertified every 2 years.
+Do not exceed 1500 kg per shelving level unless labeled otherwise.
+Use Class 2 ratchet straps for loads over 200 kg.
+Hazardous chemicals must be stored in locked ventilated cabinets.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,chemical storage ventilation,Keyword Search,auto,keyword,0.9968342062287502,0.0210256576538085,True,"Found relevant information using keyword search:
+SECTION 5: MATERIAL HANDLING AND STORAGE
+Forklift operators must be certified and recertified every 2 years.
+Do not exceed 1500 kg per shelving level unless labeled otherwise.
+Use Class 2 ratchet straps for loads over 200 kg.
+Hazardous chemicals must be stored in locked ventilated cabinets.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,emergency exit markings,Keyword Search,auto,keyword,0.9943519591877612,0.0188543796539306,True,"Found relevant information using keyword search:
+SECTION 3: FIRE SAFETY & EVACUATION PROCEDURES
+Fire Extinguishers: One every 15 meters; monthly inspection.
+Emergency Exits: At least two per zone, clearly marked.
+Evacuation Drills: Every 6 months; missed drills require retraining.
+Assembly Points: 50 meters from building, marked with green signage.
+Never use elevators during evacuation.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,first aid inspection,Keyword Search,auto,keyword,0.9903185236127622,0.0155622959136962,True,"Found relevant information using keyword search:
+SECTION 6: FIRST AID AND INCIDENT REPORTING
+First Aid Kits must be:
+Available every 30 meters.
+Checked weekly by a safety officer.
+Incident Reports:
+Must be submitted within 2 hours using Form WHS-101.
+Use the internal safety portal for submission.
+Emergency contacts are listed on the main notice board and in Section 9.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,warehouse incident portal,Keyword Search,auto,keyword,0.9973347098079084,0.015718936920166,True,"Found relevant information using keyword search:
+SECTION 6: INCIDENT REPORTING & FEEDBACK
+----------------------------------------
+- Any injuries, equipment damage, or process violations must be reported within 1 hour.
+- Use Form WHS-207 and submit to the Shift Supervisor.
+- Anonymous feedback can be left in the box outside Room B-2 or submitted via the internal portal.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,LOTO annual review,Keyword Search,auto,keyword,0.9940036323994316,0.0121791362762451,False,No keyword match found.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,spill response pads,Keyword Search,auto,keyword,0.9942280009718752,0.0118653774261474,True,"Found relevant information using keyword search:
+Item: Bose Replacement Ear Pads. Shelf Name: Shelf E. Shelf ID: E. Stock: 36.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,visitor safety gear,Keyword Search,auto,keyword,0.9921327407190752,0.008923053741455,True,"Found relevant information using keyword search:
+SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE)
+Safety Helmets – Required at all times inside loading areas.
+High-Visibility Vests – Fluorescent yellow or orange with reflective stripes.
+Steel-Toed Boots – Must conform to ISO 20345:2011.
+Cut-Resistant Gloves – Mandatory when handling sharp materials.
+Hearing Protection – Required in areas above 85 dB",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,fire drill schedule,Keyword Search,auto,keyword,0.9888780034087272,0.0140116214752197,True,"Found relevant information using keyword search:
+SECTION 3: FIRE SAFETY & EVACUATION PROCEDURES
+Fire Extinguishers: One every 15 meters; monthly inspection.
+Emergency Exits: At least two per zone, clearly marked.
+Evacuation Drills: Every 6 months; missed drills require retraining.
+Assembly Points: 50 meters from building, marked with green signage.
+Never use elevators during evacuation.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,hearing protection rule,Keyword Search,auto,keyword,0.9946955254244962,0.0187404155731201,True,"Found relevant information using keyword search:
+SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE)
+Safety Helmets – Required at all times inside loading areas.
+High-Visibility Vests – Fluorescent yellow or orange with reflective stripes.
+Steel-Toed Boots – Must conform to ISO 20345:2011.
+Cut-Resistant Gloves – Mandatory when handling sharp materials.
+Hearing Protection – Required in areas above 85 dB",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,green waste bin,Keyword Search,auto,keyword,0.9954614005381116,0.0129423141479492,True,"Found relevant information using keyword search:
+SECTION 4: CLEANLINESS & WASTE DISPOSAL
+---------------------------------------
+- Floors must be swept at the end of each shift.
+- Spillages must be reported and cleaned immediately using absorbent pads.
+- Recycling bins are color-coded:
+  - Blue: Paper/Cardboard
+  - Green: Plastic
+  - Red: Hazardous waste
+- All cleaning supplies are stored in Room C-14.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,damaged item inspection area,Keyword Search,auto,keyword,0.9917942128693036,0.0150160789489746,True,"Found relevant information using keyword search:
+SECTION 2: INVENTORY HANDLING
+-----------------------------
+- Use handheld scanners for all inventory movements.
+- Report discrepancies immediately to the Inventory Supervisor.
+- Damaged goods must be placed in the “Inspection Zone” before tagging.
+- Shelves are labeled using alphanumeric codes (e.g., A1-B3).",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,inventory discrepancy reporting,Keyword Search,auto,keyword,0.6779898077452703,0.0151820182800292,True,"Found relevant information using keyword search:
+WAREHOUSE DAILY OPERATIONS GUIDE (2024)
+========================================
+
+SECTION 1: SHIFT SCHEDULES & WORKFLOW
+-------------------------------------
+- Morning Shift: 6:00 AM – 2:00 PM
+- Afternoon Shift: 2:00 PM – 10:00 PM
+- Night Shift: 10:00 PM – 6:00 AM
+- All workers must sign in 10 minutes before their shift and attend the team briefing.
+- Daily workload is divided into receiving, inventory update, picking, packing, and dispatch.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What should a visitor wear before entering operational warehouse areas?,RAG Safety,auto,rag,0.9978627951783956,4.804826736450195,True,"According to the context, a visitor must wear a visitor badge (as stated in SECTION 4: VISITOR PROTOCOL) and PPE (Personal Protective Equipment) is required for visitors entering the warehouse floor. 
+
+The specific PPE required is not specified in the visitor protocol section, but in SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE), it is stated that Safety Helmets are required at all times inside loading areas, and other PPE such as High-Visibility Vests, Steel-Toed Boots, Cut-Resistant Gloves, and Hearing Protection are required in specific situations. 
+
+Therefore, the answer is: a visitor badge and PPE (the specific type of PPE may depend on the area of the warehouse they are entering).",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are the documented requirements for a safe chemical-storage cabinet?,RAG Safety,auto,rag,0.9993850946367332,0.902313470840454,True,The documented requirements for a safe chemical-storage cabinet are that it must be locked and ventilated.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What must an operator do to remain qualified to drive a forklift?,RAG Safety,auto,rag,0.9989858331729188,0.5938601493835449,True,"To remain qualified to drive a forklift, an operator must be recertified every 2 years.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What procedure is specified when an inventory discrepancy is discovered?,RAG Safety,auto,rag,0.9585730581939738,0.580289363861084,True,"When an inventory discrepancy is discovered, the procedure specified is to ""Report discrepancies immediately to the Inventory Supervisor.""",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What should happen to damaged goods before further handling?,RAG Safety,auto,rag,0.981912322899942,0.4070055484771728,True,Damaged goods must be placed in the “Inspection Zone” before tagging.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are the manual's requirements for emergency assembly locations?,RAG Safety,auto,rag,0.9999211841501062,0.644615650177002,True,The manual requires that assembly points be 50 meters from the building and marked with green signage.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What reporting steps apply to an injury under the current 2025 procedure?,RAG Safety,auto,rag,0.9915634178563578,1.780428409576416,True,"According to the provided context, there are two conflicting procedures for reporting incidents, including injuries. 
+
+In Section 6: INCIDENT REPORTING & FEEDBACK (Chunk 6), it is stated that any injuries must be reported within 1 hour using Form WHS-207 and submitted to the Shift Supervisor.
+
+In Section 6: FIRST AID AND INCIDENT REPORTING (Chunk 12), it is stated that Incident Reports, including injuries, must be submitted within 2 hours using Form WHS-101 via the internal safety portal.
+
+Since the question asks for the ""current 2025 procedure"" and there is no specific information provided about the year 2025, it is unclear which procedure is currently in effect. Therefore, the answer is not in the context.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What does the manual require after a safety violation?,RAG Safety,auto,rag,0.998799006932844,0.5484762191772461,True,The manual requires Safety Training immediately after any safety violation or accident.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are workers instructed to do when a spill is discovered?,RAG Safety,auto,rag,0.998684936589806,0.780268669128418,True,"When a spill is discovered, workers are instructed to report it and clean it immediately using absorbent pads.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What evacuation restrictions apply to elevators?,RAG Safety,auto,rag,0.9989112017643856,0.409726619720459,True,Never use elevators during evacuation.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What inspection schedule applies to firefighting equipment?,RAG Safety,auto,rag,0.9991508114400118,0.4795706272125244,True,The inspection schedule for firefighting equipment (fire extinguishers) is monthly.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What PPE is required when employees handle sharp objects?,RAG Safety,auto,rag,0.997830881152744,0.6657660007476807,True,Cut-Resistant Gloves are mandatory when handling sharp materials.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What does the manual specify for hearing protection in noisy areas?,RAG Safety,auto,rag,0.998791530680762,0.4483504295349121,True,The manual specifies that Hearing Protection is required in areas above 85 dB.,2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are the requirements for the number and marking of emergency exits?,RAG Safety,auto,rag,0.9996861191603876,0.4703414440155029,True,"The requirements for emergency exits are: 
+- At least two emergency exits per zone, and 
+- They must be clearly marked.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What contact information is provided for a medical emergency?,RAG Safety,auto,rag,0.995549215607072,0.5657777786254883,True,"The contact information provided for a medical emergency is:
+
+- On-site Medical Officer: Ext. 221 
+
+This information is found in SECTION 8: EMERGENCY CONTACTS of the Safety Manual.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,By how many units does Shelf B exceed Shelf C?,LLM Reasoning,auto,llm,0.9574926682773994,1.2078895568847656,True,"LLM response: To determine by how many units Shelf B exceeds Shelf C, we need to calculate the total stock on each shelf.
+
+Shelf B contains:
+- Samsung Galaxy S23: 196 units
+- Samsung Galaxy S24: 22 units
+- Samsung Galaxy Tab S9: 15 units
+- Samsung Wireless Earbuds: 27 units
+- Samsung Fast Charger: 66 units
+
+Total stock on Shelf B: 196 + 22 + 15 + 27 + 66 = 326 units
+
+Shelf C contains:
+- Sony WH-1000XM5: 16 units
+- Sony WH-CH720N: 23 units
+- Sony WF-1000XM5: 18 units
+- Sony Extra Bass Headphones: 31 units
+- Sony Carrying Case: 42 units
+
+Total stock on Shelf C: 16 + 23 + 18 + 31 + 42 = 130 units
+
+Shelf B exceeds Shelf C by 326 - 130 = 196 units.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which shelf is second highest in total stock?,LLM Reasoning,auto,llm,0.9996060519016496,2.7825851440429688,True,"LLM response: To find the shelf that is second highest in total stock, I need to calculate the total stock for each shelf.
+
+Shelf A: 10 (Apple iPhone 14) + 10 (Apple iPhone 14 Pro) + 8 (Apple iPhone 13) + 45 (iPhone Charging Cable) + 32 (iPhone Screen Protector) = 105
+Shelf B: 196 (Samsung Galaxy S23) + 22 (Samsung Galaxy S24) + 15 (Samsung Galaxy Tab S9) + 27 (Samsung Wireless Earbuds) + 66 (Samsung Fast Charger) = 326
+Shelf C: 16 (Sony WH-1000XM5) + 23 (Sony WH-CH720N) + 18 (Sony WF-1000XM5) + 31 (Sony Extra Bass Headphones) + 42 (Sony Carrying Case) = 130
+Shelf D: 45 (Dell XPS 13) + 8 (Dell XPS 15) + 14 (Dell Inspiron 14) + 23 (Dell Laptop Charger) + 19 (Dell Laptop Bag) = 109
+Shelf E: 11 (Bose QuietComfort 45) + 7 (Bose QuietComfort Ultra) + 25 (Bose SoundLink Flex) + 9 (Bose Soundbar 600) + 36 (Bose Replacement Ear Pads) = 88
+Shelf F: 7 (Logitech MX Master 3) + 14 (Logitech MX Keys) + 22 (Logitech G Pro X Superlight) + 31 (Logitech Webcam C920) + 58 (Logitech Mouse Pad) = 132
+Shelf G: 99 (Sony PlayStation 5) + 45 (PlayStation DualSense Controller) + 12 (PlayStation VR2) + 6 (PlayStation 5 Games Bundle) + 27 (PlayStation Charging Station) = 189
+
+The shelves in order of total stock are:
+1. Shelf B: 326
+2. Shelf G: 189
+3. Shelf F: 132
+4. Shelf C: 130
+5. Shelf D: 109
+6. Shelf A: 105
+7. Shelf E: 88
+
+The shelf that is second highest in total stock is Shelf G with a total stock of 189.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Calculate the combined stock of Shelves A and G.,LLM Reasoning,auto,llm,0.9797312501339404,1.4680187702178955,True,"LLM response: To calculate the combined stock of Shelves A and G, we need to add up the stock of all items on these shelves.
+
+Shelf A:
+- Apple iPhone 14: 10
+- Apple iPhone 14 Pro: 10
+- Apple iPhone 13: 8
+- iPhone Charging Cable: 45
+- iPhone Screen Protector: 32
+
+Total stock on Shelf A: 10 + 10 + 8 + 45 + 32 = 105
+
+Shelf G:
+- Sony PlayStation 5: 99
+- PlayStation DualSense Controller: 45
+- PlayStation VR2: 12
+- PlayStation 5 Games Bundle: 6
+- PlayStation Charging Station: 27
+
+Total stock on Shelf G: 99 + 45 + 12 + 6 + 27 = 189
+
+Combined stock of Shelves A and G: 105 + 189 = 294",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which two products share the minimum stock level?,LLM Reasoning,auto,llm,0.999669466217028,0.8050587177276611,True,"LLM response: The two products that share the minimum stock level are:
+
+1. Dell XPS 15 - Stock: 7 (no, it's 8)
+2. Bose QuietComfort Ultra - Stock: 7 
+3. Logitech MX Master 3 - Stock: 7 
+
+These three products share the minimum stock level of 7.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,How many total units are stored on Shelves D and E together?,LLM Reasoning,auto,llm,0.9670200284334898,1.761868238449097,True,"LLM response: To find the total units stored on Shelves D and E, I will add up the stock of all items on these shelves.
+
+Shelf D:
+- Dell XPS 13: 45 units
+- Dell XPS 15: 8 units
+- Dell Inspiron 14: 14 units
+- Dell Laptop Charger: 23 units
+- Dell Laptop Bag: 19 units
+
+Total units on Shelf D: 45 + 8 + 14 + 23 + 19 = 109 units
+
+Shelf E:
+- Bose QuietComfort 45: 11 units
+- Bose QuietComfort Ultra: 7 units
+- Bose SoundLink Flex: 25 units
+- Bose Soundbar 600: 9 units
+- Bose Replacement Ear Pads: 36 units
+
+Total units on Shelf E: 11 + 7 + 25 + 9 + 36 = 88 units
+
+Total units on Shelves D and E: 109 + 88 = 197 units",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Compare the inventory value of Dell XPS 13 with Dell XPS 15.,LLM Reasoning,auto,llm,0.9980220464665476,1.7065749168395996,True,"LLM response: To compare the inventory value of Dell XPS 13 and Dell XPS 15, we need to calculate the total value of each item in stock.
+
+For Dell XPS 13:
+Stock: 45
+Price: $1199.99
+Inventory Value = Stock * Price = 45 * $1199.99 = $53,999.55
+
+For Dell XPS 15:
+Stock: 8
+Price: $1799.99
+Inventory Value = Stock * Price = 8 * $1799.99 = $14,399.92
+
+The inventory value of Dell XPS 13 ($53,999.55) is higher than that of Dell XPS 15 ($14,399.92).",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What is the combined stock of all Bose products?,LLM Reasoning,auto,llm,0.9956895303645656,1.236945390701294,True,"LLM response: To find the combined stock of all Bose products, we need to look at the inventory list and find the items that are from Bose. 
+
+Here are the Bose products:
+- Bose QuietComfort 45, Stock: 11
+- Bose QuietComfort Ultra, Stock: 7
+- Bose SoundLink Flex, Stock: 25
+- Bose Soundbar 600, Stock: 9
+- Bose Replacement Ear Pads, Stock: 36
+
+Now, let's add up the stock of these items:
+11 + 7 + 25 + 9 + 36 = 88
+
+The combined stock of all Bose products is 88.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which Samsung product contributes the most units to Shelf B?,LLM Reasoning,auto,llm,0.983153617185324,0.5374510288238525,True,"LLM response: The Samsung product that contributes the most units to Shelf B is the Samsung Galaxy S23, with a stock of 196 units.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,"Order Shelves D, E, and G from lowest to highest total stock.",LLM Reasoning,auto,llm,0.9983252963505124,1.4513750076293943,True,"LLM response: To determine the order, I'll calculate the total stock for each shelf:
+
+Shelf D: 
+- Dell XPS 13: 45
+- Dell XPS 15: 8
+- Dell Inspiron 14: 14
+- Dell Laptop Charger: 23
+- Dell Laptop Bag: 19
+Total stock for Shelf D: 45 + 8 + 14 + 23 + 19 = 109
+
+Shelf E: 
+- Bose QuietComfort 45: 11
+- Bose QuietComfort Ultra: 7
+- Bose SoundLink Flex: 25
+- Bose Soundbar 600: 9
+- Bose Replacement Ear Pads: 36
+Total stock for Shelf E: 11 + 7 + 25 + 9 + 36 = 88
+
+Shelf G: 
+- Sony PlayStation 5: 99
+- PlayStation DualSense Controller: 45
+- PlayStation VR2: 12
+- PlayStation 5 Games Bundle: 6
+- PlayStation Charging Station: 27
+Total stock for Shelf G: 99 + 45 + 12 + 6 + 27 = 189
+
+Now, ordering the shelves from lowest to highest total stock:
+1. Shelf E (88)
+2. Shelf D (109)
+3. Shelf G (189)",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What fraction of Shelf G stock is Sony PlayStation 5?,LLM Reasoning,auto,llm,0.9764131409004256,1.2350454330444336,True,"LLM response: To find the fraction of Shelf G stock that is Sony PlayStation 5, we need to know the total stock on Shelf G and the stock of Sony PlayStation 5.
+
+The items on Shelf G are:
+1. Sony PlayStation 5 - Stock: 99
+2. PlayStation DualSense Controller - Stock: 45
+3. PlayStation VR2 - Stock: 12
+4. PlayStation 5 Games Bundle - Stock: 6
+5. PlayStation Charging Station - Stock: 27
+
+Total stock on Shelf G = 99 + 45 + 12 + 6 + 27 = 189
+
+Stock of Sony PlayStation 5 = 99
+
+Fraction of Shelf G stock that is Sony PlayStation 5 = 99 / 189 = 0.523 or approximately 52.38% or 52.4% (as a percentage).",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,How much inventory value is represented by the Sony PlayStation 5 stock?,LLM Reasoning,auto,llm,0.9964225808844104,0.9223120212554932,True,"LLM response: To find the total inventory value of the Sony PlayStation 5 stock, we need to multiply the stock quantity by the price of each item.
+
+Stock quantity: 99
+Price: $499.99
+
+Total inventory value = Stock quantity * Price
+= 99 * $499.99
+= $49,499.01
+
+So, the total inventory value represented by the Sony PlayStation 5 stock is $49,499.01.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Compare the combined stock of Apple phones with Samsung phones.,LLM Reasoning,auto,llm,0.99856855022492,0.4963254928588867,True,"LLM response: To compare the combined stock of Apple phones with Samsung phones, we need to identify the relevant items in the inventory.
+
+Apple phones:
+- Apple iPhone 14: 10
+- Apple iPhone 14 Pro: 10
+- Apple iPhone 13: 8
+
+Combined stock of Apple phones: 10 + 10 + 8 = 28
+
+Samsung phones:
+- Samsung Galaxy S23: 196
+- Samsung Galaxy S24: 22
+
+Combined stock of Samsung phones: 196 + 22 = 218
+
+The combined stock of Samsung phones (218) is higher than the combined stock of Apple phones (28).",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which shelf is closest to the warehouse-wide average stock per shelf?,LLM Reasoning,auto,llm,0.9977476525330792,5.949666738510132,True,"LLM response: To determine which shelf is closest to the warehouse-wide average stock per shelf, we need to calculate the average stock per shelf first. 
+
+Let's calculate the total stock:
+10 + 10 + 8 + 45 + 32 + 196 + 22 + 15 + 27 + 66 + 16 + 23 + 18 + 31 + 42 + 45 + 8 + 14 + 23 + 19 + 11 + 7 + 25 + 9 + 36 + 7 + 14 + 22 + 31 + 58 + 99 + 45 + 12 + 6 + 27 = 892
+
+There are 7 shelves (A, B, C, D, E, F, G) with items. 
+
+Now, let's calculate the stock per shelf:
+Shelf A: 10 + 10 + 8 + 45 + 32 = 105
+Shelf B: 196 + 22 + 15 + 27 + 66 = 326
+Shelf C: 16 + 23 + 18 + 31 + 42 = 130
+Shelf D: 45 + 8 + 14 + 23 + 19 = 109
+Shelf E: 11 + 7 + 25 + 9 + 36 = 88
+Shelf F: 7 + 14 + 22 + 31 + 58 = 132
+Shelf G: 99 + 45 + 12 + 6 + 27 = 189
+
+The total stock is 892, and there are 31 items. However, to calculate the average stock per shelf, we should use the total stock per shelf. 
+The total stock per shelf is: 105 + 326 + 130 + 109 + 88 + 132 + 189 = 1079
+
+Since some items are counted multiple times (once for each shelf they are on), we should use the number of shelves (7) for the calculation:
+Average stock per shelf = Total stock / Number of shelves is not accurate in this case. 
+Average stock per shelf = (105 + 326 + 130 + 109 + 88 + 132 + 189) / 7 = 1079 / 7 = 154.14
+
+Now, let's find the shelf with the stock closest to the average:
+Shelf A: 105 (48.14 less than the average)
+Shelf B: 326 (171.86 more than the average)
+Shelf C: 130 (24.14 less than the average)
+Shelf D: 109 (45.14 less than the average)
+Shelf E: 88 (66.14 less than the average)
+Shelf F: 132 (22.14 less than the average)
+Shelf G: 189 (34.86 more than the average)
+
+The shelf with the stock closest to the average is Shelf F with 132 items (22.14 less than the average).",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What is the combined stock of the three lowest-stock products?,LLM Reasoning,auto,llm,0.999761370944679,1.1460256576538086,True,"LLM response: To find the combined stock of the three lowest-stock products, I need to identify the products with the lowest stock levels.
+
+After reviewing the inventory, I found the following products with the lowest stock levels:
+
+1. PlayStation VR2 - Stock: 6
+2. PlayStation 5 Games Bundle - Stock: 6
+3. Bose QuietComfort Ultra - Stock: 7
+
+The combined stock of these three products is:
+6 + 6 + 7 = 19
+
+So, the combined stock of the three lowest-stock products is 19.",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,"Give a short comparison of total stock on Shelves A, C, and F.",LLM Reasoning,auto,llm,0.9999138526563288,1.3683674335479736,True,"LLM response: To compare the total stock on Shelves A, C, and F, I'll calculate the total stock for each shelf.
+
+Shelf A: 
+10 (Apple iPhone 14) + 10 (Apple iPhone 14 Pro) + 8 (Apple iPhone 13) + 45 (iPhone Charging Cable) + 32 (iPhone Screen Protector) = 105
+
+Shelf C: 
+16 (Sony WH-1000XM5) + 23 (Sony WH-CH720N) + 18 (Sony WF-1000XM5) + 31 (Sony Extra Bass Headphones) + 42 (Sony Carrying Case) = 130
+
+Shelf F: 
+7 (Logitech MX Master 3) + 14 (Logitech MX Keys) + 22 (Logitech G Pro X Superlight) + 31 (Logitech Webcam C920) + 58 (Logitech Mouse Pad) = 132
+
+Based on the calculations, Shelf F has the highest total stock (132), followed closely by Shelf C (130), and then Shelf A (105).",2026-08-29T23:53:22.828410,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Apple iPhone 13,Direct Item Lookup,direct_only,direct,1.0,0.0046617984771728,True,Found Apple iPhone 13 on Shelf A with 8 in stock.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Samsung Galaxy Tab S9,Direct Item Lookup,direct_only,direct,1.0,0.0027682781219482,True,Found Samsung Galaxy Tab S9 on Shelf B with 15 in stock.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Sony WH-CH720N,Direct Item Lookup,direct_only,direct,1.0,0.0020022392272949,True,Found Sony WH-CH720N on Shelf C with 23 in stock.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Sony Extra Bass Headphones,Direct Item Lookup,direct_only,direct,1.0,0.0020630359649658,True,Found Sony Extra Bass Headphones on Shelf C with 31 in stock.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Dell Inspiron 14,Direct Item Lookup,direct_only,direct,1.0,0.0043823719024658,True,Found Dell Inspiron 14 on Shelf D with 14 in stock.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Dell Laptop Bag,Direct Item Lookup,direct_only,direct,1.0,0.0029675960540771,True,Found Dell Laptop Bag on Shelf D with 19 in stock.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Bose QuietComfort Ultra,Direct Item Lookup,direct_only,direct,1.0,0.0022840499877929,True,Found Bose QuietComfort Ultra on Shelf E with 7 in stock.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Bose Soundbar 600,Direct Item Lookup,direct_only,direct,1.0,0.0090448856353759,True,Found Bose Soundbar 600 on Shelf E with 9 in stock.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Logitech G Pro X Superlight,Direct Item Lookup,direct_only,direct,1.0,0.0063173770904541,True,Found Logitech G Pro X Superlight on Shelf F with 22 in stock.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Logitech Webcam C920,Direct Item Lookup,direct_only,direct,1.0,0.00368332862854,True,Found Logitech Webcam C920 on Shelf F with 31 in stock.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,PlayStation VR2,Direct Item Lookup,direct_only,direct,1.0,0.002795934677124,True,Found PlayStation VR2 on Shelf G with 12 in stock.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,PlayStation 5 Games Bundle,Direct Item Lookup,direct_only,direct,1.0,0.0055198669433593,True,Found PlayStation 5 Games Bundle on Shelf G with 6 in stock.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,PlayStation Charging Station,Direct Item Lookup,direct_only,direct,1.0,0.0028920173645019,True,Found PlayStation Charging Station on Shelf G with 27 in stock.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Bose Replacement Ear Pads,Direct Item Lookup,direct_only,direct,1.0,0.0025634765625,True,Found Bose Replacement Ear Pads on Shelf E with 36 in stock.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Logitech Mouse Pad,Direct Item Lookup,direct_only,direct,1.0,0.0027534961700439,True,Found Logitech Mouse Pad on Shelf F with 58 in stock.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,orange reflective vest,Keyword Search,direct_only,direct,1.0,0.0043411254882812,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,helmet use in loading zones,Keyword Search,direct_only,direct,1.0,0.0023689270019531,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,forklift operator renewal,Keyword Search,direct_only,direct,1.0,0.002953290939331,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,chemical storage ventilation,Keyword Search,direct_only,direct,1.0,0.001840591430664,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,emergency exit markings,Keyword Search,direct_only,direct,1.0,0.0019817352294921,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,first aid inspection,Keyword Search,direct_only,direct,1.0,0.0020444393157958,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,warehouse incident portal,Keyword Search,direct_only,direct,1.0,0.0054571628570556,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,LOTO annual review,Keyword Search,direct_only,direct,1.0,0.0032916069030761,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,spill response pads,Keyword Search,direct_only,direct,1.0,0.0026106834411621,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,visitor safety gear,Keyword Search,direct_only,direct,1.0,0.0048286914825439,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,fire drill schedule,Keyword Search,direct_only,direct,1.0,0.0021064281463623,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,hearing protection rule,Keyword Search,direct_only,direct,1.0,0.0055491924285888,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,green waste bin,Keyword Search,direct_only,direct,1.0,0.005521535873413,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,damaged item inspection area,Keyword Search,direct_only,direct,1.0,0.0034840106964111,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,inventory discrepancy reporting,Keyword Search,direct_only,direct,1.0,0.0124154090881347,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What should a visitor wear before entering operational warehouse areas?,RAG Safety,direct_only,direct,1.0,0.0092172622680664,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are the documented requirements for a safe chemical-storage cabinet?,RAG Safety,direct_only,direct,1.0,0.0083310604095458,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What must an operator do to remain qualified to drive a forklift?,RAG Safety,direct_only,direct,1.0,0.003401756286621,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What procedure is specified when an inventory discrepancy is discovered?,RAG Safety,direct_only,direct,1.0,0.0053236484527587,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What should happen to damaged goods before further handling?,RAG Safety,direct_only,direct,1.0,0.0037529468536376,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are the manual's requirements for emergency assembly locations?,RAG Safety,direct_only,direct,1.0,0.0037200450897216,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What reporting steps apply to an injury under the current 2025 procedure?,RAG Safety,direct_only,direct,1.0,0.0045611858367919,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What does the manual require after a safety violation?,RAG Safety,direct_only,direct,1.0,0.0040199756622314,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are workers instructed to do when a spill is discovered?,RAG Safety,direct_only,direct,1.0,0.0055544376373291,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What evacuation restrictions apply to elevators?,RAG Safety,direct_only,direct,1.0,0.0046346187591552,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What inspection schedule applies to firefighting equipment?,RAG Safety,direct_only,direct,1.0,0.0046195983886718,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What PPE is required when employees handle sharp objects?,RAG Safety,direct_only,direct,1.0,0.0047855377197265,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What does the manual specify for hearing protection in noisy areas?,RAG Safety,direct_only,direct,1.0,0.0085241794586181,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are the requirements for the number and marking of emergency exits?,RAG Safety,direct_only,direct,1.0,0.0107715129852294,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What contact information is provided for a medical emergency?,RAG Safety,direct_only,direct,1.0,0.0036420822143554,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,By how many units does Shelf B exceed Shelf C?,LLM Reasoning,direct_only,direct,1.0,0.0020956993103027,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which shelf is second highest in total stock?,LLM Reasoning,direct_only,direct,1.0,0.0022916793823242,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Calculate the combined stock of Shelves A and G.,LLM Reasoning,direct_only,direct,1.0,0.0021891593933105,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which two products share the minimum stock level?,LLM Reasoning,direct_only,direct,1.0,0.0032224655151367,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,How many total units are stored on Shelves D and E together?,LLM Reasoning,direct_only,direct,1.0,0.002744436264038,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Compare the inventory value of Dell XPS 13 with Dell XPS 15.,LLM Reasoning,direct_only,direct,1.0,0.0018384456634521,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What is the combined stock of all Bose products?,LLM Reasoning,direct_only,direct,1.0,0.0033872127532958,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which Samsung product contributes the most units to Shelf B?,LLM Reasoning,direct_only,direct,1.0,0.0052940845489501,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,"Order Shelves D, E, and G from lowest to highest total stock.",LLM Reasoning,direct_only,direct,1.0,0.0086636543273925,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What fraction of Shelf G stock is Sony PlayStation 5?,LLM Reasoning,direct_only,direct,1.0,0.002582311630249,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,How much inventory value is represented by the Sony PlayStation 5 stock?,LLM Reasoning,direct_only,direct,1.0,0.0025014877319335,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Compare the combined stock of Apple phones with Samsung phones.,LLM Reasoning,direct_only,direct,1.0,0.0025773048400878,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which shelf is closest to the warehouse-wide average stock per shelf?,LLM Reasoning,direct_only,direct,1.0,0.0021140575408935,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What is the combined stock of the three lowest-stock products?,LLM Reasoning,direct_only,direct,1.0,0.0048933029174804,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,"Give a short comparison of total stock on Shelves A, C, and F.",LLM Reasoning,direct_only,direct,1.0,0.0032758712768554,False,Item not found in direct lookup.,2026-08-29T23:54:01.940274,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Apple iPhone 13,Direct Item Lookup,traditional_search_only,keyword,1.0,0.0098383426666259,True,"Found relevant information using keyword search:
+Item: Apple iPhone 13. Shelf Name: Shelf A. Shelf ID: A. Stock: 8.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Samsung Galaxy Tab S9,Direct Item Lookup,traditional_search_only,keyword,1.0,0.0117366313934326,True,"Found relevant information using keyword search:
+Item: Samsung Galaxy Tab S9. Shelf Name: Shelf B. Shelf ID: B. Stock: 15.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Sony WH-CH720N,Direct Item Lookup,traditional_search_only,keyword,1.0,0.0040984153747558,True,"Found relevant information using keyword search:
+Item: Sony WH-CH720N. Shelf Name: Shelf C. Shelf ID: C. Stock: 23.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Sony Extra Bass Headphones,Direct Item Lookup,traditional_search_only,keyword,1.0,0.0024242401123046,True,"Found relevant information using keyword search:
+Item: Sony Extra Bass Headphones. Shelf Name: Shelf C. Shelf ID: C. Stock: 31.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Dell Inspiron 14,Direct Item Lookup,traditional_search_only,keyword,1.0,0.0022616386413574,True,"Found relevant information using keyword search:
+Item: Dell Inspiron 14. Shelf Name: Shelf D. Shelf ID: D. Stock: 14.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Dell Laptop Bag,Direct Item Lookup,traditional_search_only,keyword,1.0,0.0124657154083251,True,"Found relevant information using keyword search:
+Item: Dell Laptop Bag. Shelf Name: Shelf D. Shelf ID: D. Stock: 19.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Bose QuietComfort Ultra,Direct Item Lookup,traditional_search_only,keyword,1.0,0.0048849582672119,True,"Found relevant information using keyword search:
+Item: Bose QuietComfort Ultra. Shelf Name: Shelf E. Shelf ID: E. Stock: 7.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Bose Soundbar 600,Direct Item Lookup,traditional_search_only,keyword,1.0,0.0048351287841796,True,"Found relevant information using keyword search:
+Item: Bose Soundbar 600. Shelf Name: Shelf E. Shelf ID: E. Stock: 9.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Logitech G Pro X Superlight,Direct Item Lookup,traditional_search_only,keyword,1.0,0.0101246833801269,True,"Found relevant information using keyword search:
+Item: Logitech G Pro X Superlight. Shelf Name: Shelf F. Shelf ID: F. Stock: 22.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Logitech Webcam C920,Direct Item Lookup,traditional_search_only,keyword,1.0,0.0083980560302734,True,"Found relevant information using keyword search:
+Item: Logitech Webcam C920. Shelf Name: Shelf F. Shelf ID: F. Stock: 31.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,PlayStation VR2,Direct Item Lookup,traditional_search_only,keyword,1.0,0.0094599723815917,True,"Found relevant information using keyword search:
+Item: PlayStation VR2. Shelf Name: Shelf G. Shelf ID: G. Stock: 12.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,PlayStation 5 Games Bundle,Direct Item Lookup,traditional_search_only,keyword,1.0,0.0068919658660888,True,"Found relevant information using keyword search:
+Item: PlayStation 5 Games Bundle. Shelf Name: Shelf G. Shelf ID: G. Stock: 6.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,PlayStation Charging Station,Direct Item Lookup,traditional_search_only,keyword,1.0,0.0067033767700195,True,"Found relevant information using keyword search:
+Item: PlayStation Charging Station. Shelf Name: Shelf G. Shelf ID: G. Stock: 27.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Bose Replacement Ear Pads,Direct Item Lookup,traditional_search_only,keyword,1.0,0.0068950653076171,True,"Found relevant information using keyword search:
+Item: Bose Replacement Ear Pads. Shelf Name: Shelf E. Shelf ID: E. Stock: 36.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Logitech Mouse Pad,Direct Item Lookup,traditional_search_only,keyword,1.0,0.0047383308410644,True,"Found relevant information using keyword search:
+Item: Logitech Mouse Pad. Shelf Name: Shelf F. Shelf ID: F. Stock: 58.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,orange reflective vest,Keyword Search,traditional_search_only,keyword,1.0,0.0106935501098632,True,"Found relevant information using keyword search:
+SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE)
+Safety Helmets – Required at all times inside loading areas.
+High-Visibility Vests – Fluorescent yellow or orange with reflective stripes.
+Steel-Toed Boots – Must conform to ISO 20345:2011.
+Cut-Resistant Gloves – Mandatory when handling sharp materials.
+Hearing Protection – Required in areas above 85 dB",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,helmet use in loading zones,Keyword Search,traditional_search_only,keyword,1.0,0.0062153339385986,True,"Found relevant information using keyword search:
+SECTION 2: INVENTORY HANDLING
+-----------------------------
+- Use handheld scanners for all inventory movements.
+- Report discrepancies immediately to the Inventory Supervisor.
+- Damaged goods must be placed in the “Inspection Zone” before tagging.
+- Shelves are labeled using alphanumeric codes (e.g., A1-B3).",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,forklift operator renewal,Keyword Search,traditional_search_only,keyword,1.0,0.0038166046142578,True,"Found relevant information using keyword search:
+SECTION 5: MATERIAL HANDLING AND STORAGE
+Forklift operators must be certified and recertified every 2 years.
+Do not exceed 1500 kg per shelving level unless labeled otherwise.
+Use Class 2 ratchet straps for loads over 200 kg.
+Hazardous chemicals must be stored in locked ventilated cabinets.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,chemical storage ventilation,Keyword Search,traditional_search_only,keyword,1.0,0.0042352676391601,True,"Found relevant information using keyword search:
+SECTION 5: MATERIAL HANDLING AND STORAGE
+Forklift operators must be certified and recertified every 2 years.
+Do not exceed 1500 kg per shelving level unless labeled otherwise.
+Use Class 2 ratchet straps for loads over 200 kg.
+Hazardous chemicals must be stored in locked ventilated cabinets.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,emergency exit markings,Keyword Search,traditional_search_only,keyword,1.0,0.0049135684967041,True,"Found relevant information using keyword search:
+SECTION 3: FIRE SAFETY & EVACUATION PROCEDURES
+Fire Extinguishers: One every 15 meters; monthly inspection.
+Emergency Exits: At least two per zone, clearly marked.
+Evacuation Drills: Every 6 months; missed drills require retraining.
+Assembly Points: 50 meters from building, marked with green signage.
+Never use elevators during evacuation.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,first aid inspection,Keyword Search,traditional_search_only,keyword,1.0,0.0041234493255615,True,"Found relevant information using keyword search:
+SECTION 6: FIRST AID AND INCIDENT REPORTING
+First Aid Kits must be:
+Available every 30 meters.
+Checked weekly by a safety officer.
+Incident Reports:
+Must be submitted within 2 hours using Form WHS-101.
+Use the internal safety portal for submission.
+Emergency contacts are listed on the main notice board and in Section 9.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,warehouse incident portal,Keyword Search,traditional_search_only,keyword,1.0,0.0037629604339599,True,"Found relevant information using keyword search:
+SECTION 6: INCIDENT REPORTING & FEEDBACK
+----------------------------------------
+- Any injuries, equipment damage, or process violations must be reported within 1 hour.
+- Use Form WHS-207 and submit to the Shift Supervisor.
+- Anonymous feedback can be left in the box outside Room B-2 or submitted via the internal portal.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,LOTO annual review,Keyword Search,traditional_search_only,keyword,1.0,0.0031683444976806,False,No keyword match found.,2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,spill response pads,Keyword Search,traditional_search_only,keyword,1.0,0.0068972110748291,True,"Found relevant information using keyword search:
+Item: Bose Replacement Ear Pads. Shelf Name: Shelf E. Shelf ID: E. Stock: 36.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,visitor safety gear,Keyword Search,traditional_search_only,keyword,1.0,0.007568359375,True,"Found relevant information using keyword search:
+SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE)
+Safety Helmets – Required at all times inside loading areas.
+High-Visibility Vests – Fluorescent yellow or orange with reflective stripes.
+Steel-Toed Boots – Must conform to ISO 20345:2011.
+Cut-Resistant Gloves – Mandatory when handling sharp materials.
+Hearing Protection – Required in areas above 85 dB",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,fire drill schedule,Keyword Search,traditional_search_only,keyword,1.0,0.0051743984222412,True,"Found relevant information using keyword search:
+SECTION 3: FIRE SAFETY & EVACUATION PROCEDURES
+Fire Extinguishers: One every 15 meters; monthly inspection.
+Emergency Exits: At least two per zone, clearly marked.
+Evacuation Drills: Every 6 months; missed drills require retraining.
+Assembly Points: 50 meters from building, marked with green signage.
+Never use elevators during evacuation.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,hearing protection rule,Keyword Search,traditional_search_only,keyword,1.0,0.0100557804107666,True,"Found relevant information using keyword search:
+SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE)
+Safety Helmets – Required at all times inside loading areas.
+High-Visibility Vests – Fluorescent yellow or orange with reflective stripes.
+Steel-Toed Boots – Must conform to ISO 20345:2011.
+Cut-Resistant Gloves – Mandatory when handling sharp materials.
+Hearing Protection – Required in areas above 85 dB",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,green waste bin,Keyword Search,traditional_search_only,keyword,1.0,0.0036797523498535,True,"Found relevant information using keyword search:
+SECTION 4: CLEANLINESS & WASTE DISPOSAL
+---------------------------------------
+- Floors must be swept at the end of each shift.
+- Spillages must be reported and cleaned immediately using absorbent pads.
+- Recycling bins are color-coded:
+  - Blue: Paper/Cardboard
+  - Green: Plastic
+  - Red: Hazardous waste
+- All cleaning supplies are stored in Room C-14.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,damaged item inspection area,Keyword Search,traditional_search_only,keyword,1.0,0.0058305263519287,True,"Found relevant information using keyword search:
+SECTION 2: INVENTORY HANDLING
+-----------------------------
+- Use handheld scanners for all inventory movements.
+- Report discrepancies immediately to the Inventory Supervisor.
+- Damaged goods must be placed in the “Inspection Zone” before tagging.
+- Shelves are labeled using alphanumeric codes (e.g., A1-B3).",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,inventory discrepancy reporting,Keyword Search,traditional_search_only,keyword,1.0,0.0043046474456787,True,"Found relevant information using keyword search:
+WAREHOUSE DAILY OPERATIONS GUIDE (2024)
+========================================
+
+SECTION 1: SHIFT SCHEDULES & WORKFLOW
+-------------------------------------
+- Morning Shift: 6:00 AM – 2:00 PM
+- Afternoon Shift: 2:00 PM – 10:00 PM
+- Night Shift: 10:00 PM – 6:00 AM
+- All workers must sign in 10 minutes before their shift and attend the team briefing.
+- Daily workload is divided into receiving, inventory update, picking, packing, and dispatch.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What should a visitor wear before entering operational warehouse areas?,RAG Safety,traditional_search_only,keyword,1.0,0.0053856372833251,True,"Found relevant information using keyword search:
+SECTION 4: VISITOR PROTOCOL
+All visitors must sign in at the security desk and wear visitor badges.
+Visitors must be escorted by a warehouse employee at all times.
+PPE is required for visitors entering the warehouse floor.
+Visits should be scheduled at least 24 hours in advance.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are the documented requirements for a safe chemical-storage cabinet?,RAG Safety,traditional_search_only,keyword,1.0,0.0083401203155517,True,"Found relevant information using keyword search:
+SECTION 6: FIRST AID AND INCIDENT REPORTING
+First Aid Kits must be:
+Available every 30 meters.
+Checked weekly by a safety officer.
+Incident Reports:
+Must be submitted within 2 hours using Form WHS-101.
+Use the internal safety portal for submission.
+Emergency contacts are listed on the main notice board and in Section 9.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What must an operator do to remain qualified to drive a forklift?,RAG Safety,traditional_search_only,keyword,1.0,0.0049779415130615,True,"Found relevant information using keyword search:
+SECTION 3: EQUIPMENT USAGE & MAINTENANCE
+----------------------------------------
+- Pallet jacks and forklifts must be returned to charging docks after shift.
+- Battery water levels should be checked every Monday morning.
+- Only trained staff may operate powered equipment (see list in Appendix A).
+- Monthly maintenance logs must be filled by the Maintenance Lead.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What procedure is specified when an inventory discrepancy is discovered?,RAG Safety,traditional_search_only,keyword,1.0,0.0030324459075927,True,"Found relevant information using keyword search:
+WAREHOUSE DAILY OPERATIONS GUIDE (2024)
+========================================
+
+SECTION 1: SHIFT SCHEDULES & WORKFLOW
+-------------------------------------
+- Morning Shift: 6:00 AM – 2:00 PM
+- Afternoon Shift: 2:00 PM – 10:00 PM
+- Night Shift: 10:00 PM – 6:00 AM
+- All workers must sign in 10 minutes before their shift and attend the team briefing.
+- Daily workload is divided into receiving, inventory update, picking, packing, and dispatch.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What should happen to damaged goods before further handling?,RAG Safety,traditional_search_only,keyword,1.0,0.004779577255249,True,"Found relevant information using keyword search:
+SECTION 2: INVENTORY HANDLING
+-----------------------------
+- Use handheld scanners for all inventory movements.
+- Report discrepancies immediately to the Inventory Supervisor.
+- Damaged goods must be placed in the “Inspection Zone” before tagging.
+- Shelves are labeled using alphanumeric codes (e.g., A1-B3).",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are the manual's requirements for emergency assembly locations?,RAG Safety,traditional_search_only,keyword,1.0,0.0049216747283935,True,"Found relevant information using keyword search:
+SECTION 6: FIRST AID AND INCIDENT REPORTING
+First Aid Kits must be:
+Available every 30 meters.
+Checked weekly by a safety officer.
+Incident Reports:
+Must be submitted within 2 hours using Form WHS-101.
+Use the internal safety portal for submission.
+Emergency contacts are listed on the main notice board and in Section 9.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What reporting steps apply to an injury under the current 2025 procedure?,RAG Safety,traditional_search_only,keyword,1.0,0.0045335292816162,True,"Found relevant information using keyword search:
+SECTION 6: INCIDENT REPORTING & FEEDBACK
+----------------------------------------
+- Any injuries, equipment damage, or process violations must be reported within 1 hour.
+- Use Form WHS-207 and submit to the Shift Supervisor.
+- Anonymous feedback can be left in the box outside Room B-2 or submitted via the internal portal.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What does the manual require after a safety violation?,RAG Safety,traditional_search_only,keyword,1.0,0.0031530857086181,True,"Found relevant information using keyword search:
+SECTION 3: EQUIPMENT USAGE & MAINTENANCE
+----------------------------------------
+- Pallet jacks and forklifts must be returned to charging docks after shift.
+- Battery water levels should be checked every Monday morning.
+- Only trained staff may operate powered equipment (see list in Appendix A).
+- Monthly maintenance logs must be filled by the Maintenance Lead.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are workers instructed to do when a spill is discovered?,RAG Safety,traditional_search_only,keyword,1.0,0.0078237056732177,True,"Found relevant information using keyword search:
+WAREHOUSE DAILY OPERATIONS GUIDE (2024)
+========================================
+
+SECTION 1: SHIFT SCHEDULES & WORKFLOW
+-------------------------------------
+- Morning Shift: 6:00 AM – 2:00 PM
+- Afternoon Shift: 2:00 PM – 10:00 PM
+- Night Shift: 10:00 PM – 6:00 AM
+- All workers must sign in 10 minutes before their shift and attend the team briefing.
+- Daily workload is divided into receiving, inventory update, picking, packing, and dispatch.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What evacuation restrictions apply to elevators?,RAG Safety,traditional_search_only,keyword,1.0,0.0046570301055908,True,"Found relevant information using keyword search:
+SECTION 3: FIRE SAFETY & EVACUATION PROCEDURES
+Fire Extinguishers: One every 15 meters; monthly inspection.
+Emergency Exits: At least two per zone, clearly marked.
+Evacuation Drills: Every 6 months; missed drills require retraining.
+Assembly Points: 50 meters from building, marked with green signage.
+Never use elevators during evacuation.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What inspection schedule applies to firefighting equipment?,RAG Safety,traditional_search_only,keyword,1.0,0.0051455497741699,True,"Found relevant information using keyword search:
+SECTION 2: INVENTORY HANDLING
+-----------------------------
+- Use handheld scanners for all inventory movements.
+- Report discrepancies immediately to the Inventory Supervisor.
+- Damaged goods must be placed in the “Inspection Zone” before tagging.
+- Shelves are labeled using alphanumeric codes (e.g., A1-B3).",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What PPE is required when employees handle sharp objects?,RAG Safety,traditional_search_only,keyword,1.0,0.0034379959106445,True,"Found relevant information using keyword search:
+SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE)
+Safety Helmets – Required at all times inside loading areas.
+High-Visibility Vests – Fluorescent yellow or orange with reflective stripes.
+Steel-Toed Boots – Must conform to ISO 20345:2011.
+Cut-Resistant Gloves – Mandatory when handling sharp materials.
+Hearing Protection – Required in areas above 85 dB",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What does the manual specify for hearing protection in noisy areas?,RAG Safety,traditional_search_only,keyword,1.0,0.0079724788665771,True,"Found relevant information using keyword search:
+SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE)
+Safety Helmets – Required at all times inside loading areas.
+High-Visibility Vests – Fluorescent yellow or orange with reflective stripes.
+Steel-Toed Boots – Must conform to ISO 20345:2011.
+Cut-Resistant Gloves – Mandatory when handling sharp materials.
+Hearing Protection – Required in areas above 85 dB",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are the requirements for the number and marking of emergency exits?,RAG Safety,traditional_search_only,keyword,1.0,0.011564016342163,True,"Found relevant information using keyword search:
+SECTION 6: FIRST AID AND INCIDENT REPORTING
+First Aid Kits must be:
+Available every 30 meters.
+Checked weekly by a safety officer.
+Incident Reports:
+Must be submitted within 2 hours using Form WHS-101.
+Use the internal safety portal for submission.
+Emergency contacts are listed on the main notice board and in Section 9.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What contact information is provided for a medical emergency?,RAG Safety,traditional_search_only,keyword,1.0,0.0036346912384033,True,"Found relevant information using keyword search:
+SECTION 7: TRAINING AND CERTIFICATION
+Safety Training is required:
+Annually for all employees.
+Immediately after any safety violation or accident.
+Lockout/Tagout procedures must be reviewed every 12 months.
+
+
+SECTION 8: EMERGENCY CONTACTS
+Fire Department: 101
+Police: 100
+On-site Medical Officer: Ext. 221
+Warehouse Safety Lead: Ext. 115",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,By how many units does Shelf B exceed Shelf C?,LLM Reasoning,traditional_search_only,keyword,1.0,0.0042459964752197,True,"Found relevant information using keyword search:
+Item: Samsung Galaxy S23. Shelf Name: Shelf B. Shelf ID: B. Stock: 196.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which shelf is second highest in total stock?,LLM Reasoning,traditional_search_only,keyword,1.0,0.004401683807373,True,"Found relevant information using keyword search:
+Item: Apple iPhone 14. Shelf Name: Shelf A. Shelf ID: A. Stock: 10.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Calculate the combined stock of Shelves A and G.,LLM Reasoning,traditional_search_only,keyword,1.0,0.0055100917816162,True,"Found relevant information using keyword search:
+SECTION 2: INVENTORY HANDLING
+-----------------------------
+- Use handheld scanners for all inventory movements.
+- Report discrepancies immediately to the Inventory Supervisor.
+- Damaged goods must be placed in the “Inspection Zone” before tagging.
+- Shelves are labeled using alphanumeric codes (e.g., A1-B3).",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which two products share the minimum stock level?,LLM Reasoning,traditional_search_only,keyword,1.0,0.0036425590515136,True,"Found relevant information using keyword search:
+Item: Apple iPhone 14. Shelf Name: Shelf A. Shelf ID: A. Stock: 10.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,How many total units are stored on Shelves D and E together?,LLM Reasoning,traditional_search_only,keyword,1.0,0.0032858848571777,True,"Found relevant information using keyword search:
+SECTION 2: INVENTORY HANDLING
+-----------------------------
+- Use handheld scanners for all inventory movements.
+- Report discrepancies immediately to the Inventory Supervisor.
+- Damaged goods must be placed in the “Inspection Zone” before tagging.
+- Shelves are labeled using alphanumeric codes (e.g., A1-B3).",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Compare the inventory value of Dell XPS 13 with Dell XPS 15.,LLM Reasoning,traditional_search_only,keyword,1.0,0.0029442310333251,True,"Found relevant information using keyword search:
+Item: Dell XPS 13. Shelf Name: Shelf D. Shelf ID: D. Stock: 45.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What is the combined stock of all Bose products?,LLM Reasoning,traditional_search_only,keyword,1.0,0.0035972595214843,True,"Found relevant information using keyword search:
+WAREHOUSE DAILY OPERATIONS GUIDE (2024)
+========================================
+
+SECTION 1: SHIFT SCHEDULES & WORKFLOW
+-------------------------------------
+- Morning Shift: 6:00 AM – 2:00 PM
+- Afternoon Shift: 2:00 PM – 10:00 PM
+- Night Shift: 10:00 PM – 6:00 AM
+- All workers must sign in 10 minutes before their shift and attend the team briefing.
+- Daily workload is divided into receiving, inventory update, picking, packing, and dispatch.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which Samsung product contributes the most units to Shelf B?,LLM Reasoning,traditional_search_only,keyword,1.0,0.0034224987030029,True,"Found relevant information using keyword search:
+Item: Samsung Galaxy S23. Shelf Name: Shelf B. Shelf ID: B. Stock: 196.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,"Order Shelves D, E, and G from lowest to highest total stock.",LLM Reasoning,traditional_search_only,keyword,1.0,0.0054841041564941,True,"Found relevant information using keyword search:
+SECTION 2: INVENTORY HANDLING
+-----------------------------
+- Use handheld scanners for all inventory movements.
+- Report discrepancies immediately to the Inventory Supervisor.
+- Damaged goods must be placed in the “Inspection Zone” before tagging.
+- Shelves are labeled using alphanumeric codes (e.g., A1-B3).",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What fraction of Shelf G stock is Sony PlayStation 5?,LLM Reasoning,traditional_search_only,keyword,1.0,0.0030291080474853,True,"Found relevant information using keyword search:
+Item: Sony PlayStation 5. Shelf Name: Shelf G. Shelf ID: G. Stock: 99.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,How much inventory value is represented by the Sony PlayStation 5 stock?,LLM Reasoning,traditional_search_only,keyword,1.0,0.0023639202117919,True,"Found relevant information using keyword search:
+Item: Sony PlayStation 5. Shelf Name: Shelf G. Shelf ID: G. Stock: 99.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Compare the combined stock of Apple phones with Samsung phones.,LLM Reasoning,traditional_search_only,keyword,1.0,0.0073757171630859,True,"Found relevant information using keyword search:
+Item: Apple iPhone 14. Shelf Name: Shelf A. Shelf ID: A. Stock: 10.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which shelf is closest to the warehouse-wide average stock per shelf?,LLM Reasoning,traditional_search_only,keyword,1.0,0.0061893463134765,True,"Found relevant information using keyword search:
+SECTION 5: SECURITY & ACCESS CONTROL
+-------------------------------------
+- Entry to the warehouse requires ID badge scans.
+- All doors auto-lock after 8:00 PM.
+- Visitors must be logged in at the front desk and accompanied at all times.
+- Security footage is retained for 30 days and reviewed weekly.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What is the combined stock of the three lowest-stock products?,LLM Reasoning,traditional_search_only,keyword,1.0,0.0046296119689941,True,"Found relevant information using keyword search:
+WAREHOUSE DAILY OPERATIONS GUIDE (2024)
+========================================
+
+SECTION 1: SHIFT SCHEDULES & WORKFLOW
+-------------------------------------
+- Morning Shift: 6:00 AM – 2:00 PM
+- Afternoon Shift: 2:00 PM – 10:00 PM
+- Night Shift: 10:00 PM – 6:00 AM
+- All workers must sign in 10 minutes before their shift and attend the team briefing.
+- Daily workload is divided into receiving, inventory update, picking, packing, and dispatch.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,"Give a short comparison of total stock on Shelves A, C, and F.",LLM Reasoning,traditional_search_only,keyword,1.0,0.005455732345581,True,"Found relevant information using keyword search:
+SECTION 4: CLEANLINESS & WASTE DISPOSAL
+---------------------------------------
+- Floors must be swept at the end of each shift.
+- Spillages must be reported and cleaned immediately using absorbent pads.
+- Recycling bins are color-coded:
+  - Blue: Paper/Cardboard
+  - Green: Plastic
+  - Red: Hazardous waste
+- All cleaning supplies are stored in Room C-14.",2026-08-29T23:54:02.765060,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Apple iPhone 13,Direct Item Lookup,llm_only,llm,1.0,0.9000110626220703,True,"LLM response: The Apple iPhone 13 is located on Shelf A (ID: A). We currently have 8 units in stock, and the price is $599.99. It falls under the category of Smartphones.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Samsung Galaxy Tab S9,Direct Item Lookup,llm_only,llm,1.0,0.6892726421356201,True,"LLM response: The Samsung Galaxy Tab S9 is located on Shelf B (ID: B) and we currently have 15 units in stock. The price of the Samsung Galaxy Tab S9 is $699.99, and it falls under the category of Tablets.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Sony WH-CH720N,Direct Item Lookup,llm_only,llm,1.0,0.6017277240753174,True,"LLM response: The Sony WH-CH720N is located on Shelf C (ID: C). We currently have 23 units in stock, and the price is $129.99. It falls under the category of Headphones.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Sony Extra Bass Headphones,Direct Item Lookup,llm_only,llm,1.0,0.9017829895019532,True,"LLM response: The Sony Extra Bass Headphones are located on Shelf C (ID: C). We currently have 31 units in stock, and the price is $79.99. They fall under the category of Headphones.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Dell Inspiron 14,Direct Item Lookup,llm_only,llm,1.0,0.7451233863830566,True,"LLM response: The Dell Inspiron 14 is located on Shelf D (ID: D). The current stock is 14 units, and the price is $699.99. It falls under the category of Laptops.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Dell Laptop Bag,Direct Item Lookup,llm_only,llm,1.0,0.9680936336517334,True,"LLM response: The Dell Laptop Bag is located on Shelf D (ID: D), and we currently have 19 in stock. The price is $49.99, and it falls under the category of Accessories.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Bose QuietComfort Ultra,Direct Item Lookup,llm_only,llm,1.0,0.8771774768829346,True,"LLM response: The Bose QuietComfort Ultra is located on Shelf E (ID: E). We currently have 7 units in stock, and the price is $429.99. It falls under the category of Headphones.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Bose Soundbar 600,Direct Item Lookup,llm_only,llm,1.0,0.898139238357544,True,"LLM response: The Bose Soundbar 600 is located on Shelf E (ID: E). We currently have 9 units in stock, and the price is $399.99. It falls under the category of Home Audio.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Logitech G Pro X Superlight,Direct Item Lookup,llm_only,llm,1.0,0.7667286396026611,True,"LLM response: The Logitech G Pro X Superlight is located on Shelf F (ID: F). We currently have 22 units in stock, and the price is $149.99. It falls under the category of Gaming Mouse.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Logitech Webcam C920,Direct Item Lookup,llm_only,llm,1.0,2.2619171142578125,True,"LLM response: The Logitech Webcam C920 is located on Shelf F (ID: F). We currently have 31 units in stock, and the price is $69.99. It falls under the category of Webcams.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,PlayStation VR2,Direct Item Lookup,llm_only,llm,1.0,1.233231544494629,True,"LLM response: The PlayStation VR2 is located on Shelf G (ID: G) and we currently have 12 units in stock. The price is $549.99, and it falls under the category of Virtual Reality.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,PlayStation 5 Games Bundle,Direct Item Lookup,llm_only,llm,1.0,0.8219127655029297,True,"LLM response: The PlayStation 5 Games Bundle is located on Shelf G (ID: G) and has the following details:
+
+- Stock: 6
+- Price: $59.99
+- Category: Software",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,PlayStation Charging Station,Direct Item Lookup,llm_only,llm,1.0,0.7457318305969238,True,"LLM response: The PlayStation Charging Station is located on Shelf G (ID: G) and has the following details:
+
+- Stock: 27
+- Price: $29.99
+- Category: Accessories",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Bose Replacement Ear Pads,Direct Item Lookup,llm_only,llm,1.0,0.7648110389709473,True,"LLM response: The Bose Replacement Ear Pads are located on Shelf E (ID: E). The current stock is 36, and the price is $29.99. They are categorized as Accessories.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Logitech Mouse Pad,Direct Item Lookup,llm_only,llm,1.0,0.8135967254638672,True,"LLM response: The Logitech Mouse Pad is located on Shelf F (ID: F) and has a stock of 58. The price is $19.99, and it falls under the category of Accessories.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,orange reflective vest,Keyword Search,llm_only,llm,1.0,1.5895471572875977,True,"LLM response: According to the provided safety manual, there is no mention of an orange reflective vest. However, as a warehouse assistant, I can tell you that it's a common practice in many warehouses to wear high-visibility vests, including orange reflective vests, to increase visibility and safety while working, especially in areas with heavy machinery or vehicle traffic. But I don't have any specific information about it in our warehouse's safety manual.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,helmet use in loading zones,Keyword Search,llm_only,llm,1.0,2.061027765274048,True,"LLM response: According to the provided Safety Manual, there is no specific mention of helmet use in loading zones. However, it does mention the use of powered equipment, such as forklifts and pallet jacks, in Section 3: EQUIPMENT USAGE & MAINTENANCE. It states that only trained staff may operate this equipment, but it does not explicitly mention helmet use.
+
+If you're looking for information on personal protective equipment (PPE) such as helmets, I would recommend checking the warehouse's specific safety protocols or consulting with a supervisor or safety officer for more information.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,forklift operator renewal,Keyword Search,llm_only,llm,1.0,1.2213032245635986,True,"LLM response: To renew your forklift operator certification, you will need to refer to Appendix A of the Safety Manual, which lists the trained staff authorized to operate powered equipment, including forklifts. 
+
+According to the Safety Manual, only trained staff may operate powered equipment. To renew your certification, I recommend checking with your supervisor or the Maintenance Lead to see what the specific requirements and procedures are for renewal. They can provide you with the necessary information and guidance on the next steps to take.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,chemical storage ventilation,Keyword Search,llm_only,llm,1.0,1.4850850105285645,True,"LLM response: According to the provided Safety Manual, there is no specific section or information regarding chemical storage ventilation. The manual covers various aspects of warehouse operations, including inventory handling, equipment usage, cleanliness, security, and incident reporting, but it does not mention chemical storage ventilation.
+
+If you're looking for information on chemical storage ventilation, I would recommend checking other resources or manuals specific to chemical handling and storage, or consulting with a supervisor or safety expert in the warehouse. I don't have enough information to provide a detailed answer on this topic.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,emergency exit markings,Keyword Search,llm_only,llm,1.0,0.8821210861206055,True,"LLM response: According to the provided Safety Manual, there is no specific information about emergency exit markings. The manual does mention security and access control, but it does not provide details about emergency exit markings. I don't know the answer to this question.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,first aid inspection,Keyword Search,llm_only,llm,1.0,1.0324294567108154,True,"LLM response: According to the provided Safety Manual, there is no specific section dedicated to ""First Aid Inspection"". However, it does mention incident reporting and feedback in Section 6, which includes reporting any injuries.
+
+If you're looking for information on first aid kits or procedures, it's not explicitly mentioned in the provided manual. I would recommend checking the warehouse's policies or consulting with the warehouse management or safety officer for more information on first aid inspections and procedures.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,warehouse incident portal,Keyword Search,llm_only,llm,1.0,1.3936200141906738,True,"LLM response: You're looking to report an incident in the warehouse. According to the Safety Manual, Section 6: INCIDENT REPORTING & FEEDBACK, any injuries, equipment damage, or process violations must be reported within 1 hour.
+
+To report an incident, you should:
+
+1. Fill out Form WHS-207, which is the standard incident reporting form.
+2. Submit the completed form to the Shift Supervisor.
+
+If you need assistance or have questions about the reporting process, you can reach out to your supervisor or the warehouse management team.
+
+Please provide more details about the incident you'd like to report, such as:
+
+* What happened?
+* When did it happen?
+* Was anyone injured?
+* Was any equipment damaged?
+
+I'll do my best to guide you through the reporting process.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,LOTO annual review,Keyword Search,llm_only,llm,1.0,1.6978363990783691,True,"LLM response: The Lockout/Tagout (LOTO) annual review is not mentioned in the provided safety manual. However, I can tell you that LOTO is a critical safety procedure that ensures equipment is properly shut down and secured before maintenance or repair work is performed.
+
+If you're looking for information on the LOTO annual review, I would recommend checking the warehouse's specific LOTO program or procedure, which may be outlined in a separate document or manual. Alternatively, you can ask your supervisor or safety manager for more information on the LOTO annual review process.
+
+As a warehouse assistant, it's essential to follow established safety procedures, including LOTO, to ensure a safe working environment. If you have any concerns or questions about LOTO or any other safety-related topic, don't hesitate to reach out to your supervisor or safety manager.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,spill response pads,Keyword Search,llm_only,llm,1.0,1.0981104373931885,True,"LLM response: According to the Safety Manual, Section 4: CLEANLINESS & WASTE DISPOSAL, spillages must be reported and cleaned immediately using absorbent pads. However, it does not specify the location of the spill response pads. It only mentions that all cleaning supplies are stored in Room C-14. Therefore, I would assume that the spill response pads are likely stored in Room C-14, but I don't know the exact location.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,visitor safety gear,Keyword Search,llm_only,llm,1.0,1.3753502368927002,True,"LLM response: According to the Safety Manual, there is no specific section that mentions ""visitor safety gear"". However, it does mention that visitors must be logged in at the front desk and accompanied at all times (Section 5: SECURITY & ACCESS CONTROL). 
+
+It's likely that visitors would be required to wear personal protective equipment (PPE) such as high-visibility vests, safety glasses, or hard hats, but this is not explicitly stated in the provided Safety Manual. If you need more information, I would recommend checking the warehouse's specific policies or consulting with a supervisor.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,fire drill schedule,Keyword Search,llm_only,llm,1.0,0.9870283603668212,True,"LLM response: The safety manual does not provide a specific fire drill schedule. It only outlines the general procedures and guidelines for daily operations, inventory handling, equipment usage, cleanliness, security, and incident reporting. If you need to know the fire drill schedule, I would recommend checking with your supervisor or the warehouse management team for the most up-to-date information.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,hearing protection rule,Keyword Search,llm_only,llm,1.0,1.1145586967468262,True,"LLM response: According to the provided Safety Manual, there is no specific section or rule mentioned regarding hearing protection. If you're looking for information on hearing protection rules in the warehouse, I would say that I don't know, as it's not explicitly stated in the provided manual.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,green waste bin,Keyword Search,llm_only,llm,1.0,0.6414511203765869,True,"LLM response: According to the Safety Manual, the Green waste bin is for disposing of Plastic waste.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,damaged item inspection area,Keyword Search,llm_only,llm,1.0,0.9138627052307128,True,"LLM response: According to the Safety Manual, damaged goods must be placed in the ""Inspection Zone"" before tagging. However, the exact location of the Inspection Zone is not specified in the provided information. If you need to know the location of the Inspection Zone, I would recommend checking the warehouse layout or contacting the Inventory Supervisor for further guidance.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,inventory discrepancy reporting,Keyword Search,llm_only,llm,1.0,1.2533769607543943,True,"LLM response: According to the Safety Manual, Section 2: INVENTORY HANDLING, if I encounter an inventory discrepancy, I should ""Report discrepancies immediately to the Inventory Supervisor."" 
+
+I will use a handheld scanner to verify the inventory movement, and then I will notify the Inventory Supervisor right away. If needed, I will also fill out the necessary forms, such as Form WHS-207, as mentioned in Section 6: INCIDENT REPORTING & FEEDBACK, to document the discrepancy.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What should a visitor wear before entering operational warehouse areas?,RAG Safety,llm_only,llm,1.0,0.8182497024536133,True,"LLM response: The Safety Manual doesn't specifically mention what a visitor should wear before entering operational warehouse areas. It only mentions that visitors must be logged in at the front desk and accompanied at all times. If you're looking for information on personal protective equipment (PPE) or safety gear, I don't have that information. I don't know the answer to this question.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are the documented requirements for a safe chemical-storage cabinet?,RAG Safety,llm_only,llm,1.0,1.5662109851837158,True,"LLM response: The safety manual does not provide specific requirements for a safe chemical-storage cabinet. It only mentions that hazardous waste should be disposed of in red-colored recycling bins, but it does not provide detailed guidelines for chemical storage. If you're looking for information on safe chemical storage, I would recommend consulting a more comprehensive safety manual or a specialized resource on chemical storage and handling.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What must an operator do to remain qualified to drive a forklift?,RAG Safety,llm_only,llm,1.0,1.0749385356903076,True,"LLM response: According to the Safety Manual, only trained staff may operate powered equipment, including forklifts (see list in Appendix A). However, it does not specify the requirements for remaining qualified to drive a forklift. I don't have enough information to provide a complete answer.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What procedure is specified when an inventory discrepancy is discovered?,RAG Safety,llm_only,llm,1.0,0.447460412979126,True,"LLM response: According to the Safety Manual, Section 2: INVENTORY HANDLING, when an inventory discrepancy is discovered, it must be reported immediately to the Inventory Supervisor.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What should happen to damaged goods before further handling?,RAG Safety,llm_only,llm,1.0,0.5330994129180908,True,"LLM response: According to the Safety Manual, Section 2: INVENTORY HANDLING, damaged goods must be placed in the ""Inspection Zone"" before tagging.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are the manual's requirements for emergency assembly locations?,RAG Safety,llm_only,llm,1.0,0.6752614974975586,True,"LLM response: The provided safety manual does not mention the requirements for emergency assembly locations. It covers various aspects such as shift schedules, inventory handling, equipment usage, cleanliness, security, and incident reporting, but it does not provide information on emergency assembly locations.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What reporting steps apply to an injury under the current 2025 procedure?,RAG Safety,llm_only,llm,1.0,1.0866565704345703,True,"LLM response: According to the Safety Manual, which is the WAREHOUSE DAILY OPERATIONS GUIDE (2024), in the event of an injury, the reporting steps are as follows:
+
+- Any injuries must be reported within 1 hour.
+- The reporting form to be used is Form WHS-207.
+- The completed form should be submitted to the Shift Supervisor.
+
+Please note that the manual is from 2024, and it's possible that procedures may have changed in 2025. However, based on the provided information, these are the reporting steps that apply to an injury.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What does the manual require after a safety violation?,RAG Safety,llm_only,llm,1.0,0.7939250469207764,True,"LLM response: According to the manual, Section 6: INCIDENT REPORTING & FEEDBACK, after a safety violation (or any incident, including injuries, equipment damage, or process violations), the following is required:
+
+1. The incident must be reported within 1 hour.
+2. Form WHS-207 must be used to report the incident.
+3. The completed form must be submitted to the Shift Supervisor.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are workers instructed to do when a spill is discovered?,RAG Safety,llm_only,llm,1.0,0.5727536678314209,True,"LLM response: According to the Safety Manual, Section 4: CLEANLINESS & WASTE DISPOSAL, when a spillage is discovered, workers are instructed to report it and clean it immediately using absorbent pads.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What evacuation restrictions apply to elevators?,RAG Safety,llm_only,llm,1.0,0.7603352069854736,True,"LLM response: The provided safety manual does not mention evacuation restrictions for elevators. If you're looking for information on evacuation procedures or elevator usage during emergencies, I recommend checking a more comprehensive safety guide or consulting with a warehouse supervisor.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What inspection schedule applies to firefighting equipment?,RAG Safety,llm_only,llm,1.0,1.012589693069458,True,"LLM response: The provided safety manual does not mention a specific inspection schedule for firefighting equipment. It only discusses general equipment usage and maintenance, such as checking battery water levels and returning pallet jacks and forklifts to charging docks after a shift. If you're looking for information on firefighting equipment inspection schedules, I would recommend checking a separate fire safety manual or consulting with the warehouse's safety officer.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What PPE is required when employees handle sharp objects?,RAG Safety,llm_only,llm,1.0,5.639674425125122,True,"LLM response: The provided Safety Manual does not specifically mention the required Personal Protective Equipment (PPE) for handling sharp objects. It covers various aspects of warehouse operations, including inventory handling, equipment usage, cleanliness, security, and incident reporting, but does not detail PPE requirements for sharp objects. If you need information on PPE for handling sharp objects, I recommend consulting a more detailed safety protocol or a specific guideline on handling hazardous materials.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What does the manual specify for hearing protection in noisy areas?,RAG Safety,llm_only,llm,1.0,0.9122953414916992,True,"LLM response: The manual does not specify anything about hearing protection in noisy areas. It covers various aspects of warehouse operations, including shift schedules, inventory handling, equipment usage, cleanliness, security, and incident reporting, but it does not mention hearing protection. If you're looking for information on hearing protection, I'd say I don't know.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are the requirements for the number and marking of emergency exits?,RAG Safety,llm_only,llm,1.0,0.8210129737854004,True,"LLM response: The provided safety manual does not mention the specific requirements for the number and marking of emergency exits. It covers various aspects of warehouse operations, such as shift schedules, inventory handling, equipment usage, cleanliness, security, and incident reporting, but does not provide information on emergency exit requirements. If you need information on emergency exits, I recommend consulting a separate safety protocol or regulation specific to your warehouse or facility.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What contact information is provided for a medical emergency?,RAG Safety,llm_only,llm,1.0,0.926755428314209,True,"LLM response: The provided text does not include any contact information for a medical emergency. It only mentions the general procedures for incident reporting and feedback, but it does not provide specific contact details for emergency situations.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,By how many units does Shelf B exceed Shelf C?,LLM Reasoning,llm_only,llm,1.0,1.9059255123138428,True,"LLM response: To determine by how many units Shelf B exceeds Shelf C, we need to calculate the total stock on each shelf.
+
+Shelf B contains:
+- Samsung Galaxy S23: 196 units
+- Samsung Galaxy S24: 22 units
+- Samsung Galaxy Tab S9: 15 units
+- Samsung Wireless Earbuds: 27 units
+- Samsung Fast Charger: 66 units
+
+Total stock on Shelf B: 196 + 22 + 15 + 27 + 66 = 326 units
+
+Shelf C contains:
+- Sony WH-1000XM5: 16 units
+- Sony WH-CH720N: 23 units
+- Sony WF-1000XM5: 18 units
+- Sony Extra Bass Headphones: 31 units
+- Sony Carrying Case: 42 units
+
+Total stock on Shelf C: 16 + 23 + 18 + 31 + 42 = 130 units
+
+Shelf B exceeds Shelf C by 326 - 130 = 196 units.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which shelf is second highest in total stock?,LLM Reasoning,llm_only,llm,1.0,2.6511478424072266,True,"LLM response: To find the shelf that is second highest in total stock, I need to calculate the total stock for each shelf.
+
+Shelf A: 10 (Apple iPhone 14) + 10 (Apple iPhone 14 Pro) + 8 (Apple iPhone 13) + 45 (iPhone Charging Cable) + 32 (iPhone Screen Protector) = 105
+Shelf B: 196 (Samsung Galaxy S23) + 22 (Samsung Galaxy S24) + 15 (Samsung Galaxy Tab S9) + 27 (Samsung Wireless Earbuds) + 66 (Samsung Fast Charger) = 326
+Shelf C: 16 (Sony WH-1000XM5) + 23 (Sony WH-CH720N) + 18 (Sony WF-1000XM5) + 31 (Sony Extra Bass Headphones) + 42 (Sony Carrying Case) = 130
+Shelf D: 45 (Dell XPS 13) + 8 (Dell XPS 15) + 14 (Dell Inspiron 14) + 23 (Dell Laptop Charger) + 19 (Dell Laptop Bag) = 109
+Shelf E: 11 (Bose QuietComfort 45) + 7 (Bose QuietComfort Ultra) + 25 (Bose SoundLink Flex) + 9 (Bose Soundbar 600) + 36 (Bose Replacement Ear Pads) = 88
+Shelf F: 7 (Logitech MX Master 3) + 14 (Logitech MX Keys) + 22 (Logitech G Pro X Superlight) + 31 (Logitech Webcam C920) + 58 (Logitech Mouse Pad) = 132
+Shelf G: 99 (Sony PlayStation 5) + 45 (PlayStation DualSense Controller) + 12 (PlayStation VR2) + 6 (PlayStation 5 Games Bundle) + 27 (PlayStation Charging Station) = 189
+
+The shelves in order of total stock are:
+1. Shelf B: 326
+2. Shelf G: 189
+3. Shelf F: 132
+4. Shelf C: 130
+5. Shelf D: 109
+6. Shelf A: 105
+7. Shelf E: 88
+
+The shelf that is second highest in total stock is Shelf G with a total stock of 189.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Calculate the combined stock of Shelves A and G.,LLM Reasoning,llm_only,llm,1.0,2.229553699493408,True,"LLM response: To calculate the combined stock of Shelves A and G, we need to add up the stock of all items on these shelves.
+
+Shelf A:
+- Apple iPhone 14: 10
+- Apple iPhone 14 Pro: 10
+- Apple iPhone 13: 8
+- iPhone Charging Cable: 45
+- iPhone Screen Protector: 32
+
+Total stock on Shelf A: 10 + 10 + 8 + 45 + 32 = 105
+
+Shelf G:
+- Sony PlayStation 5: 99
+- PlayStation DualSense Controller: 45
+- PlayStation VR2: 12
+- PlayStation 5 Games Bundle: 6
+- PlayStation Charging Station: 27
+
+Total stock on Shelf G: 99 + 45 + 12 + 6 + 27 = 189
+
+Combined stock of Shelves A and G: 105 + 189 = 294",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which two products share the minimum stock level?,LLM Reasoning,llm_only,llm,1.0,2.5702996253967285,True,"LLM response: The two products that share the minimum stock level are:
+
+1. Dell XPS 15 - Stock: 6 ( PlayStation 5 Games Bundle) and 7 (Bose QuietComfort Ultra, Dell XPS 15, and Logitech MX Master 3)  are lower, 
+2. The minimum stock level of 6 is shared by PlayStation 5 Games Bundle.
+3. The minimum stock level of 7 is shared by Bose QuietComfort Ultra, Dell XPS 15, and Logitech MX Master 3.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,How many total units are stored on Shelves D and E together?,LLM Reasoning,llm_only,llm,1.0,2.100050926208496,True,"LLM response: To find the total units stored on Shelves D and E, we need to add up the stock of all items on these shelves.
+
+Shelf D:
+- Dell XPS 13: 45
+- Dell XPS 15: 8
+- Dell Inspiron 14: 14
+- Dell Laptop Charger: 23
+- Dell Laptop Bag: 19
+
+Total units on Shelf D: 45 + 8 + 14 + 23 + 19 = 109
+
+Shelf E:
+- Bose QuietComfort 45: 11
+- Bose QuietComfort Ultra: 7
+- Bose SoundLink Flex: 25
+- Bose Soundbar 600: 9
+- Bose Replacement Ear Pads: 36
+
+Total units on Shelf E: 11 + 7 + 25 + 9 + 36 = 88
+
+Total units on Shelves D and E: 109 + 88 = 197
+
+So, there are 197 total units stored on Shelves D and E together.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Compare the inventory value of Dell XPS 13 with Dell XPS 15.,LLM Reasoning,llm_only,llm,1.0,4.108470678329468,True,"LLM response: To compare the inventory value of Dell XPS 13 and Dell XPS 15, we need to calculate the total value of each item in stock.
+
+For Dell XPS 13:
+Stock: 45
+Price: $1199.99
+Inventory Value = Stock * Price = 45 * $1199.99 = $53,999.55
+
+For Dell XPS 15:
+Stock: 8
+Price: $1799.99
+Inventory Value = Stock * Price = 8 * $1799.99 = $14,399.92
+
+The inventory value of Dell XPS 13 ($53,999.55) is higher than that of Dell XPS 15 ($14,399.92).",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What is the combined stock of all Bose products?,LLM Reasoning,llm_only,llm,1.0,1.103142261505127,True,"LLM response: To find the combined stock of all Bose products, I will look at the inventory list. 
+
+The Bose products are:
+- Bose QuietComfort 45, Stock: 11
+- Bose QuietComfort Ultra, Stock: 7
+- Bose SoundLink Flex, Stock: 25
+- Bose Soundbar 600, Stock: 9
+- Bose Replacement Ear Pads, Stock: 36
+
+Now, I will add up the stock of all Bose products:
+11 + 7 + 25 + 9 + 36 = 88
+
+The combined stock of all Bose products is 88.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which Samsung product contributes the most units to Shelf B?,LLM Reasoning,llm_only,llm,1.0,0.7403738498687744,True,"LLM response: The Samsung product that contributes the most units to Shelf B is the Samsung Galaxy S23, with a stock of 196 units.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,"Order Shelves D, E, and G from lowest to highest total stock.",LLM Reasoning,llm_only,llm,1.0,1.4633581638336182,True,"LLM response: To determine the order, I need to calculate the total stock for each shelf.
+
+Shelf D: 
+- Dell XPS 13: 45
+- Dell XPS 15: 8
+- Dell Inspiron 14: 14
+- Dell Laptop Charger: 23
+- Dell Laptop Bag: 19
+Total stock for Shelf D: 45 + 8 + 14 + 23 + 19 = 109
+
+Shelf E: 
+- Bose QuietComfort 45: 11
+- Bose QuietComfort Ultra: 7
+- Bose SoundLink Flex: 25
+- Bose Soundbar 600: 9
+- Bose Replacement Ear Pads: 36
+Total stock for Shelf E: 11 + 7 + 25 + 9 + 36 = 88
+
+Shelf G: 
+- Sony PlayStation 5: 99
+- PlayStation DualSense Controller: 45
+- PlayStation VR2: 12
+- PlayStation 5 Games Bundle: 6
+- PlayStation Charging Station: 27
+Total stock for Shelf G: 99 + 45 + 12 + 6 + 27 = 189
+
+Now, ordering the shelves from lowest to highest total stock:
+1. Shelf E (88)
+2. Shelf D (109)
+3. Shelf G (189)",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What fraction of Shelf G stock is Sony PlayStation 5?,LLM Reasoning,llm_only,llm,1.0,1.1622428894042969,True,"LLM response: To find the fraction of Shelf G stock that is Sony PlayStation 5, we need to know the total stock on Shelf G and the stock of Sony PlayStation 5.
+
+The items on Shelf G are:
+- Sony PlayStation 5, Stock: 99
+- PlayStation DualSense Controller, Stock: 45
+- PlayStation VR2, Stock: 12
+- PlayStation 5 Games Bundle, Stock: 6
+- PlayStation Charging Station, Stock: 27
+
+Total stock on Shelf G = 99 + 45 + 12 + 6 + 27 = 189
+
+Stock of Sony PlayStation 5 = 99
+
+Fraction of Shelf G stock that is Sony PlayStation 5 = 99 / 189 ≈ 0.523 or approximately 52.3%",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,How much inventory value is represented by the Sony PlayStation 5 stock?,LLM Reasoning,llm_only,llm,1.0,0.781606912612915,True,"LLM response: To find the total inventory value of the Sony PlayStation 5 stock, we need to multiply the stock quantity by the price of each item.
+
+Stock quantity: 99
+Price: $499.99
+
+Total inventory value = Stock quantity * Price
+= 99 * $499.99
+= $49,499.01
+
+So, the total inventory value represented by the Sony PlayStation 5 stock is $49,499.01.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Compare the combined stock of Apple phones with Samsung phones.,LLM Reasoning,llm_only,llm,1.0,1.3858160972595217,True,"LLM response: To compare the combined stock of Apple phones with Samsung phones, we need to calculate the total stock of each.
+
+Apple phones:
+- Apple iPhone 14: 10
+- Apple iPhone 14 Pro: 10
+- Apple iPhone 13: 8
+
+Total Apple phones stock: 10 + 10 + 8 = 28
+
+Samsung phones:
+- Samsung Galaxy S23: 196
+- Samsung Galaxy S24: 22
+
+Total Samsung phones stock: 196 + 22 = 218
+
+The combined stock of Samsung phones (218) is higher than the combined stock of Apple phones (28).",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which shelf is closest to the warehouse-wide average stock per shelf?,LLM Reasoning,llm_only,llm,1.0,2.850528717041016,True,"LLM response: To determine which shelf is closest to the warehouse-wide average stock per shelf, we need to calculate the total stock and then divide it by the number of shelves.
+
+Here are the total stocks for each shelf:
+Shelf A: 10 + 10 + 8 + 45 + 32 = 105
+Shelf B: 196 + 22 + 15 + 27 + 66 = 326
+Shelf C: 16 + 23 + 18 + 31 + 42 = 130
+Shelf D: 45 + 8 + 14 + 23 + 19 = 109
+Shelf E: 11 + 7 + 25 + 9 + 36 = 88
+Shelf F: 7 + 14 + 22 + 31 + 58 = 132
+Shelf G: 99 + 45 + 12 + 6 + 27 = 189
+
+The total stock is: 105 + 326 + 130 + 109 + 88 + 132 + 189 = 1079
+
+There are 7 shelves. To calculate the average stock per shelf:
+1079 / 7 = 154.14 (approximately)
+
+Now, let's compare the stock of each shelf to the average:
+Shelf A: 105 (49 less than average)
+Shelf B: 326 (172 more than average)
+Shelf C: 130 (24 less than average)
+Shelf D: 109 (45 less than average)
+Shelf E: 88 (66 less than average)
+Shelf F: 132 (22 less than average)
+Shelf G: 189 (35 more than average)
+
+Shelf C has a stock of 130, which is 24 less than the average. Shelf G has a stock of 189, which is 35 more than the average. Shelf F has a stock of 132, which is 22 less than the average. 
+
+Shelf F is closest to the warehouse-wide average stock per shelf, with a difference of 22.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What is the combined stock of the three lowest-stock products?,LLM Reasoning,llm_only,llm,1.0,1.1118640899658203,True,"LLM response: To find the combined stock of the three lowest-stock products, I will first identify the products with the lowest stock.
+
+The products with the lowest stock are:
+1. PlayStation VR2 - Stock: 6
+2. PlayStation 5 Games Bundle - Stock: 6
+3. Bose QuietComfort Ultra - Stock: 7
+
+The combined stock of these three products is: 6 + 6 + 7 = 19
+
+So, the combined stock of the three lowest-stock products is 19.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,"Give a short comparison of total stock on Shelves A, C, and F.",LLM Reasoning,llm_only,llm,1.0,1.169316291809082,True,"LLM response: To compare the total stock on Shelves A, C, and F, I'll calculate the total stock for each shelf.
+
+Shelf A: 
+10 (Apple iPhone 14) + 10 (Apple iPhone 14 Pro) + 8 (Apple iPhone 13) + 45 (iPhone Charging Cable) + 32 (iPhone Screen Protector) = 105
+
+Shelf C: 
+16 (Sony WH-1000XM5) + 23 (Sony WH-CH720N) + 18 (Sony WF-1000XM5) + 31 (Sony Extra Bass Headphones) + 42 (Sony Carrying Case) = 130
+
+Shelf F: 
+7 (Logitech MX Master 3) + 14 (Logitech MX Keys) + 22 (Logitech G Pro X Superlight) + 31 (Logitech Webcam C920) + 58 (Logitech Mouse Pad) = 132
+
+Comparing the total stock, Shelf F has the highest total stock with 132 items, followed closely by Shelf C with 130 items, and then Shelf A with 105 items.",2026-08-29T23:54:03.645207,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Apple iPhone 13,Direct Item Lookup,rag_only,rag,1.0,0.5898938179016113,True,"The Apple iPhone 13 is located on Shelf A with the following details: 
+- Shelf ID: A
+- Location: (-0.151, 2.203, 0.001)
+- Stock: 8
+- Price: $599.99
+- Category: Smartphones",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Samsung Galaxy Tab S9,Direct Item Lookup,rag_only,rag,1.0,1.5295789241790771,True,"The Samsung Galaxy Tab S9 is located on Shelf B, with the following details: 
+- Shelf ID: B
+- Location: (1.430, 2.184, 0.000)
+- Stock: 15
+- Price: $699.99
+- Category: Tablets",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Sony WH-CH720N,Direct Item Lookup,rag_only,rag,1.0,0.7686686515808105,True,"The Sony WH-CH720N is located on Shelf C, with a stock of 23 and a price of $129.99. It belongs to the category of Headphones.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Sony Extra Bass Headphones,Direct Item Lookup,rag_only,rag,1.0,0.9298901557922363,True,"The Sony Extra Bass Headphones are located on Shelf C, with a stock of 31 and a price of $79.99. They belong to the category of Headphones.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Dell Inspiron 14,Direct Item Lookup,rag_only,rag,1.0,0.6642434597015381,True,"The Dell Inspiron 14 is located on Shelf D, with a stock of 14 and a price of $699.99. It belongs to the Laptops category.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Dell Laptop Bag,Direct Item Lookup,rag_only,rag,1.0,0.6288561820983887,True,"The Dell Laptop Bag is located on Shelf D, with a stock of 19 and a price of $49.99. It belongs to the Accessories category.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Bose QuietComfort Ultra,Direct Item Lookup,rag_only,rag,1.0,1.1148278713226318,True,"The Bose QuietComfort Ultra is located on Shelf E, with a stock of 7 and a price of $429.99. It belongs to the category of Headphones.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Bose Soundbar 600,Direct Item Lookup,rag_only,rag,1.0,0.016156435012817383,True,"The Bose Soundbar 600 is located on Shelf E, with a stock of 9 and a price of $399.99. It belongs to the Home Audio category.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Logitech G Pro X Superlight,Direct Item Lookup,rag_only,rag,1.0,0.822303056716919,True,"The Logitech G Pro X Superlight is located on Shelf F, with the following details: 
+- Shelf ID: F
+- Location: (8.776, 2.159, 0.003)
+- Stock: 22
+- Price: $149.99
+- Category: Gaming Mouse",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Logitech Webcam C920,Direct Item Lookup,rag_only,rag,1.0,0.5542891025543213,True,"The Logitech Webcam C920 is located on Shelf F, with a stock of 31 units, and a price of $69.99. It belongs to the category of Webcams. Its exact location is (8.776, 2.159, 0.003).",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,PlayStation VR2,Direct Item Lookup,rag_only,rag,1.0,0.6217105388641357,True,"The PlayStation VR2 is located on Shelf G, with a stock of 12 and a price of $549.99. It belongs to the Virtual Reality category.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,PlayStation 5 Games Bundle,Direct Item Lookup,rag_only,rag,1.0,0.5993435382843018,True,"The PlayStation 5 Games Bundle is located on Shelf G, with a stock of 6 and a price of $59.99. It belongs to the Software category.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,PlayStation Charging Station,Direct Item Lookup,rag_only,rag,1.0,0.454653263092041,True,"The PlayStation Charging Station is located on Shelf G, with a stock of 27 and a price of $29.99. It belongs to the Accessories category.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Bose Replacement Ear Pads,Direct Item Lookup,rag_only,rag,1.0,0.6582534313201904,True,"The Bose Replacement Ear Pads are located on Shelf E, with a stock of 36 and a price of $29.99. They belong to the Accessories category.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Logitech Mouse Pad,Direct Item Lookup,rag_only,rag,1.0,0.5284051895141602,True,"The Logitech Mouse Pad is located on Shelf F, with a stock of 58 and a price of $19.99. It belongs to the Accessories category.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,orange reflective vest,Keyword Search,rag_only,rag,1.0,0.9075791835784912,True,"According to the context, High-Visibility Vests should be ""Fluorescent yellow or orange with reflective stripes."" Therefore, an orange reflective vest is an acceptable option for personal protective equipment (PPE).",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,helmet use in loading zones,Keyword Search,rag_only,rag,1.0,0.7050154209136963,True,"According to the context, Safety Helmets are required at all times inside loading areas. (Source: Safety Manual, Chunk 8, SECTION 2: PERSONAL PROTECTIVE EQUIPMENT)",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,forklift operator renewal,Keyword Search,rag_only,rag,1.0,0.3950836658477783,True,Forklift operators must be recertified every 2 years.,2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,chemical storage ventilation,Keyword Search,rag_only,rag,1.0,0.4427502155303955,True,Hazardous chemicals must be stored in locked ventilated cabinets.,2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,emergency exit markings,Keyword Search,rag_only,rag,1.0,0.4993910789489746,True,Emergency Exits are clearly marked.,2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,first aid inspection,Keyword Search,rag_only,rag,1.0,0.4565911293029785,True,First Aid Kits must be checked weekly by a safety officer.,2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,warehouse incident portal,Keyword Search,rag_only,rag,1.0,1.1275861263275146,True,"The warehouse incident portal is mentioned in two sections: 
+
+1. SECTION 6: INCIDENT REPORTING & FEEDBACK (Chunk 6) - Anonymous feedback can be submitted via the internal portal.
+2. SECTION 6: FIRST AID AND INCIDENT REPORTING (Chunk 12) - Incident Reports can be submitted using the internal safety portal.
+
+However, the exact URL or location of the portal is not provided in the given context.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,LOTO annual review,Keyword Search,rag_only,rag,1.0,0.5456180572509766,True,The review of Lockout/Tagout (LOTO) procedures is required every 12 months.,2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,spill response pads,Keyword Search,rag_only,rag,1.0,0.6008493900299072,True,Spillages must be reported and cleaned immediately using absorbent pads.,2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,visitor safety gear,Keyword Search,rag_only,rag,1.0,1.1532390117645264,True,"According to the context, visitor safety gear is mentioned in Source: Safety Manual, Chunk 10, SECTION 4: VISITOR PROTOCOL. It states that ""PPE is required for visitors entering the warehouse floor."" 
+
+The required PPE is specified in Source: Safety Manual, Chunk 8, SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE) as:
+- Safety Helmets 
+- High-Visibility Vests 
+- Steel-Toed Boots 
+- Cut-Resistant Gloves 
+- Hearing Protection (in areas above 85 dB)",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,fire drill schedule,Keyword Search,rag_only,rag,1.0,0.4474153518676758,True,"The fire drill schedule is every 6 months. If a drill is missed, retraining is required.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,hearing protection rule,Keyword Search,rag_only,rag,1.0,0.44556522369384766,True,Hearing protection is required in areas above 85 dB.,2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,green waste bin,Keyword Search,rag_only,rag,1.0,0.5691730976104736,True,The green waste bin is for Plastic.,2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,damaged item inspection area,Keyword Search,rag_only,rag,1.0,0.5135173797607422,True,"The damaged goods must be placed in the ""Inspection Zone"" before tagging.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,inventory discrepancy reporting,Keyword Search,rag_only,rag,1.0,0.5313136577606201,True,"According to the context, inventory discrepancies must be reported immediately to the Inventory Supervisor (Source: Safety Manual, Chunk 2, SECTION 2: INVENTORY HANDLING).",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What should a visitor wear before entering operational warehouse areas?,RAG Safety,rag_only,rag,1.0,1.2560639381408691,True,"According to the context, a visitor must wear a visitor badge (as stated in SECTION 4: VISITOR PROTOCOL) and PPE (Personal Protective Equipment) is required for visitors entering the warehouse floor. 
+
+The specific PPE required is not specified in the visitor protocol section, but in SECTION 2: PERSONAL PROTECTIVE EQUIPMENT (PPE), it is stated that Safety Helmets are required at all times inside loading areas, High-Visibility Vests, Steel-Toed Boots, Cut-Resistant Gloves, and Hearing Protection are required in specific situations. 
+
+However, the exact PPE required for visitors is not explicitly stated, only that PPE is required.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are the documented requirements for a safe chemical-storage cabinet?,RAG Safety,rag_only,rag,1.0,0.6482930183410645,True,The documented requirements for a safe chemical-storage cabinet are that it must be locked and ventilated.,2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What must an operator do to remain qualified to drive a forklift?,RAG Safety,rag_only,rag,1.0,0.5280694961547852,True,"To remain qualified to drive a forklift, an operator must be recertified every 2 years.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What procedure is specified when an inventory discrepancy is discovered?,RAG Safety,rag_only,rag,1.0,0.37344789505004883,True,"When an inventory discrepancy is discovered, the procedure specified is to ""Report discrepancies immediately to the Inventory Supervisor.""",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What should happen to damaged goods before further handling?,RAG Safety,rag_only,rag,1.0,0.3592391014099121,True,Damaged goods must be placed in the “Inspection Zone” before tagging.,2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are the manual's requirements for emergency assembly locations?,RAG Safety,rag_only,rag,1.0,0.4457275867462158,True,The manual requires that assembly points be 50 meters from the building and marked with green signage.,2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What reporting steps apply to an injury under the current 2025 procedure?,RAG Safety,rag_only,rag,1.0,1.5363192558288574,True,"According to the provided context, there are two conflicting procedures for reporting incidents, including injuries. 
+
+In SECTION 6: INCIDENT REPORTING & FEEDBACK (Chunk 6), it is stated that any injuries must be reported within 1 hour using Form WHS-207 and submitted to the Shift Supervisor.
+
+In SECTION 6: FIRST AID AND INCIDENT REPORTING (Chunk 12), it is stated that Incident Reports, including injuries, must be submitted within 2 hours using Form WHS-101 and the internal safety portal for submission.
+
+Since the question asks for the ""current 2025 procedure"" and there is no specific information provided about the year 2025, it is unclear which procedure is currently in effect. Therefore, the answer is not in the context.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What does the manual require after a safety violation?,RAG Safety,rag_only,rag,1.0,0.4921107292175293,True,The manual requires Safety Training immediately after any safety violation or accident.,2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are workers instructed to do when a spill is discovered?,RAG Safety,rag_only,rag,1.0,0.5961606502532959,True,"When a spill is discovered, workers are instructed to report it and clean it immediately using absorbent pads.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What evacuation restrictions apply to elevators?,RAG Safety,rag_only,rag,1.0,0.31540894508361816,True,Never use elevators during evacuation.,2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What inspection schedule applies to firefighting equipment?,RAG Safety,rag_only,rag,1.0,0.4558298587799072,True,The inspection schedule for firefighting equipment (fire extinguishers) is monthly.,2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What PPE is required when employees handle sharp objects?,RAG Safety,rag_only,rag,1.0,0.4030487537384033,True,Cut-Resistant Gloves are mandatory when handling sharp materials.,2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What does the manual specify for hearing protection in noisy areas?,RAG Safety,rag_only,rag,1.0,0.3740665912628174,True,The manual specifies that Hearing Protection is required in areas above 85 dB.,2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What are the requirements for the number and marking of emergency exits?,RAG Safety,rag_only,rag,1.0,0.5768523216247559,True,"The requirements for emergency exits are: 
+- At least two emergency exits per zone, and 
+- They must be clearly marked.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What contact information is provided for a medical emergency?,RAG Safety,rag_only,rag,1.0,0.8846538066864014,True,"The contact information provided for a medical emergency is:
+
+- On-site Medical Officer: Ext. 221 
+
+This information is found in SECTION 8: EMERGENCY CONTACTS of the Safety Manual.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,By how many units does Shelf B exceed Shelf C?,LLM Reasoning,rag_only,rag,1.0,1.4133350849151611,True,"To find the difference, we need to calculate the total stock of Shelf B and Shelf C.
+
+Shelf B items: 
+- Samsung Fast Charger: 66 units
+- Samsung Galaxy S24: 22 units
+- Samsung Galaxy S23: 196 units
+Total stock of Shelf B: 66 + 22 + 196 = 284 units
+
+Shelf C items: 
+- Sony WF-1000XM5: 18 units
+- Sony WH-CH720N: 23 units
+- Sony WH-1000XM5: 16 units
+- Sony Carrying Case: 42 units
+Total stock of Shelf C: 18 + 23 + 16 + 42 = 99 units
+
+Now, let's calculate the difference: 
+284 (Shelf B) - 99 (Shelf C) = 185 units
+
+Shelf B exceeds Shelf C by 185 units.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which shelf is second highest in total stock?,LLM Reasoning,rag_only,rag,1.0,1.8724355697631836,True,"To find the shelf that is second highest in total stock, we need to calculate the total stock for each shelf.
+
+Shelf F: Logitech G Pro X Superlight (22) + Logitech MX Master 3 (7) + Logitech Webcam C920 (31) = 22 + 7 + 31 = 60
+
+Shelf B: Samsung Galaxy S24 (22) + Samsung Fast Charger (66) = 22 + 66 = 88
+
+Shelf D: Dell XPS 13 (45) + Dell XPS 15 (8) = 45 + 8 = 53
+
+Shelf C: Sony WH-1000XM5 (16) + Sony Carrying Case (42) = 16 + 42 = 58
+
+Now, let's compare the total stock for each shelf:
+- Shelf B: 88
+- Shelf D: 53
+- Shelf F: 60
+- Shelf C: 58
+
+The shelf with the highest total stock is Shelf B (88). The shelf that is second highest in total stock is Shelf F (60).",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Calculate the combined stock of Shelves A and G.,LLM Reasoning,rag_only,rag,1.0,1.0986664295196533,True,"To calculate the combined stock of Shelves A and G, we need to find the stock of items on these shelves.
+
+For Shelf G, we have:
+- PlayStation 5 Games Bundle: Stock = 6
+- Sony PlayStation 5: Stock = 99
+
+Combined stock of Shelf G = 6 + 99 = 105
+
+For Shelf A, there is no information provided in the context. 
+
+Since there is no information about Shelf A, we cannot calculate the combined stock of Shelves A and G.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which two products share the minimum stock level?,LLM Reasoning,rag_only,rag,1.0,1.844008445739746,True,"To find the products with the minimum stock level, we need to compare the stock levels of all the products.
+
+The stock levels are:
+- Sony Carrying Case: 42
+- PlayStation DualSense Controller: 45
+- Logitech G Pro X Superlight: 22
+- PlayStation 5 Games Bundle: 6
+- Samsung Fast Charger: 66
+- Sony WH-1000XM5: 16
+- Sony WH-CH720N: 23
+- Sony PlayStation 5: 99
+- Logitech MX Master 3: 7
+
+The minimum stock level is 6, which is shared by the PlayStation 5 Games Bundle.
+
+However, we are looking for two products with the minimum stock level. Since there is only one product with a stock level of 6, we need to find the next lowest stock level.
+
+The next lowest stock level is 7, which is shared by the Logitech MX Master 3.
+
+Therefore, the two products with the minimum stock levels are the PlayStation 5 Games Bundle (6) and the Logitech MX Master 3 (7).",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,How many total units are stored on Shelves D and E together?,LLM Reasoning,rag_only,rag,1.0,1.4971656799316406,True,"To find the total units stored on Shelves D and E, we need to look at the items stored on these shelves.
+
+For Shelf D:
+- Dell XPS 13: 45 units
+- Dell XPS 15: 8 units
+
+Total units on Shelf D = 45 + 8 = 53 units
+
+There are no items listed for Shelf E.
+
+Since there are no items on Shelf E, the total units on Shelf E = 0 units
+
+Total units on Shelves D and E = 53 + 0 = 53 units",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Compare the inventory value of Dell XPS 13 with Dell XPS 15.,LLM Reasoning,rag_only,rag,1.0,1.0567963123321533,True,"To compare the inventory value of Dell XPS 13 with Dell XPS 15, we need to calculate the total value of each item.
+
+For Dell XPS 13:
+Stock: 45
+Price: $1199.99
+Total Value = Stock * Price = 45 * $1199.99 = $53,999.55
+
+For Dell XPS 15:
+Stock: 8
+Price: $1799.99
+Total Value = Stock * Price = 8 * $1799.99 = $14,399.92
+
+The inventory value of Dell XPS 13 ($53,999.55) is higher than the inventory value of Dell XPS 15 ($14,399.92).",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What is the combined stock of all Bose products?,LLM Reasoning,rag_only,rag,1.0,0.6941471099853516,True,"To find the combined stock of all Bose products, we need to add the stock of each Bose item.
+
+Bose Replacement Ear Pads: 36
+Bose QuietComfort 45: 11
+Bose QuietComfort Ultra: 7
+Bose SoundLink Flex: 25
+Bose Soundbar 600: 9
+
+Combined stock = 36 + 11 + 7 + 25 + 9
+Combined stock = 88
+
+The answer is 88.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which Samsung product contributes the most units to Shelf B?,LLM Reasoning,rag_only,rag,1.0,1.1960780620574951,True,"To find out which Samsung product contributes the most units to Shelf B, we need to compare the stock of each Samsung product on Shelf B.
+
+The Samsung products on Shelf B are:
+- Samsung Fast Charger: Stock = 66
+- Samsung Galaxy S24: Stock = 22
+- Samsung Galaxy S23: Stock = 196
+- Samsung Galaxy Tab S9: Stock = 15
+- Samsung Wireless Earbuds: Stock = 27
+
+Comparing the stock:
+196 (Samsung Galaxy S23) > 66 (Samsung Fast Charger) > 27 (Samsung Wireless Earbuds) > 22 (Samsung Galaxy S24) > 15 (Samsung Galaxy Tab S9)
+
+So, the Samsung Galaxy S23 contributes the most units to Shelf B with a stock of 196 units.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,"Order Shelves D, E, and G from lowest to highest total stock.",LLM Reasoning,rag_only,rag,1.0,2.2593674659729004,True,"To determine the order, we need to calculate the total stock for each shelf.
+
+Shelf D: 
+Dell XPS 13: 45
+Dell Laptop Bag: 19
+Dell XPS 15: 8
+Dell Inspiron 14: 14
+Total stock for Shelf D: 45 + 19 + 8 + 14 = 86
+
+Shelf E: 
+There is no information about Shelf E in the context.
+
+Shelf G: 
+Sony PlayStation 5: 99
+PlayStation 5 Games Bundle: 6
+Total stock for Shelf G: 99 + 6 = 105
+
+Since Shelf E has no information, we can only compare Shelves D and G. 
+The order from lowest to highest total stock is: 
+1. Shelf D: 86
+2. Shelf G: 105
+
+Note: Shelf E is not included in the comparison as there is no information about it in the context.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What fraction of Shelf G stock is Sony PlayStation 5?,LLM Reasoning,rag_only,rag,1.0,1.7330405712127686,True,"To find the fraction of Shelf G stock that is Sony PlayStation 5, we need to calculate the total stock on Shelf G and then divide the stock of Sony PlayStation 5 by the total stock.
+
+The items on Shelf G are:
+- Sony PlayStation 5 (Stock: 99)
+- PlayStation 5 Games Bundle (Stock: 6)
+- PlayStation DualSense Controller (Stock: 45)
+- PlayStation Charging Station (Stock: 27)
+- PlayStation VR2 (Stock: 12)
+
+Total stock on Shelf G = 99 + 6 + 45 + 27 + 12 = 189
+
+Stock of Sony PlayStation 5 = 99
+
+Fraction of Shelf G stock that is Sony PlayStation 5 = 99 / 189
+
+To simplify the fraction: 
+99 / 189 = 33 / 63 
+
+Since 33 and 63 have a common factor of 3, we can simplify further:
+33 / 63 = 11 / 21 
+
+So, the fraction of Shelf G stock that is Sony PlayStation 5 is 11/21.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,How much inventory value is represented by the Sony PlayStation 5 stock?,LLM Reasoning,rag_only,rag,1.0,0.7500126361846924,True,"To find the inventory value of the Sony PlayStation 5 stock, we need to multiply the stock quantity by the price.
+
+Stock quantity: 99
+Price: $499.99
+
+Inventory value = Stock quantity * Price
+= 99 * $499.99
+= $49499.01
+
+So, the inventory value represented by the Sony PlayStation 5 stock is $49499.01.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Compare the combined stock of Apple phones with Samsung phones.,LLM Reasoning,rag_only,rag,1.0,1.1558611392974854,True,"To compare the combined stock of Apple phones with Samsung phones, we need to calculate the total stock of each.
+
+Apple phones:
+- Apple iPhone 14 Pro: 10
+- Apple iPhone 14: 10
+- Apple iPhone 13: 8
+Total Apple phones stock: 10 + 10 + 8 = 28
+
+Samsung phones:
+- Samsung Galaxy S24: 22
+- Samsung Galaxy S23: 196
+Total Samsung phones stock: 22 + 196 = 218
+
+Comparison: The combined stock of Samsung phones (218) is greater than the combined stock of Apple phones (28).",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,Which shelf is closest to the warehouse-wide average stock per shelf?,LLM Reasoning,rag_only,rag,1.0,3.3854691982269287,True,"To find the warehouse-wide average stock per shelf, we need to calculate the total stock and divide it by the number of shelves.
+
+Total stock = 45 + 42 + 22 + 16 + 18 + 66 + 23 + 7 + 8 = 247
+
+Number of shelves = 4 (Shelf B, Shelf C, Shelf D, Shelf F, but Shelf C has multiple items, it's still one shelf)
+
+Average stock per shelf = Total stock / Number of shelves = 247 / 4 = 61.75
+
+Now, let's compare the stock of each shelf to the average:
+- Shelf B: 66 (stock of Samsung Fast Charger) - 66 - 61.75 = 4.25
+- Shelf C: 42 + 16 + 18 + 23 = 99 (stock of Sony Carrying Case, Sony WH-1000XM5, Sony WF-1000XM5, Sony WH-CH720N) - 99 - 61.75 = 37.25
+- Shelf D: 45 + 8 = 53 (stock of Dell XPS 13 and Dell XPS 15) - 53 - 61.75 = -8.75
+- Shelf F: 22 + 7 = 29 (stock of Logitech G Pro X Superlight and Logitech MX Master 3) - 29 - 61.75 = -32.75
+
+The shelf closest to the warehouse-wide average stock per shelf is Shelf B with a stock of 66, which is 4.25 above the average.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,What is the combined stock of the three lowest-stock products?,LLM Reasoning,rag_only,rag,1.0,1.3941528797149658,True,"To find the combined stock of the three lowest-stock products, we need to identify the products with the lowest stock and add their stock quantities.
+
+The products with the lowest stock are:
+1. PlayStation 5 Games Bundle (Stock: 6)
+2. Logitech MX Master 3 (Stock: 7)
+3. Bose QuietComfort Ultra (Stock: 7)
+
+The combined stock of these products is: 
+6 (PlayStation 5 Games Bundle) + 7 (Logitech MX Master 3) + 7 (Bose QuietComfort Ultra) = 20
+
+So, the combined stock of the three lowest-stock products is 20.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto
+meta-llama/Llama-3.3-70B-Instruct-Turbo,"Give a short comparison of total stock on Shelves A, C, and F.",LLM Reasoning,rag_only,rag,1.0,2.187316417694092,True,"To compare the total stock on Shelves A, C, and F, we need to calculate the total stock for each shelf.
+
+Shelf A: There is no information about Shelf A, so we cannot calculate the total stock.
+
+Shelf C: 
+- Sony WH-1000XM5: 16
+- Sony Carrying Case: 42
+- Sony WF-1000XM5: 18
+- Sony WH-CH720N: 23
+Total stock on Shelf C = 16 + 42 + 18 + 23 = 99
+
+Shelf F: 
+- Logitech G Pro X Superlight: 22
+- Logitech MX Master 3: 7
+Total stock on Shelf F = 22 + 7 = 29
+
+Since there is no information about Shelf A, we can only compare Shelves C and F. Shelf C has a total stock of 99, which is more than Shelf F's total stock of 29.",2026-08-29T23:55:21.840735,500,100,"{'semantic': 0.6, 'keyword': 0.3, 'metadata': 0.1}",auto

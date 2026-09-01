@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Inventory Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .metric-card { transition: all 0.3s ease; }
+        .metric-card:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #c1c1c1; border-radius: 10px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #a1a1a1; }
+        .low-stock { animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <h1 class="text-3xl font-bold mb-2 md:mb-0">Warehouse Robot Assistant</h1>
+            <nav>
+                <ul class="flex space-x-2 flex-wrap justify-center">
+                    <li><a href="/" class="px-3 py-2 rounded-md bg-blue-700 text-white transition-colors">Inventory Dashboard</a></li>
+                    <li><a href="/assistance" class="px-3 py-2 rounded-md text-white hover:bg-blue-700 transition-colors">General Query</a></li>
+                    <li><a href="/robot_assistance" class="px-3 py-2 rounded-md text-white hover:bg-blue-700 transition-colors">Robot Control</a></li>
+                    <li><a href="/order_management" class="px-3 py-2 rounded-md text-white hover:bg-blue-700 transition-colors">Order Management</a></li>
+                    <li><a href="/deep_thinking_assistant" class="px-3 py-2 rounded-md text-white hover:bg-blue-700 transition-colors">Deep Thinking</a></li>
+                    <li><a href="/performance_dashboard" class="px-3 py-2 rounded-md text-white hover:bg-blue-700 transition-colors">Performance</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-6 p-4 flex-grow">
+        <!-- Page Header -->
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-800">Inventory Dashboard</h1>
+                <p class="text-gray-600 mt-1">Real-time inventory data loaded from shelfinfo.csv</p>
+            </div>
+            <div class="mt-4 md:mt-0">
+                <div class="text-sm text-gray-500">Last updated: <span id="current-time" class="font-medium">Loading...</span></div>
+            </div>
+        </div>
+
+        <!-- Inventory Summary Metrics - NOW WITH REAL DATA -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            <div class="metric-card bg-white border-l-4 border-blue-500 p-5 rounded-lg shadow-md">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-sm text-gray-500 uppercase tracking-wide font-medium">Total Items</p>
+                        <p class="text-3xl font-bold text-gray-800 mt-1">{{ total_items }}</p>
+                    </div>
+                    <div class="bg-blue-100 p-3 rounded-full">
+                        <i class="fas fa-boxes text-blue-500 text-xl"></i>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">{{ total_units }} total units in stock</p>
+            </div>
+            
+            <div class="metric-card bg-white border-l-4 border-green-500 p-5 rounded-lg shadow-md">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-sm text-gray-500 uppercase tracking-wide font-medium">Total Value</p>
+                        <p class="text-3xl font-bold text-gray-800 mt-1">${{ "%.2f"|format(total_value) }}</p>
+                    </div>
+                    <div class="bg-green-100 p-3 rounded-full">
+                        <i class="fas fa-dollar-sign text-green-500 text-xl"></i>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">Total inventory value</p>
+            </div>
+            
+            <div class="metric-card bg-white border-l-4 border-amber-500 p-5 rounded-lg shadow-md">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-sm text-gray-500 uppercase tracking-wide font-medium">Low Stock Items</p>
+                        <p class="text-3xl font-bold text-gray-800 mt-1">{{ low_stock_items }}</p>
+                    </div>
+                    <div class="bg-amber-100 p-3 rounded-full">
+                        <i class="fas fa-exclamation-triangle text-amber-500 text-xl"></i>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">Items with less than 5 units</p>
+            </div>
+            
+            <div class="metric-card bg-white border-l-4 border-purple-500 p-5 rounded-lg shadow-md">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-sm text-gray-500 uppercase tracking-wide font-medium">Categories</p>
+                        <p class="text-3xl font-bold text-gray-800 mt-1">{{ categories }}</p>
+                    </div>
+                    <div class="bg-purple-100 p-3 rounded-full">
+                        <i class="fas fa-tags text-purple-500 text-xl"></i>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">Different product types</p>
+            </div>
+        </div>
+
+        <!-- QUERY SECTION MOVED TO TOP -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Ask About Item Location or Stock</h2>
+            <p class="text-gray-600 mb-4">Use natural language to query inventory information. Examples: "Where is the Sony PlayStation 5?" or "How many iPhones do we have?"</p>
+            
+            <div class="flex flex-col space-y-4">
+                <textarea id="query" rows="4" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Ask about item location or stock..."></textarea>
+                
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                    <div class="mb-4 sm:mb-0">
+                        <p class="text-sm text-gray-500">Try these examples:</p>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            <button onclick="setExample('Where is the Sony PlayStation 5?')" class="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-md text-sm text-gray-700 transition-colors">
+                                PlayStation 5 location
+                            </button>
+                            <button onclick="setExample('What items are low in stock?')" class="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-md text-sm text-gray-700 transition-colors">
+                                Low stock items
+                            </button>
+                            <button onclick="setExample('How many phones do we have?')" class="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-md text-sm text-gray-700 transition-colors">
+                                Phone count
+                            </button>
+                            <button onclick="setExample('Show me all items on Shelf A')" class="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-md text-sm text-gray-700 transition-colors">
+                                Shelf A items
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <button onclick="submitQuery()" class="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 flex items-center">
+                        <i class="fas fa-search mr-2"></i> Submit Query
+                    </button>
+                </div>
+            </div>
+
+            <div class="mt-6 p-4 rounded-lg border" id="query-status-container">
+                <div class="status-message font-medium flex items-center" id="query-status">
+                    <i class="fas fa-info-circle mr-2"></i> Enter a query to get started
+                </div>
+                <div class="query-result mt-4 text-gray-700" id="query-result"></div>
+            </div>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+            <!-- Inventory Table -->
+            <div class="lg:col-span-2">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+                        <h2 class="text-xl font-semibold text-gray-800">Warehouse Inventory ({{ total_items }} items)</h2>
+                        <div class="flex space-x-2">
+                            <button onclick="exportToCSV()" class="px-3 py-1 bg-blue-50 text-blue-600 rounded-md text-sm font-medium hover:bg-blue-100 transition-colors">
+                                <i class="fas fa-download mr-1"></i> Export CSV
+                            </button>
+                            <button onclick="filterLowStock()" class="px-3 py-1 bg-red-50 text-red-600 rounded-md text-sm font-medium hover:bg-red-100 transition-colors">
+                                <i class="fas fa-exclamation-triangle mr-1"></i> Show Low Stock
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="overflow-x-auto custom-scrollbar" style="max-height: 1600px;">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-gray-50 sticky top-0 z-10">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Shelf Name</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Item</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Category</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Stock</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Value</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Location (X, Y, Z)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200" id="inventory-table-body">
+                                {% for shelf in shelves %}
+                                <tr class="hover:bg-gray-50 transition-colors {% if shelf['Stock'] < 5 %}bg-red-50 low-stock-row{% endif %}">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 h-8 w-8 {% if shelf['Shelf ID'] == 'A' %}bg-blue-100{% elif shelf['Shelf ID'] == 'B' %}bg-green-100{% elif shelf['Shelf ID'] == 'C' %}bg-purple-100{% elif shelf['Shelf ID'] == 'D' %}bg-red-100{% elif shelf['Shelf ID'] == 'E' %}bg-amber-100{% elif shelf['Shelf ID'] == 'F' %}bg-indigo-100{% else %}bg-gray-100{% endif %} rounded-md flex items-center justify-center">
+                                                <i class="fas fa-warehouse {% if shelf['Shelf ID'] == 'A' %}text-blue-600{% elif shelf['Shelf ID'] == 'B' %}text-green-600{% elif shelf['Shelf ID'] == 'C' %}text-purple-600{% elif shelf['Shelf ID'] == 'D' %}text-red-600{% elif shelf['Shelf ID'] == 'E' %}text-amber-600{% elif shelf['Shelf ID'] == 'F' %}text-indigo-600{% else %}text-gray-600{% endif %}"></i>
+                                            </div>
+                                            <div class="ml-4">
+                                                <div class="text-sm font-medium text-gray-900">{{ shelf["Shelf Name"] }}</div>
+                                                <div class="text-xs text-gray-500">ID: {{ shelf["Shelf ID"] }}</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="text-sm font-medium text-gray-900">{{ shelf["Item"] }}</div>
+                                        {% if shelf['Stock'] < 5 %}
+                                        <div class="text-xs text-red-500 font-medium mt-1">⚠️ Low Stock</div>
+                                        {% endif %}
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full 
+                                            {% if 'Smartphone' in shelf.get('Category', '') %}bg-blue-100 text-blue-800
+                                            {% elif 'Headphone' in shelf.get('Category', '') or 'Audio' in shelf.get('Category', '') or 'Earbud' in shelf.get('Category', '') %}bg-green-100 text-green-800
+                                            {% elif 'Laptop' in shelf.get('Category', '') or 'Tablet' in shelf.get('Category', '') %}bg-purple-100 text-purple-800
+                                            {% elif 'Gaming' in shelf.get('Category', '') %}bg-red-100 text-red-800
+                                            {% elif 'Monitor' in shelf.get('Category', '') %}bg-indigo-100 text-indigo-800
+                                            {% elif 'Accessor' in shelf.get('Category', '') %}bg-gray-100 text-gray-800
+                                            {% elif 'Mouse' in shelf.get('Category', '') or 'Keyboard' in shelf.get('Category', '') %}bg-amber-100 text-amber-800
+                                            {% else %}bg-yellow-100 text-yellow-800{% endif %}">
+                                            {{ shelf.get("Category", "Electronics") }}
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <div class="w-24 bg-gray-200 rounded-full h-2 mr-3">
+                                                {% set max_stock = 200 %}
+                                                {% set stock_percent = (shelf['Stock'] / max_stock) * 100 if shelf['Stock'] <= max_stock else 100 %}
+                                                <div class="h-2 rounded-full {% if shelf['Stock'] < 5 %}bg-red-500{% elif shelf['Stock'] < 10 %}bg-amber-500{% else %}bg-green-500{% endif %}" 
+                                                     style="width: {{ stock_percent }}%"></div>
+                                            </div>
+                                            <span class="text-sm font-medium {% if shelf['Stock'] < 5 %}text-red-600 font-bold low-stock{% elif shelf['Stock'] < 10 %}text-amber-600{% else %}text-gray-700{% endif %}">
+                                                {{ shelf["Stock"] }} units
+                                            </span>
+                                            {% if shelf['Stock'] < 5 %}
+                                            <i class="fas fa-exclamation-circle text-red-500 ml-2" title="Low Stock - Needs Replenishment"></i>
+                                            {% endif %}
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        {% if shelf.get('Value') and shelf['Value'] > 0 %}
+                                        <div class="text-sm font-medium text-gray-900">${{ "%.2f"|format(shelf['Value']) }}</div>
+                                        <div class="text-xs text-gray-500">${{ "%.2f"|format(shelf['Stock'] * shelf['Value']) }} total</div>
+                                        {% else %}
+                                        <div class="text-sm text-gray-400">-</div>
+                                        {% endif %}
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                                        ({{ shelf["X Position"] | round(3) }}, {{ shelf["Y Position"] | round(3) }}, {{ shelf["Z Position"] | round(3) }})
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="px-6 py-4 border-t border-gray-200 flex justify-between items-center">
+                        <div class="text-sm text-gray-500">
+                            Showing <span class="font-medium">{{ total_items }}</span> items • 
+                            <span class="font-medium">{{ total_units }}</span> total units
+                        </div>
+                        <div class="text-sm text-gray-500">
+                            <span class="font-medium text-red-600">{{ low_stock_items }}</span> items need replenishment
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sidebar with Quick Actions & Stats -->
+            <div class="space-y-6">
+                <!-- Stock Overview -->
+                <div class="bg-white rounded-lg shadow-md p-5">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Stock Overview</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span class="font-medium">In Stock (>10)</span>
+                                <span>{{ shelves|selectattr('Stock', 'gt', 10)|list|length }} items</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                {% set high_stock = shelves|selectattr('Stock', 'gt', 10)|list|length %}
+                                <div class="bg-green-500 h-2 rounded-full" style="width: {{ (high_stock / total_items * 100) if total_items > 0 else 0 }}%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span class="font-medium">Medium (5-10)</span>
+                                <span>{{ shelves|selectattr('Stock', 'ge', 5)|selectattr('Stock', 'le', 10)|list|length }} items</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                {% set medium_stock = shelves|selectattr('Stock', 'ge', 5)|selectattr('Stock', 'le', 10)|list|length %}
+                                <div class="bg-amber-500 h-2 rounded-full" style="width: {{ (medium_stock / total_items * 100) if total_items > 0 else 0 }}%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span class="font-medium">Low (<5)</span>
+                                <span>{{ low_stock_items }} items</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: {{ (low_stock_items / total_items * 100) if total_items > 0 else 0 }}%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-4 border-t border-gray-200">
+                        <h4 class="font-medium text-gray-700 mb-2">Low Stock Items (<5 units)</h4>
+                        <div class="space-y-2 max-h-40 overflow-y-auto custom-scrollbar">
+                            {% for shelf in shelves if shelf['Stock'] < 5 %}
+                            <div class="flex justify-between items-center p-2 bg-red-50 rounded hover:bg-red-100 cursor-pointer" onclick="focusOnItem('{{ shelf['Item'] }}')">
+                                <div>
+                                    <span class="text-sm font-medium">{{ shelf['Item'] }}</span>
+                                    <div class="text-xs text-gray-500">Shelf {{ shelf['Shelf ID'] }}</div>
+                                </div>
+                                <span class="text-sm font-bold text-red-600">{{ shelf['Stock'] }} left</span>
+                            </div>
+                            {% else %}
+                            <div class="text-sm text-gray-500 text-center py-2">No low stock items ✓</div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category Breakdown -->
+                <div class="bg-white rounded-lg shadow-md p-5">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Inventory by Category</h3>
+                    <div class="space-y-4">
+                        {% set category_counts = {} %}
+                        {% set category_stock = {} %}
+                        {% for shelf in shelves %}
+                            {% set category = shelf.get('Category', 'Uncategorized') %}
+                            {% if category not in category_counts %}
+                                {% set _ = category_counts.update({category: 1}) %}
+                                {% set _ = category_stock.update({category: shelf['Stock']}) %}
+                            {% else %}
+                                {% set _ = category_counts.update({category: category_counts[category] + 1}) %}
+                                {% set _ = category_stock.update({category: category_stock[category] + shelf['Stock']}) %}
+                            {% endif %}
+                        {% endfor %}
+                        
+                        {% for category, count in category_counts.items()|sort(attribute='1', reverse=True) %}
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span class="font-medium">{{ category }}</span>
+                                <span>{{ count }} items ({{ category_stock[category] }} units)</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="
+                                    {% if loop.index % 6 == 1 %}bg-blue-500
+                                    {% elif loop.index % 6 == 2 %}bg-green-500
+                                    {% elif loop.index % 6 == 3 %}bg-purple-500
+                                    {% elif loop.index % 6 == 4 %}bg-red-500
+                                    {% elif loop.index % 6 == 5 %}bg-indigo-500
+                                    {% else %}bg-amber-500{% endif %}
+                                    h-2 rounded-full" 
+                                    style="width: {{ (count / total_items * 100) if total_items > 0 else 0 }}%">
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <!-- Shelf Summary -->
+                <div class="bg-white rounded-lg shadow-md p-5">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Shelf Summary</h3>
+                    <div class="grid grid-cols-2 gap-3">
+                        {% set shelf_stats = {} %}
+                        {% for shelf_id in ['A', 'B', 'C', 'D', 'E', 'F', 'G'] %}
+                            {% set shelf_items = shelves|selectattr('Shelf ID', 'equalto', shelf_id)|list %}
+                            {% set shelf_count = shelf_items|length %}
+                            {% set shelf_stock = shelf_items|sum(attribute='Stock') %}
+                            {% if shelf_count > 0 %}
+                            <div class="p-3 border rounded-lg hover:bg-gray-50 cursor-pointer" onclick="filterShelf('{{ shelf_id }}')">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <div class="font-bold text-lg text-gray-800">Shelf {{ shelf_id }}</div>
+                                        <div class="text-xs text-gray-500">{{ shelf_count }} items</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="font-bold text-blue-600">{{ shelf_stock }}</div>
+                                        <div class="text-xs text-gray-500">units</div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Warehouse Robot Assistant • Real Inventory Dashboard</p>
+            <p class="text-gray-400 text-sm mt-1">Data loaded from shelfinfo.csv • {{ total_items }} items • ${{ "%.2f"|format(total_value) }} total value</p>
+        </div>
+    </footer>
+
+    <script>
+        // Update current time
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('en-US', { 
+                hour: '2-digit', 
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true 
+            });
+            const dateString = now.toLocaleDateString('en-US', { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            });
+            document.getElementById('current-time').textContent = `${dateString} at ${timeString}`;
+        }
+        
+        updateTime();
+        setInterval(updateTime, 1000);
+        
+        function setExample(query) {
+            document.getElementById('query').value = query;
+        }
+        
+        async function submitQuery() {
+            const query = document.getElementById('query').value.trim();
+            const queryStatusDiv = document.getElementById('query-status');
+            const queryResultDiv = document.getElementById('query-result');
+            const queryStatusContainer = document.getElementById('query-status-container');
+
+            if (query === '') {
+                queryStatusDiv.innerHTML = '<i class="fas fa-exclamation-triangle mr-2 text-amber-500"></i> Please enter a query.';
+                queryStatusContainer.classList.remove('bg-green-50', 'bg-red-50', 'border-green-300', 'border-red-300');
+                queryStatusContainer.classList.add('bg-amber-50', 'border-amber-300');
+                return;
+            }
+
+            queryStatusDiv.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Processing query...';
+            queryResultDiv.innerHTML = '';
+            queryStatusContainer.classList.remove('bg-green-50', 'bg-red-50', 'bg-amber-50', 'border-green-300', 'border-red-300', 'border-amber-300');
+            queryStatusContainer.classList.add('bg-gray-50', 'border-gray-300');
+
+            try {
+                const response = await fetch('/query', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ query: query, mode: 'auto' })
+                });
+
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+    queryStatusDiv.innerHTML = '<i class="fas fa-check-circle mr-2 text-green-500"></i> Query Results';
+    queryStatusContainer.classList.remove('bg-gray-50', 'border-gray-300', 'bg-red-50', 'border-red-300');
+    queryStatusContainer.classList.add('bg-green-50', 'border-green-300');
+
+    let resultHtml = '';
+    
+    // FIRST, check if we have a direct LLM answer
+    if (data.data.llm_answer) {
+        // Display the natural language answer from LLM
+        resultHtml += `
+            <div class="bg-white rounded-lg p-4 shadow-sm border">
+                <div class="mb-4">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-2 rounded-md mr-3">
+                            <i class="fas fa-robot text-blue-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-sm text-gray-500 mb-1">AI Assistant Response</p>
+                            <div class="text-gray-800 whitespace-pre-line">${data.data.llm_answer}</div>
+                        </div>
+                    </div>
+                </div>`;
+    } 
+    // If no llm_answer, fall back to structured data
+    else if (data.data) {
+        resultHtml += '<div class="bg-white rounded-lg p-4 shadow-sm border">';
+        
+        if (data.data.item && data.data.item !== 'N/A') {
+            resultHtml += `<div class="flex items-center mb-3">
+                <div class="bg-blue-100 p-2 rounded-md mr-3">
+                    <i class="fas fa-box text-blue-600"></i>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-500">Item</p>
+                    <p class="font-bold text-lg text-gray-800">${data.data.item}</p>
+                </div>
+            </div>`;
+        }
+        
+        // ... rest of your existing structured data display code ...
+        resultHtml += '</div>';
+    }
+    
+    // Always add method and timing info if available
+    if (data.method || data.total_processing_time) {
+        resultHtml += `<div class="mt-4 pt-3 border-t border-gray-200">
+            <p class="text-xs text-gray-500"><i class="fas fa-microchip mr-1"></i> Method: ${data.method || 'N/A'}</p>
+            <p class="text-xs text-gray-500"><i class="fas fa-clock mr-1"></i> Time: ${data.total_processing_time ? data.total_processing_time.toFixed(2) : 'N/A'}s</p>
+        </div>`;
+    }
+    
+    queryResultDiv.innerHTML = resultHtml;
+} else {
+                    queryStatusDiv.innerHTML = `<i class="fas fa-times-circle mr-2 text-red-500"></i> Error: ${data.message || 'Unknown error'}`;
+                    queryResultDiv.textContent = '';
+                    queryStatusContainer.classList.remove('bg-gray-50', 'border-gray-300', 'bg-green-50', 'border-green-300');
+                    queryStatusContainer.classList.add('bg-red-50', 'border-red-300');
+                }
+            } catch (error) {
+                console.error('Error submitting query:', error);
+                queryStatusDiv.innerHTML = '<i class="fas fa-times-circle mr-2 text-red-500"></i> An unexpected error occurred. Please try again.';
+                queryResultDiv.textContent = '';
+                queryStatusContainer.classList.remove('bg-gray-50', 'border-gray-300', 'bg-green-50', 'border-green-300');
+                queryStatusContainer.classList.add('bg-red-50', 'border-red-300');
+            }
+        }
+
+        // Table filtering functions
+        function filterLowStock() {
+            const rows = document.querySelectorAll('#inventory-table-body tr');
+            rows.forEach(row => {
+                if (row.classList.contains('low-stock-row')) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        function filterShelf(shelfId) {
+            const rows = document.querySelectorAll('#inventory-table-body tr');
+            rows.forEach(row => {
+                const shelfCell = row.querySelector('td:first-child .text-gray-900');
+                if (shelfCell && shelfCell.textContent.includes(`Shelf ${shelfId}`)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        function focusOnItem(itemName) {
+            // Clear any existing highlights
+            document.querySelectorAll('#inventory-table-body tr').forEach(row => {
+                row.classList.remove('bg-yellow-100');
+            });
+            
+            // Find and highlight the item
+            const rows = document.querySelectorAll('#inventory-table-body tr');
+            rows.forEach(row => {
+                const itemCell = row.querySelector('td:nth-child(2) .text-gray-900');
+                if (itemCell && itemCell.textContent.trim() === itemName) {
+                    row.classList.add('bg-yellow-100');
+                    row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            });
+        }
+
+        function exportToCSV() {
+            // In a real implementation, this would call a backend endpoint
+            alert('CSV export functionality would be implemented here. In production, this would download the inventory data.');
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('query').focus();
+            
+            // Add keyboard shortcut for query submission (Ctrl+Enter)
+            document.getElementById('query').addEventListener('keydown', function(e) {
+                if (e.ctrlKey && e.key === 'Enter') {
+                    submitQuery();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
